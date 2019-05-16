@@ -4,21 +4,45 @@ import { Link, graphql } from 'gatsby';
 import Highlight from '../components/highlight';
 import Image from '../components/image';
 import Layout from '../components/layout';
+import Timeline from '../components/timeline';
 import SEO from '../components/seo';
 
 const Highlights = ({ highlights }) =>
-  data.allHighlightsYaml.edges.map(edge => <Highlight content={edge.node.highlight} />);
+  highlights.map(highlight => <Highlight content={highlight} />);
 
-const IndexPage = ({ data }) => (
-  <Layout>
-    <SEO title="Uralys" keywords={[`gatsby`, `games`, `uralys`]} />
-    <Highlights highlights={data} />
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-);
+const IndexPage = ({ data }) => {
+  const highlights = data.allHighlightsYaml.edges.map(
+    edge => edge.node.highlight
+  );
+  const projects = data.allProjectsYaml.edges.map(edge => edge.node.project);
+
+  return (
+    <Layout>
+      <SEO title="Uralys" keywords={[`gatsby`, `games`, `uralys`]} />
+      <Highlights highlights={highlights} />
+      <Timeline projects={projects} />
+      <Link to="/page-2/">Go to page 2</Link>
+    </Layout>
+  );
+};
 
 export const query = graphql`
   query {
+    allProjectsYaml {
+      edges {
+        node {
+          project {
+            id
+            title
+            roles
+            dates
+            techno
+            category
+            location
+          }
+        }
+      }
+    }
     allHighlightsYaml {
       edges {
         node {

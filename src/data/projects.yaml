@@ -1,0 +1,49 @@
+--- #---------------------------------------------------------------------------
+
+#-------------------------------------------------------------------------------
+#  Ads-Click
+#-------------------------------------------------------------------------------
+
+- project:
+    category: job
+    location: Geneva, Switzerland
+    id: ads-click
+    title: Ads-Click
+    roles:
+      - Backend developer
+    techno:
+      - Java
+    dates: (3 years) October 2006 - December 2009
+
+#-------------------------------------------------------------------------------
+#  Blub
+#-------------------------------------------------------------------------------
+
+- project:
+    category: games
+    location: Edinburg, Scotland
+    id: blub
+    title: Blub
+    roles:
+      - Game Developer
+    techno:
+      - Java
+    dates: (1 month) July 2006
+    duration: (1 month)
+
+#-------------------------------------------------------------------------------
+#  Aspects Software
+#-------------------------------------------------------------------------------
+
+- project:
+    category: internship
+    id: aspects
+    location: Edinburg, Scotland
+    title: Aspects Software
+    roles:
+      - Intern
+      - Backend developer
+    techno:
+      - Java
+      - Hibernate
+    dates: (6 months) February to July 2006
