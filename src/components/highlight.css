@@ -1,0 +1,32 @@
+.post {
+}
+
+.imageWrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  height: auto;
+  padding-bottom: 0;
+}
+
+.image {
+}
+
+.contentWrap {
+}
+
+.content {
+  margin: 0 0 0 -30px;
+  min-height: 400px;
+}
+
+.title {
+}
+
+.subtitle {
+}
+
+.description {
+}
