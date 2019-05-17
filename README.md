@@ -12,7 +12,8 @@
 Built with Gatsby
 </h1>
 
-## 🚀 Credits
+## 🛠 Credits
 
 - core: https://github.com/gatsbyjs/gatsby
 - timeline: https://github.com/stephane-monnot/react-vertical-timeline
+- images tutorial: https://416serg.me/building-a-custom-accessible-image-lightbox-in-gatsbyjs/

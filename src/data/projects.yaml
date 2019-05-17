@@ -7,13 +7,14 @@
 - project:
     category: job
     location: Geneva, Switzerland
-    id: ads-click
+    id: adsclick
     title: Ads-Click
     roles:
       - Backend developer
     techno:
       - Java
     dates: (3 years) October 2006 - December 2009
+    description: My first real job, in a start-up, where I developed a java API, and few client side pieces. I guess this awesome team gave me this taste for building dynamic projects that still drives me today.
 
 #-------------------------------------------------------------------------------
 #  Blub
@@ -30,6 +31,8 @@
       - Java
     dates: (1 month) July 2006
     duration: (1 month)
+    description: My first 2D platformer! coming with its own level editor <3
+    url: http://lespoissonsrouges.free.fr/blub/blub.html
 
 #-------------------------------------------------------------------------------
 #  Aspects Software
@@ -47,3 +50,32 @@
       - Java
       - Hibernate
     dates: (6 months) February to July 2006
+    description: 'This internship ended my graduate course: I helped the team develop internal tools to interface their building processes.'
+
+#-------------------------------------------------------------------------------
+#  School
+#-------------------------------------------------------------------------------
+
+- project:
+    category: school
+    id: enseirb
+    location: Bordeaux, France
+    title: ENSEIRB
+    roles:
+      - Student
+    techno:
+      - Software Engineering
+    dates: (3 years) 2003 - 2006
+    description: 'enseirb delivers...'
+
+- project:
+    category: school
+    id: prepa
+    location: Valence, France
+    title: MP
+    roles:
+      - Student
+    techno:
+      - Maths/Physics
+    dates: (2 years) 2001 - 2003
+    description: 'mp/mpsi...'

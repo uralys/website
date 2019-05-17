@@ -2,13 +2,14 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 
 import Highlight from '../components/highlight';
-import Image from '../components/image';
 import Layout from '../components/layout';
 import Timeline from '../components/timeline';
 import SEO from '../components/seo';
 
 const Highlights = ({ highlights }) =>
-  highlights.map(highlight => <Highlight content={highlight} />);
+  highlights.map(highlight => (
+    <Highlight key={highlight.id} content={highlight} />
+  ));
 
 const IndexPage = ({ data }) => {
   const highlights = data.allHighlightsYaml.edges.map(

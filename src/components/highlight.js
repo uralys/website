@@ -1,7 +1,5 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
 import style from './highlight.css';
 
 const propTypes = {
@@ -13,21 +11,21 @@ const propTypes = {
 };
 
 const Highlight = ({ content }) => (
-  <div class={style.post}>
-    <div class={style.imageWrap}>
+  <div className={style.post}>
+    <div className={style.imageWrap}>
       <div
-        class={style.image}
+        className={style.image}
         data-cms-original-style="background-image: url(/images/demo/work-01.jpg)"
       />
     </div>
 
-    <div class={style.contentWrap}>
-      <div class={style.content}>
-        <h2 class={style.title}>
+    <div className={style.contentWrap}>
+      <div className={style.content}>
+        <h2 className={style.title}>
           <a href="/project/write-it-down">{content.title}</a>
         </h2>
-        <p class={style.subtitle}>{content.id}</p>
-        <p class={style.description}>{content.description}</p>
+        <p className={style.subtitle}>{content.id}</p>
+        <p className={style.description}>{content.description}</p>
       </div>
     </div>
   </div>

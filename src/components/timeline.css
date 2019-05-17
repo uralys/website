@@ -1,8 +1,13 @@
+@value dark #121212;
+
 .title {
+  color: dark;
 }
 
 .location {
+  color: dark;
 }
 
 .dates {
+  color: dark;
 }
