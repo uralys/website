@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import style from './highlight.css';
+import style from './highlight.module.css';
 
 const propTypes = {
   content: PropTypes.shape({

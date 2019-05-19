@@ -2,7 +2,7 @@
 
 @value FONT_FAMILY 'Open Sans', sans-serif;
 @value dark #121212;
-@value light #ededed;
+@value light #eee;
 
 html {
   font-family: FONT_FAMILY;
@@ -13,8 +13,8 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: dark;
-  color: light;
+  background-color: light;
+  color: dark;
 }
 article,
 aside,
@@ -207,7 +207,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: light;
+  color: dark;
   font-family: FONT_FAMILY;
   font-weight: normal;
   word-wrap: break-word;

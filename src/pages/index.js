@@ -33,13 +33,14 @@ export const query = graphql`
       edges {
         node {
           project {
+            category
             id
+            location
             title
             roles
-            dates
             techno
-            category
-            location
+            dates
+            description
           }
         }
       }

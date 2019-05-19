@@ -8,7 +8,7 @@ import {
   VerticalTimelineElement
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import style from './timeline.css';
+import style from './timeline.module.css';
 
 const propTypes = {
   projects: PropTypes.shape({
@@ -57,7 +57,7 @@ const Timeline = ({ projects, images }) => {
   console.log(_projects);
 
   return (
-    <VerticalTimeline>
+    <VerticalTimeline className={style.timeline}>
       {_projects.map(project => {
         return (
           <VerticalTimelineElement
@@ -78,11 +78,9 @@ const Timeline = ({ projects, images }) => {
             <h4 className={style.location}>{project.location}</h4>
             <h4 className={style.dates}>{project.dates}</h4>
             {project.images && project.images.timeline && (
-              <div>
-                <span>{project.images.timeline.src}</span>
-                <Img fluid={project.images.timeline} />
-              </div>
+              <Img fluid={project.images.timeline} />
             )}
+            <p className={style.description}>{project.description}</p>
           </VerticalTimelineElement>
         );
       })}

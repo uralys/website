@@ -17,3 +17,6 @@ Built with Gatsby
 - core: https://github.com/gatsbyjs/gatsby
 - timeline: https://github.com/stephane-monnot/react-vertical-timeline
 - images tutorial: https://416serg.me/building-a-custom-accessible-image-lightbox-in-gatsbyjs/
+
+- noun icons:
+  - school https://thenounproject.com/search/?q=diploma&i=111104

@@ -1,5 +1,9 @@
 @value dark #121212;
 
+.timeline {
+  width: 80%;
+}
+
 .title {
   color: dark;
 }
