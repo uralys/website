@@ -19,4 +19,7 @@ Built with Gatsby
 - images tutorial: https://416serg.me/building-a-custom-accessible-image-lightbox-in-gatsbyjs/
 
 - noun icons:
-  - school https://thenounproject.com/search/?q=diploma&i=111104
+  - school https://thenounproject.com/term/mortarboard/967646/
+  - gamepad https://thenounproject.com/search/?q=gamepad&i=669321
+  - internship https://thenounproject.com/term/internship/961058/
+  - freelance https://thenounproject.com/search/?q=freelance&i=1805396

@@ -10,6 +10,10 @@ import {
 import 'react-vertical-timeline-component/style.min.css';
 import style from './timeline.module.css';
 
+import { ReactComponent as SchoolIcon } from '../icons/school.svg';
+import { ReactComponent as GamepadIcon } from '../icons/gamepad.svg';
+import { ReactComponent as InternshipIcon } from '../icons/internship.svg';
+
 const propTypes = {
   projects: PropTypes.shape({
     category: PropTypes.string,
@@ -26,6 +30,52 @@ const propTypes = {
 const timelinePropTypes = {
   ...propTypes,
   images: PropTypes.array.isRequired
+};
+
+const Icon = ({ category }) => {
+  switch (category) {
+    case 'school':
+      return (
+        <SchoolIcon
+          style={{
+            fill: '#ededed'
+          }}
+        />
+      );
+
+    case 'games':
+      return (
+        <GamepadIcon
+          style={{
+            width: '100%',
+            height: '100%',
+            fill: '#ededed',
+            margin: 'auto',
+            top: '10px',
+            left: '10px'
+          }}
+        />
+      );
+
+    case 'internship':
+      return (
+        <InternshipIcon
+          style={{
+            width: '100%',
+            height: '100%',
+            fill: '#ededed',
+            margin: 'auto',
+            top: '10px',
+            left: '10px'
+          }}
+        />
+      );
+
+    case 'partnership':
+    case 'job':
+    default:
+      return null;
+  }
 };
 
 const Timeline = ({ projects, images }) => {
@@ -54,24 +104,18 @@ const Timeline = ({ projects, images }) => {
     }
   });
 
-  console.log(_projects);
-
   return (
     <VerticalTimeline className={style.timeline}>
+      <div className={style.year}>2019</div>
       {_projects.map(project => {
         return (
           <VerticalTimelineElement
             key={project.id}
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            iconStyle={{ background: '#003b5f', color: '#fff' }}
             icon={
-              <div
-                style={{
-                  width: '10px',
-                  height: '10px',
-                  borderRadius: '50%',
-                  background: '#ff00ff'
-                }}
-              />
+              <div className={style.iconWrap}>
+                <Icon category={project.category} />
+              </div>
             }
           >
             <h3 className={style.title}>{project.title}</h3>

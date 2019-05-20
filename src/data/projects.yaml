@@ -1,4 +1,333 @@
---- #---------------------------------------------------------------------------
+--- # Projects overview for timeline
+
+#-------------------------------------------------------------------------------
+#  Phantoms
+#-------------------------------------------------------------------------------
+
+- project:
+    category: games
+    id: phantoms
+    title: Phantoms
+    location: Paris, France
+    roles:
+      - Mobile Developer
+      - Game Designer
+    techno:
+      - Lua
+      - Corona SDK
+    dates: (1 year) January 2015 - December 2015
+    details: true
+
+#-------------------------------------------------------------------------------
+#  Coorpacademy
+#-------------------------------------------------------------------------------
+
+- project:
+    category: job
+    id: coorpacademy
+    title: Coorpacademy
+    location: Paris, France
+    roles:
+      - Web and Mobile Developer
+    techno:
+      - React.js
+      - Node.js
+      - React Native
+    dates: (4 years)since March 2015
+
+#-------------------------------------------------------------------------------
+#  Adillions
+#-------------------------------------------------------------------------------
+
+- project:
+    category: partnership
+    id: adillions
+    title: Adillions
+    location: Paris, France
+    roles:
+      - Co-Founder / CTO
+      - Full Stack Developer
+    techno:
+      - Node.js
+      - Backbone.js
+      - Marionette.js
+      - Lua
+      - Corona SDK
+    dates: (1 year 3 months) Sept 2013 - Nov 2014
+    details: true
+
+#-------------------------------------------------------------------------------
+#  Photobox MStudio
+#-------------------------------------------------------------------------------
+
+- project:
+    category: freelance
+    id: mstudio
+    title: Photobox MStudio
+    location: Paris, France
+    roles:
+      - Front-end Developer
+      - Freelance
+    techno:
+      - Backbone.js
+      - Marionette.js
+      - HTML/CSS
+    dates: (1 year) Dec 2013 - Nov 2014
+    description: "Draft a phonecase, a mug or a calendar with your mobile tablet. I've spent one year with the Photobox 'Creation Team' as Front-end developer to help building their new web-mobile Studio"
+
+#-------------------------------------------------------------------------------
+#  Behind The Wind
+#-------------------------------------------------------------------------------
+
+- project:
+    category: games
+    id: behind-the-wind
+    title: Behind The Wind
+    location: Paris, France
+    roles:
+      - Mobile Developer
+      - Game Designer
+    techno:
+      - Lua
+      - Corona SDK
+    dates: (4 months) January - April 2014
+    details: true
+
+#-------------------------------------------------------------------------------
+#  Maperial
+#-------------------------------------------------------------------------------
+
+- project:
+    category: partnership
+    id: maperial
+    title: Maperial
+    location: Paris, France
+    roles:
+      - Co-Founder
+      - Front-end Developer
+    techno:
+      - JavaScript
+      - HTML5
+      - HTML/CSS
+    dates: (2 years 3 months) Oct 2012 - Dec 2014
+    details: true
+
+#-------------------------------------------------------------------------------
+#  Kodo 1.0
+#-------------------------------------------------------------------------------
+
+- project:
+    category: games
+    id: kodo-1
+    title: Kodo 1.0
+    location: Paris, France
+    roles:
+      - Mobile Developer
+      - Game Designer
+    techno:
+      - Lua
+      - Corona SDK
+    dates: (2 weeks) August 2013
+    details: true
+
+#-------------------------------------------------------------------------------
+#  The Lightning Planet
+#-------------------------------------------------------------------------------
+
+- project:
+    category: games
+    id: the-lightning-planet
+    title: The Lightning Planet
+    location: Paris, France
+    roles:
+      - Mobile Developer
+      - Game Designer
+    techno:
+      - Lua
+      - Corona SDK
+    dates: (2 months) July - August 2013
+    details: true
+
+#-------------------------------------------------------------------------------
+# Diligis
+#-------------------------------------------------------------------------------
+
+- project:
+    category: partnership
+    id: diligis
+    title: Diligis
+    location: Paris, France
+    roles:
+      - Full Stack Developer
+      - Mobile Developer
+    techno:
+      - Play! Framework
+      - PostgreSQL
+      - Lua
+      - Corona SDK
+    dates: (3 months) April – June 2013
+    details: true
+
+#-------------------------------------------------------------------------------
+#  Cadeaux
+#-------------------------------------------------------------------------------
+
+- project:
+    category: partnership
+    id: cadeaux
+    title: Cadeaux
+    location: Bordeaux, France
+    roles:
+      - Full Stack Developer
+    techno:
+      - Play! Framework
+      - Facebook API
+      - JavaScript
+      - HTML/CSS
+    dates: (3 months) August – October 2012
+
+#-------------------------------------------------------------------------------
+#  The Band
+#-------------------------------------------------------------------------------
+
+- project:
+    category: games
+    id: the-band
+    title: The Band
+    location: Paris, France
+    roles:
+      - Full Stack Developer
+      - Game Designer
+    techno:
+      - Java
+      - Spring framework
+      - Hibernate
+      - JavaScript
+      - HTML/CSS
+    dates: (2 months) April – May 2012
+
+#-------------------------------------------------------------------------------
+#  Eram Assortiment
+#-------------------------------------------------------------------------------
+
+- project:
+    category: freelance
+    id: assort
+    title: Eram Assortiment
+    location: Paris, France
+    roles:
+      - Front-end Developer
+      - Freelance
+    techno:
+      - Flex 4
+    dates: (1 year 6 months) March 2011 – September 2012
+
+#-------------------------------------------------------------------------------
+#  Tribes And Khans
+#-------------------------------------------------------------------------------
+
+- project:
+    category: games
+    id: tribes-and-khans
+    title: Tribes And Khans
+    location: Paris, France
+    roles:
+      - Full Stack Developer
+      - Game Designer
+    techno:
+      - Java
+      - Spring Framework
+      - Google AppEngine
+      - Flex 4
+    dates: (1 year 7 months) December 2010 - July 2012
+    details: true
+
+#-------------------------------------------------------------------------------
+# Robeco
+#-------------------------------------------------------------------------------
+
+- project:
+    category: freelance
+    id: robeco
+    title: Robeco
+    location: Paris, France
+    roles:
+      - Front-end Developer
+    techno:
+      - PHP5
+      - Flex 4
+    dates: (3 months) October - December 2010
+
+#-------------------------------------------------------------------------------
+#  Fools
+#-------------------------------------------------------------------------------
+
+- project:
+    category: games
+    id: fools
+    title: Fools
+    location: Melun, France
+    roles:
+      - Full Stack Developer
+      - Game Designer
+    techno:
+      - Facebook Graph API
+      - Flex 3
+    dates: (3 months) August - October 2010
+
+#-------------------------------------------------------------------------------
+#  Skooairs
+#-------------------------------------------------------------------------------
+
+- project:
+    category: games
+    id: skooairs
+    title: Skooairs
+    location: Melun, France
+    roles:
+      - Full Stack Developer
+      - Game Designer
+    techno:
+      - Java
+      - Spring Framework
+      - Google AppEngine
+      - Flex 3
+    dates: (2 months) July - August 2010
+
+#-------------------------------------------------------------------------------
+#  Uralys
+#-------------------------------------------------------------------------------
+
+- project:
+    category: games
+    id: lands-of-uralys
+    location: Toulouse, France
+    title: Lands of Uralys
+    roles:
+      - Full Stack Developer
+      - Game Designer
+    techno:
+      - Java
+      - Spring Framework
+      - Google AppEngine
+      - Flex 3
+    dates: (2 years 6 months) January 2008 - June 2010
+
+#-------------------------------------------------------------------------------
+# Serendi
+#-------------------------------------------------------------------------------
+
+- project:
+    category: partnership
+    id: serendi_prototype
+    location: Bordeaux, France
+    title: Prototype
+    roles:
+      - Front-end Developer
+    techno:
+      - Flex 3
+    dates: (3 months) December 2009 - February 2010
+    description: I joined 4 partners to create a voting platform, we ended with a small prototype.
 
 #-------------------------------------------------------------------------------
 #  Ads-Click
@@ -6,8 +335,8 @@
 
 - project:
     category: job
-    location: Geneva, Switzerland
     id: adsclick
+    location: Geneva, Switzerland
     title: Ads-Click
     roles:
       - Backend developer
@@ -22,8 +351,8 @@
 
 - project:
     category: games
-    location: Edinburg, Scotland
     id: blub
+    location: Edinburg, Scotland
     title: Blub
     roles:
       - Game Developer
