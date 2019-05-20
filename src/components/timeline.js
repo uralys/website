@@ -106,8 +106,11 @@ const Timeline = ({ projects, images }) => {
 
   return (
     <VerticalTimeline className={style.timeline}>
-      <div className={style.year}>2019</div>
       {_projects.map(project => {
+        if (project.category === 'year') {
+          return <div className={style.year}>{project.id}</div>;
+        }
+
         return (
           <VerticalTimelineElement
             key={project.id}
@@ -119,8 +122,8 @@ const Timeline = ({ projects, images }) => {
             }
           >
             <h3 className={style.title}>{project.title}</h3>
-            <h4 className={style.location}>{project.location}</h4>
-            <h4 className={style.dates}>{project.dates}</h4>
+            <p className={style.location}>{project.location}</p>
+            <p className={style.dates}>{project.dates}</p>
             {project.images && project.images.timeline && (
               <Img fluid={project.images.timeline} />
             )}

@@ -30,14 +30,25 @@
   width: 100%;
 }
 
-.title {
+h3.title {
   color: dark;
+  margin: 0;
+  padding: 0;
 }
 
-.location {
+p.location {
   color: dark;
+  font-size: 16px;
+  margin: 0;
+  margin-top: 15px;
+  padding: 0;
 }
 
-.dates {
+p.dates {
   color: dark;
+  font-style: italic;
+  font-size: 13px;
+  margin: 0;
+  margin-top: -2px;
+  padding: 0;
 }
