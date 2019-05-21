@@ -6,6 +6,131 @@
     id: '2019'
 
 #-------------------------------------------------------------------------------
+#  1024
+#-------------------------------------------------------------------------------
+
+- project:
+    category: games
+    id: ld44
+    title: '1024'
+    location: Paris, France
+    roles:
+      - Mobile Developer
+      - Game Designer
+    techno:
+      - Lua
+      - Corona SDK
+    dates: April 2019
+    description: another Ludum Dare entry, Compo this time!
+
+#-------------------------------------------------------------------------------
+#  Kodo: find the Monster
+#-------------------------------------------------------------------------------
+
+- project:
+    category: games
+    id: kodo-monster
+    title: 'Kodo: find the Monster'
+    location: Paris, France
+    roles:
+      - Mobile Developer
+      - Game Designer
+    techno:
+      - Lua
+      - Corona SDK
+    dates: May 2019
+    description: A new theme for Kodo
+
+#-------------------------------------------------------------------------------
+#  Coorpacademy Playground
+#-------------------------------------------------------------------------------
+
+- project:
+    category: games
+    id: exalt
+    title: Coorpacademy Playground
+    location: Paris, France
+    roles:
+      - Mobile Developer
+      - Game Designer
+    techno:
+      - Lua
+      - Corona SDK
+    dates: Jan 2019 - Apr 2019
+    description: A prototype to demonstrate Coorpacademy gaming potential
+
+#-------------------------------------------------------------------------------
+
+- project:
+    category: year
+    id: '2018'
+
+#-------------------------------------------------------------------------------
+#  Kodo: find the Color
+#-------------------------------------------------------------------------------
+
+- project:
+    category: games
+    id: kodo-monster
+    title: 'Kodo: find the Color'
+    location: Paris, France
+    roles:
+      - Mobile Developer
+      - Game Designer
+    techno:
+      - Lua
+      - Corona SDK
+    dates: May 2019
+    description: 'Kodo 3.0: new gameplay, leaderboard, IAP'
+
+#-------------------------------------------------------------------------------
+
+- project:
+    category: year
+    id: '2017'
+
+#-------------------------------------------------------------------------------
+#  Cherry
+#-------------------------------------------------------------------------------
+
+- project:
+    category: games
+    id: cherry
+    title: Cherry
+    location: Paris, France
+    roles:
+      - Mobile Developer
+    techno:
+      - Lua
+      - Corona SDK
+    dates: from early 2017
+    description: 'Cherry is the backbone to my games released from 2017'
+
+#-------------------------------------------------------------------------------
+
+- project:
+    category: year
+    id: '2016'
+
+#-------------------------------------------------------------------------------
+#  Cerise Music Ride
+#-------------------------------------------------------------------------------
+
+- project:
+    category: games
+    id: ld36
+    title: Cerise Music Ride
+    location: Paris, France
+    roles:
+      - Mobile Developer
+      - Game Designer
+    techno:
+      - Lua
+      - Corona SDK
+    dates: August 2016
+    description: my first Ludum Dare participation
+
+#-------------------------------------------------------------------------------
 #  Phantoms
 #-------------------------------------------------------------------------------
 
@@ -20,7 +145,7 @@
     techno:
       - Lua
       - Corona SDK
-    dates: (1 year) January 2015 - December 2015
+    dates: Jan 2015 - Dec 2015
     details: true
 
 #-------------------------------------------------------------------------------
@@ -44,7 +169,7 @@
       - React.js
       - Node.js
       - React Native
-    dates: (4 years) since March 2015
+    dates: since March 2015
 
 #-------------------------------------------------------------------------------
 
@@ -70,7 +195,7 @@
       - Marionette.js
       - Lua
       - Corona SDK
-    dates: (1 year 3 months) Sept 2013 - Nov 2014
+    dates: Sept 2013 - Nov 2014
     details: true
 
 #-------------------------------------------------------------------------------
@@ -89,7 +214,7 @@
       - Backbone.js
       - Marionette.js
       - HTML/CSS
-    dates: (1 year) Dec 2013 - Nov 2014
+    dates: Dec 2013 - Nov 2014
     description: "Draft a phonecase, a mug or a calendar with your mobile tablet. I've spent one year with the Photobox 'Creation Team' as Front-end developer to help building their new web-mobile Studio"
 
 #-------------------------------------------------------------------------------
@@ -107,7 +232,7 @@
     techno:
       - Lua
       - Corona SDK
-    dates: (4 months) January - April 2014
+    dates: Jan - Apr 2014
     details: true
 
 #-------------------------------------------------------------------------------
@@ -132,7 +257,7 @@
       - JavaScript
       - HTML5
       - HTML/CSS
-    dates: (2 years 3 months) Oct 2012 - Dec 2014
+    dates: Oct 2012 - Dec 2014
     details: true
 
 #-------------------------------------------------------------------------------
@@ -150,7 +275,7 @@
     techno:
       - Lua
       - Corona SDK
-    dates: (2 weeks) August 2013
+    dates: August 2013
     details: true
 
 #-------------------------------------------------------------------------------
@@ -168,7 +293,7 @@
     techno:
       - Lua
       - Corona SDK
-    dates: (2 months) July - August 2013
+    dates: July - August 2013
     details: true
 
 #-------------------------------------------------------------------------------
@@ -188,7 +313,7 @@
       - PostgreSQL
       - Lua
       - Corona SDK
-    dates: (3 months) April – June 2013
+    dates: Apr – Jun 2013
     details: true
 
 #-------------------------------------------------------------------------------
@@ -213,7 +338,7 @@
       - Facebook API
       - JavaScript
       - HTML/CSS
-    dates: (3 months) August – October 2012
+    dates: Aug – Oct 2012
 
 #-------------------------------------------------------------------------------
 #  The Band
@@ -233,7 +358,7 @@
       - Hibernate
       - JavaScript
       - HTML/CSS
-    dates: (2 months) April – May 2012
+    dates: Apr – May 2012
 
 #-------------------------------------------------------------------------------
 
@@ -255,7 +380,7 @@
       - Freelance
     techno:
       - Flex 4
-    dates: (1 year 6 months) March 2011 – September 2012
+    dates: Mar 2011 – Sept 2012
 
 #-------------------------------------------------------------------------------
 #  Tribes And Khans
@@ -274,7 +399,7 @@
       - Spring Framework
       - Google AppEngine
       - Flex 4
-    dates: (1 year 7 months) December 2010 - July 2012
+    dates: Dec 2010 - Jul 2012
     details: true
 
 #-------------------------------------------------------------------------------
@@ -297,7 +422,7 @@
     techno:
       - PHP5
       - Flex 4
-    dates: (3 months) October - December 2010
+    dates: Oct - Dec 2010
 
 #-------------------------------------------------------------------------------
 #  Fools
@@ -314,7 +439,7 @@
     techno:
       - Facebook Graph API
       - Flex 3
-    dates: (3 months) August - October 2010
+    dates: Aug - Oct 2010
 
 #-------------------------------------------------------------------------------
 #  Skooairs
@@ -333,7 +458,7 @@
       - Spring Framework
       - Google AppEngine
       - Flex 3
-    dates: (2 months) July - August 2010
+    dates: Jul - Aug 2010
 
 #-------------------------------------------------------------------------------
 
@@ -358,7 +483,7 @@
       - Spring Framework
       - Google AppEngine
       - Flex 3
-    dates: (2 years 6 months) January 2008 - June 2010
+    dates: Jan 2008 - Jun 2010
 
 #-------------------------------------------------------------------------------
 # Serendi
@@ -373,7 +498,7 @@
       - Front-end Developer
     techno:
       - Flex 3
-    dates: (3 months) December 2009 - February 2010
+    dates: Dec 2009 - Feb 2010
     description: I joined 4 partners to create a voting platform, we ended with a small prototype.
 
 #-------------------------------------------------------------------------------
@@ -395,7 +520,7 @@
       - Backend developer
     techno:
       - Java
-    dates: (3 years) October 2006 - December 2009
+    dates: Oct 2006 - Dec 2009
     description: My first real job, in a start-up, where I developed a java API, and few client side pieces. I guess this awesome team gave me this taste for building dynamic projects that still drives me today.
 
 #-------------------------------------------------------------------------------
@@ -411,8 +536,7 @@
       - Game Developer
     techno:
       - Java
-    dates: (1 month) July 2006
-    duration: (1 month)
+    dates: July 2006
     description: My first 2D platformer! coming with its own level editor <3
     url: http://lespoissonsrouges.free.fr/blub/blub.html
 
@@ -431,7 +555,7 @@
     techno:
       - Java
       - Hibernate
-    dates: (6 months) February to July 2006
+    dates: Feb - Jul 2006
     description: 'This internship ended my graduate course: I helped the team develop internal tools to interface their building processes.'
 
 #-------------------------------------------------------------------------------
@@ -453,8 +577,8 @@
       - Student
     techno:
       - Software Engineering
-    dates: (3 years) 2003 - 2006
-    description: 'enseirb delivers...'
+    dates: sept 2003 - sept 2006
+    description: ENSEIRB delivers a Diploma of Engineering at a level equivalent to 5 years of higher education.
 
 #-------------------------------------------------------------------------------
 
@@ -468,10 +592,10 @@
     category: school
     id: prepa
     location: Valence, France
-    title: MP
+    title: Scientific CPGE
     roles:
       - Student
     techno:
       - Maths/Physics
-    dates: (2 years) 2001 - 2003
-    description: 'mp/mpsi...'
+    dates: 2001 - 2003
+    description: Specialized in Mathematics and Physics (MP/MPSI).
