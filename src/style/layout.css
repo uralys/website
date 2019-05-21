@@ -622,7 +622,3 @@ pre tt:after {
     font-size: 100%;
   }
 }
-
-main .vertical-timeline-element-content {
-  box-shadow: 0 0 12px 1px #bbb;
-}

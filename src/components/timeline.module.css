@@ -1,3 +1,6 @@
+@value breakpoints "../style/breakpoints.css";
+@value mobile, tablet from breakpoints;
+
 @value colors: "../style/colors.css";
 @value dark from colors;
 
@@ -21,7 +24,7 @@
   border-left: none;
 }
 
-@media only screen and (min-width: 1170px) {
+@media tablet {
   .year {
     margin-left: 50%;
   }
@@ -41,10 +44,11 @@
 .dates {
   font-style: italic;
   font-size: 13px;
-  margin-top: -2px;
+  margin-top: -8px !important;
 }
 
 .description {
+  margin-top: 25px !important;
   font-size: 15px;
-  margin-top: -2px;
+  line-height: 20px;
 }

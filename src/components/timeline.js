@@ -126,7 +126,10 @@ const Timeline = ({ projects, images }) => {
             <p className={style.location}>{project.location}</p>
             <p className={style.dates}>{project.dates}</p>
             {project.images && project.images.timeline && (
-              <Img fluid={project.images.timeline} />
+              <Img
+                style={{ maxWidth: '600px' }}
+                fluid={project.images.timeline}
+              />
             )}
             <p className={style.description}>{project.description}</p>
           </VerticalTimelineElement>

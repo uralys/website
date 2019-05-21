@@ -1,4 +1,7 @@
 .post {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .imageWrap {
@@ -15,11 +18,15 @@
 }
 
 .contentWrap {
+  width: 700px;
 }
 
 .content {
-  margin: 0 0 0 -30px;
-  min-height: 400px;
+  margin: 20px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 12px 1px #bbb;
 }
 
 .title {

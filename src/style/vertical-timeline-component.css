@@ -1,4 +1,6 @@
-@value colors "../style/colors.css";
+@value breakpoints "./breakpoints.css";
+@value colors "./colors.css";
+@value mobile, tablet from breakpoints;
 @value dark from colors;
 
 .vertical-timeline {
@@ -22,7 +24,7 @@
   width: 4px;
   background: #fff;
 }
-@media only screen and (min-width: 1170px) {
+@media tablet {
   .vertical-timeline.vertical-timeline--two-columns {
     margin-top: 3em;
     margin-bottom: 3em;
@@ -51,7 +53,7 @@
 .vertical-timeline-element:last-child {
   margin-bottom: 0;
 }
-@media only screen and (min-width: 1170px) {
+@media tablet {
   .vertical-timeline-element {
     margin: 4em 0;
   }
@@ -82,7 +84,7 @@
   margin-left: -12px;
   margin-top: -12px;
 }
-@media only screen and (min-width: 1170px) {
+@media tablet {
   .vertical-timeline--two-columns .vertical-timeline-element-icon {
     width: 60px;
     height: 60px;
@@ -137,7 +139,7 @@
   background: #fff;
   border-radius: 0.25em;
   padding: 1em;
-  box-shadow: 0 3px 0 #ddd;
+  box-shadow: 0 0 12px 1px #bbb;
 }
 .vertical-timeline-element--no-children .vertical-timeline-element-content {
   background: 0 0;
@@ -153,9 +155,6 @@
 }
 .vertical-timeline-element-content .vertical-timeline-element-date,
 .vertical-timeline-element-content p {
-  font-size: 13px;
-  font-size: 0.8125rem;
-  font-weight: 500;
   color: dark;
   margin: 0;
   padding: 0;
@@ -188,21 +187,17 @@
   .vertical-timeline-element-content::before {
   display: none;
 }
-@media only screen and (min-width: 768px) {
+@media mobile {
   .vertical-timeline-element-content h2 {
     font-size: 20px;
     font-size: 1.25rem;
-  }
-  .vertical-timeline-element-content p {
-    font-size: 16px;
-    font-size: 1rem;
   }
   .vertical-timeline-element-content .vertical-timeline-element-date {
     font-size: 14px;
     font-size: 0.875rem;
   }
 }
-@media only screen and (min-width: 1170px) {
+@media tablet {
   .vertical-timeline--two-columns .vertical-timeline-element-content {
     margin-left: 0;
     padding: 1.5em;
@@ -265,7 +260,7 @@
   -webkit-animation: cd-bounce-2 0.6s;
   animation: cd-bounce-2 0.6s;
 }
-@media only screen and (min-width: 1170px) {
+@media tablet {
   .vertical-timeline--two-columns.vertical-timeline--animate
     .vertical-timeline-element.vertical-timeline-element--right
     .vertical-timeline-element-content.bounce-in,
