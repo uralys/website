@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
-@value FONT_FAMILY 'Open Sans', sans-serif;
-@value dark #121212;
-@value light #eee;
+@value colors "../style/colors.css";
+@value font "../style/font.css";
+@value dark from colors;
+@value light from colors;
+@value FONT_FAMILY from font;
 
 html {
   font-family: FONT_FAMILY;
@@ -621,4 +621,8 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+main .vertical-timeline-element-content {
+  box-shadow: 0 0 12px 1px #bbb;
 }

@@ -7,7 +7,7 @@ import {
   VerticalTimeline,
   VerticalTimelineElement
 } from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
+import '../style/vertical-timeline-component.css';
 import style from './timeline.module.css';
 
 import { ReactComponent as SchoolIcon } from '../icons/school.svg';
@@ -113,6 +113,7 @@ const Timeline = ({ projects, images }) => {
 
         return (
           <VerticalTimelineElement
+            className={style.projectWrap}
             key={project.id}
             iconStyle={{ background: '#003b5f', color: '#fff' }}
             icon={
