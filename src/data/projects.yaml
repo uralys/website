@@ -107,6 +107,24 @@
     description: 'Cherry is the backbone to my games released from 2017'
 
 #-------------------------------------------------------------------------------
+#  Velvet Coffee website
+#-------------------------------------------------------------------------------
+
+- project:
+    category: games
+    id: velvet-website
+    title: Velvet Coffee website
+    location: Paris, France
+    roles:
+      - Web designer
+    techno:
+      - Jekyll
+      - Javascript
+    dates: July 2017
+    description: Velvet Coffee first website
+    url: https://github.com/velvetcoffee/velvetcoffee.github.io
+
+#-------------------------------------------------------------------------------
 
 - project:
     category: year
@@ -491,7 +509,7 @@
 
 - project:
     category: partnership
-    id: serendi_prototype
+    id: serendi-voting
     location: Bordeaux, France
     title: Serendi 0.1
     roles:

@@ -32,6 +32,38 @@ const timelinePropTypes = {
   images: PropTypes.array.isRequired
 };
 
+const extractAssets = images =>
+  images.reduce((_assets, image) => {
+    const projectPath = image.node.absolutePath.split('images/projects/')[1];
+    if (!projectPath) {
+      return _assets;
+    }
+
+    const imageName = image.node.base;
+    const imageType = image.node.base.split('.')[0];
+    const projectName = projectPath.split('/')[0];
+
+    return {
+      ..._assets,
+      [projectName]: {
+        ..._assets[projectName],
+        [imageType]: image.node.childImageSharp.fluid
+      }
+    };
+  }, {});
+
+const TimelineImage = ({ projectAssets, id }) => {
+  if (!projectAssets[id] || !projectAssets[id].timeline) {
+    return null;
+  }
+
+  return (
+    <div className={style.imageWrap}>
+      <Img fluid={projectAssets[id].timeline} />
+    </div>
+  );
+};
+
 const Icon = ({ category }) => {
   switch (category) {
     case 'school':
@@ -80,32 +112,10 @@ const Icon = ({ category }) => {
 
 const Timeline = ({ projects, images }) => {
   let _projects = Object.keys(projects).map(k => projects[k]);
-
-  images.forEach(image => {
-    const imagePath = image.node.childImageSharp.fluid.src;
-    const splitters = imagePath.split('/');
-    const imageName = splitters[splitters.length - 1].split('.')[0];
-
-    const projectName = imageName.split('-timeline')[0];
-    if (imageName !== projectName) {
-      _projects = _projects.map(p => {
-        if (p.id === projectName) {
-          return {
-            ...p,
-            images: {
-              ...p.images,
-              timeline: image.node.childImageSharp.fluid
-            }
-          };
-        } else {
-          return p;
-        }
-      });
-    }
-  });
+  const projectAssets = extractAssets(images);
 
   return (
-    <VerticalTimeline className={style.timeline}>
+    <VerticalTimeline className={style.timeline} layout="1-column">
       {_projects.map(project => {
         if (project.category === 'year') {
           return <div className={style.year}>{project.id}</div>;
@@ -125,12 +135,7 @@ const Timeline = ({ projects, images }) => {
             <h3 className={style.title}>{project.title}</h3>
             <p className={style.location}>{project.location}</p>
             <p className={style.dates}>{project.dates}</p>
-            {project.images && project.images.timeline && (
-              <Img
-                style={{ maxWidth: '600px' }}
-                fluid={project.images.timeline}
-              />
-            )}
+            <TimelineImage projectAssets={projectAssets} id={project.id} />
             <p className={style.description}>{project.description}</p>
           </VerticalTimelineElement>
         );
@@ -148,6 +153,8 @@ const TimelineImageLoader = props => (
         ) {
           edges {
             node {
+              base
+              absolutePath
               childImageSharp {
                 fluid(maxWidth: 1200) {
                   ...GatsbyImageSharpFluid
