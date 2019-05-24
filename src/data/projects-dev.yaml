@@ -1,0 +1,16 @@
+--- # Projects overview for timeline
+#-------------------------------------------------------------------------------
+
+- project:
+    category: games
+    id: velvet-website
+    title: Velvet Coffee website
+    location: Paris, France
+    roles:
+      - Web designer
+    technos:
+      - Jekyll
+      - Javascript
+    dates: July 2017
+    description: Velvet Coffee first website
+    url: https://github.com/velvetcoffee/velvetcoffee.github.io

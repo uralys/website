@@ -17,7 +17,7 @@
     roles:
       - Mobile Developer
       - Game Designer
-    techno:
+    technos:
       - Lua
       - Corona SDK
     dates: April 2019
@@ -35,7 +35,7 @@
     roles:
       - Mobile Developer
       - Game Designer
-    techno:
+    technos:
       - Lua
       - Corona SDK
     dates: May 2019
@@ -53,7 +53,7 @@
     roles:
       - Mobile Developer
       - Game Designer
-    techno:
+    technos:
       - Lua
       - Corona SDK
     dates: Jan 2019 - Apr 2019
@@ -71,13 +71,13 @@
 
 - project:
     category: games
-    id: kodo-monster
+    id: kodo-color
     title: 'Kodo: find the Color'
     location: Paris, France
     roles:
       - Mobile Developer
       - Game Designer
-    techno:
+    technos:
       - Lua
       - Corona SDK
     dates: May 2019
@@ -100,7 +100,7 @@
     location: Paris, France
     roles:
       - Mobile Developer
-    techno:
+    technos:
       - Lua
       - Corona SDK
     dates: from early 2017
@@ -117,7 +117,7 @@
     location: Paris, France
     roles:
       - Web designer
-    techno:
+    technos:
       - Jekyll
       - Javascript
     dates: July 2017
@@ -142,7 +142,7 @@
     roles:
       - Mobile Developer
       - Game Designer
-    techno:
+    technos:
       - Lua
       - Corona SDK
     dates: August 2016
@@ -160,7 +160,7 @@
     roles:
       - Mobile Developer
       - Game Designer
-    techno:
+    technos:
       - Lua
       - Corona SDK
     dates: Jan 2015 - Dec 2015
@@ -183,7 +183,7 @@
     location: Paris, France
     roles:
       - Web and Mobile Developer
-    techno:
+    technos:
       - React.js
       - Node.js
       - React Native
@@ -207,7 +207,7 @@
     roles:
       - Co-Founder / CTO
       - Full Stack Developer
-    techno:
+    technos:
       - Node.js
       - Backbone.js
       - Marionette.js
@@ -228,7 +228,7 @@
     roles:
       - Front-end Developer
       - Freelance
-    techno:
+    technos:
       - Backbone.js
       - Marionette.js
       - HTML/CSS
@@ -247,7 +247,7 @@
     roles:
       - Mobile Developer
       - Game Designer
-    techno:
+    technos:
       - Lua
       - Corona SDK
     dates: Jan - Apr 2014
@@ -271,7 +271,7 @@
     roles:
       - Co-Founder
       - Front-end Developer
-    techno:
+    technos:
       - JavaScript
       - HTML5
       - HTML/CSS
@@ -290,7 +290,7 @@
     roles:
       - Mobile Developer
       - Game Designer
-    techno:
+    technos:
       - Lua
       - Corona SDK
     dates: August 2013
@@ -308,7 +308,7 @@
     roles:
       - Mobile Developer
       - Game Designer
-    techno:
+    technos:
       - Lua
       - Corona SDK
     dates: July - August 2013
@@ -326,7 +326,7 @@
     roles:
       - Full Stack Developer
       - Mobile Developer
-    techno:
+    technos:
       - Play! Framework
       - PostgreSQL
       - Lua
@@ -351,7 +351,7 @@
     location: Bordeaux, France
     roles:
       - Full Stack Developer
-    techno:
+    technos:
       - Play! Framework
       - Facebook API
       - JavaScript
@@ -370,7 +370,7 @@
     roles:
       - Full Stack Developer
       - Game Designer
-    techno:
+    technos:
       - Java
       - Spring framework
       - Hibernate
@@ -396,7 +396,7 @@
     roles:
       - Front-end Developer
       - Freelance
-    techno:
+    technos:
       - Flex 4
     dates: Mar 2011 – Sept 2012
 
@@ -412,7 +412,7 @@
     roles:
       - Full Stack Developer
       - Game Designer
-    techno:
+    technos:
       - Java
       - Spring Framework
       - Google AppEngine
@@ -437,7 +437,7 @@
     location: Paris, France
     roles:
       - Front-end Developer
-    techno:
+    technos:
       - PHP5
       - Flex 4
     dates: Oct - Dec 2010
@@ -454,7 +454,7 @@
     roles:
       - Full Stack Developer
       - Game Designer
-    techno:
+    technos:
       - Facebook Graph API
       - Flex 3
     dates: Aug - Oct 2010
@@ -471,7 +471,7 @@
     roles:
       - Full Stack Developer
       - Game Designer
-    techno:
+    technos:
       - Java
       - Spring Framework
       - Google AppEngine
@@ -496,7 +496,7 @@
     roles:
       - Full Stack Developer
       - Game Designer
-    techno:
+    technos:
       - Java
       - Spring Framework
       - Google AppEngine
@@ -514,7 +514,7 @@
     title: Serendi 0.1
     roles:
       - Front-end Developer
-    techno:
+    technos:
       - Flex 3
     dates: Dec 2009 - Feb 2010
     description: I joined 4 partners to create a voting platform, we ended with a small prototype.
@@ -536,7 +536,7 @@
     title: Ads-Click
     roles:
       - Backend developer
-    techno:
+    technos:
       - Java
     dates: Oct 2006 - Dec 2009
     description: My first real job, in a start-up, where I developed a java API, and few client side pieces. I guess this awesome team gave me this taste for building dynamic projects that still drives me today.
@@ -552,7 +552,7 @@
     title: Blub
     roles:
       - Game Developer
-    techno:
+    technos:
       - Java
     dates: July 2006
     description: My first 2D platformer! coming with its own level editor <3
@@ -570,7 +570,7 @@
     roles:
       - Intern
       - Backend developer
-    techno:
+    technos:
       - Java
       - Hibernate
     dates: Feb - Jul 2006
@@ -593,7 +593,7 @@
     title: ENSEIRB
     roles:
       - Student
-    techno:
+    technos:
       - Software Engineering
     dates: sept 2003 - sept 2006
     description: ENSEIRB delivers a Diploma of Engineering at a level equivalent to 5 years of higher education.
@@ -613,7 +613,7 @@
     title: Scientific CPGE
     roles:
       - Student
-    techno:
+    technos:
       - Maths/Physics
     dates: 2001 - 2003
     description: Specialized in Mathematics and Physics (MP/MPSI).

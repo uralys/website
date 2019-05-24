@@ -15,12 +15,12 @@ const IndexPage = ({ data }) => {
   const highlights = data.allHighlightsYaml.edges.map(
     edge => edge.node.highlight
   );
-  const projects = data.allProjectsYaml.edges.map(edge => edge.node.project);
+  const projects = data.allProjectsDevYaml.edges.map(edge => edge.node.project);
 
   return (
     <Layout>
       <SEO title="Uralys" keywords={[`gatsby`, `games`, `uralys`]} />
-      <Highlights highlights={highlights} />
+      {/* <Highlights highlights={highlights} /> */}
       <Timeline projects={projects} />
       <Link to="/page-2/">Go to page 2</Link>
     </Layout>
@@ -29,7 +29,7 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
   query {
-    allProjectsYaml {
+    allProjectsDevYaml {
       edges {
         node {
           project {
@@ -38,7 +38,7 @@ export const query = graphql`
             location
             title
             roles
-            techno
+            technos
             dates
             description
           }
