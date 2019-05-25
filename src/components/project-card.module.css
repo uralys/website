@@ -8,16 +8,19 @@
 @value FONT_FAMILY from font;
 
 .project {
-  width: 200px;
-  height: 250px;
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  height: 120px;
   background: #fff;
-  border-radius: 15px;
-  margin-left: 20px;
+  border-radius: 0 15px 15px 0;
+  margin: 0 22px 10px;
 }
 
 .imageHeader {
-  width: 100%;
-  height: 100px;
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
   overflow: hidden;
 }
 
@@ -37,23 +40,23 @@
 
 .title {
   composes: text;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .location {
   composes: text;
-  font-size: 16px;
+  font-size: 11px;
 }
 
 .dates {
   composes: text;
   font-style: italic;
-  font-size: 13px;
+  font-size: 10px;
 }
 
 .description {
   composes: text;
-  font-size: 15px;
+  font-size: 11px;
   line-height: 20px;
 }
 

@@ -15,8 +15,8 @@ const IndexPage = ({ data }) => {
   const highlights = data.allHighlightsYaml.edges.map(
     edge => edge.node.highlight
   );
-  const projects = data.allProjectsDevYaml.edges.map(edge => edge.node.project);
-
+  const projects = data.allProjectsYaml.edges.map(edge => edge.node.project);
+  console.log(projects);
   return (
     <Layout>
       <SEO title="Uralys" keywords={[`gatsby`, `games`, `uralys`]} />
@@ -29,7 +29,7 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
   query {
-    allProjectsDevYaml {
+    allProjectsYaml {
       edges {
         node {
           project {

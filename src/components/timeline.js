@@ -2,11 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 
-import {
-  VerticalTimeline,
-  VerticalTimelineElement
-} from 'react-vertical-timeline-component';
-
+import { VerticalTimeline } from 'react-vertical-timeline-component';
 import ProjectCard from './project-card';
 
 import '../style/vertical-timeline-component.css';
@@ -43,14 +39,34 @@ const extractAssets = images =>
 
 const Timeline = ({ projects, images }) => {
   const assets = extractAssets(images);
-  console.log(assets);
-  return projects.map(project => (
-    <ProjectCard
-      key={project.id}
-      project={project}
-      assets={assets[project.id]}
-    />
-  ));
+
+  return (
+    <VerticalTimeline className={style.timeline} layout="1-column">
+      {projects.map(project => {
+        if (project.category === 'year') {
+          return (
+            <div key={project.id} className={style.year}>
+              {project.id}
+            </div>
+          );
+        }
+
+        if (!assets[project.id]) {
+          throw new Error(`missing assets for project ${project.id}`);
+        }
+
+        console.log(project.id, assets[project.id]);
+
+        return (
+          <ProjectCard
+            key={project.id}
+            project={project}
+            assets={assets[project.id]}
+          />
+        );
+      })}
+    </VerticalTimeline>
+  );
 };
 
 const TimelineImageLoader = props => (

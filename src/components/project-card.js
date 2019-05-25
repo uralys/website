@@ -22,26 +22,28 @@ const ProjectCard = ({ project, assets }) => (
   <div className={style.project}>
     <Image
       className={style.imageHeader}
-      asset={assets.timeline}
+      asset={assets.logo}
       projectId={project.id}
     />
 
-    <Icon fill="#ededed" className={style.icon} category={project.category} />
+    <div>
+      <h3 className={style.title}>{project.title}</h3>
+      <p className={style.location}>{project.location}</p>
+      <p className={style.dates}>{project.dates}</p>
+      <p className={style.description}>{project.description}</p>
+      {/* <p className={style.roles}>
+        {project.roles.map(role => (
+          <p className={style.role}>{role}</p>
+        ))}
+      </p>
+      <p className={style.technos}>
+        {project.technos.map(techno => (
+          <p className={style.techno}>{techno}</p>
+        ))}
+      </p> */}
+    </div>
 
-    <h3 className={style.title}>{project.title}</h3>
-    <p className={style.location}>{project.location}</p>
-    <p className={style.dates}>{project.dates}</p>
-    <p className={style.description}>{project.description}</p>
-    <p className={style.roles}>
-      {project.roles.map(role => (
-        <p className={style.role}>{role}</p>
-      ))}
-    </p>
-    <p className={style.technos}>
-      {project.technos.map(techno => (
-        <p className={style.techno}>{techno}</p>
-      ))}
-    </p>
+    <Icon fill="#ededed" className={style.icon} category={project.category} />
   </div>
 );
 

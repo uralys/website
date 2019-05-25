@@ -21,7 +21,7 @@
       - Lua
       - Corona SDK
     dates: April 2019
-    description: another Ludum Dare entry, Compo this time!
+    description: Submitted another Ludum Dare entry, on Compo category this time!
 
 #-------------------------------------------------------------------------------
 #  Kodo: find the Monster
@@ -39,7 +39,7 @@
       - Lua
       - Corona SDK
     dates: May 2019
-    description: A new theme for Kodo
+    description: Deployed a new theme for Kodo
 
 #-------------------------------------------------------------------------------
 #  Coorpacademy Playground
@@ -57,7 +57,23 @@
       - Lua
       - Corona SDK
     dates: Jan 2019 - Apr 2019
-    description: A prototype to demonstrate Coorpacademy gaming potential
+    description: Designed and created a prototype to demonstrate my potential as game studio for Coorpacademy.
+
+#-------------------------------------------------------------------------------
+#  Coorpacademy mobile
+#-------------------------------------------------------------------------------
+
+- project:
+    category: job
+    id: coorp-mobile
+    title: App mobile Coorpacademy
+    location: Paris, France
+    roles:
+      - Mobile Developer
+    technos:
+      - React Native
+    dates: Nov 2018 - May 2019
+    description: Member of the mobile team, which delivered the first mobile app on stores for Coorpacademy.
 
 #-------------------------------------------------------------------------------
 
@@ -82,6 +98,24 @@
       - Corona SDK
     dates: May 2019
     description: 'Kodo 3.0: new gameplay, leaderboard, IAP'
+
+#-------------------------------------------------------------------------------
+#  Totem
+#-------------------------------------------------------------------------------
+
+- project:
+    category: job
+    id: totem
+    title: Totem Coorpacademy
+    location: Paris, France
+    roles:
+      - Game Designer
+      - Web Developer
+    technos:
+      - React.js/Redux
+      - Node.js
+    dates: Nov 2017 - Oct 2018
+    description: Created a multiplayer game for Coorpacademy
 
 #-------------------------------------------------------------------------------
 
@@ -121,7 +155,7 @@
       - Jekyll
       - Javascript
     dates: July 2017
-    description: Velvet Coffee first website
+    description: Designed and wrote Velvet Coffee first website
     url: https://github.com/velvetcoffee/velvetcoffee.github.io
 
 #-------------------------------------------------------------------------------
@@ -149,6 +183,12 @@
     description: my first Ludum Dare participation
 
 #-------------------------------------------------------------------------------
+
+- project:
+    category: year
+    id: '2015'
+
+#-------------------------------------------------------------------------------
 #  Phantoms
 #-------------------------------------------------------------------------------
 
@@ -167,12 +207,6 @@
     details: true
 
 #-------------------------------------------------------------------------------
-
-- project:
-    category: year
-    id: '2015'
-
-#-------------------------------------------------------------------------------
 #  Coorpacademy
 #-------------------------------------------------------------------------------
 
@@ -182,12 +216,12 @@
     title: Coorpacademy
     location: Paris, France
     roles:
-      - Web and Mobile Developer
+      - Web Developer
     technos:
-      - React.js
+      - React.js/Redux
       - Node.js
-      - React Native
     dates: since March 2015
+    description: Member of the dev team, refactored existing monolith into many React/Redux apps
 
 #-------------------------------------------------------------------------------
 
