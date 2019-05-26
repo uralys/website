@@ -55,8 +55,6 @@ const Timeline = ({ projects, images }) => {
           throw new Error(`missing assets for project ${project.id}`);
         }
 
-        console.log(project.id, assets[project.id]);
-
         return (
           <ProjectCard
             key={project.id}

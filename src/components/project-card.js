@@ -26,10 +26,8 @@ const ProjectCard = ({ project, assets }) => (
       projectId={project.id}
     />
 
-    <div>
+    <div className={style.details}>
       <h3 className={style.title}>{project.title}</h3>
-      <p className={style.location}>{project.location}</p>
-      <p className={style.dates}>{project.dates}</p>
       <p className={style.description}>{project.description}</p>
       {/* <p className={style.roles}>
         {project.roles.map(role => (
