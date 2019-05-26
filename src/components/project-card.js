@@ -1,8 +1,10 @@
+import VisibilitySensor from 'react-visibility-sensor';
 import PropTypes from 'prop-types';
 import React from 'react';
 import style from './project-card.module.css';
 import Icon from './icon';
 import Image from './image';
+import classnames from 'classnames';
 
 const propTypes = {
   project: {
@@ -18,32 +20,53 @@ const propTypes = {
   assets: PropTypes.object
 };
 
-const ProjectCard = ({ project, assets }) => (
-  <div className={style.project}>
-    <Image
-      className={style.imageHeader}
-      asset={assets.logo}
-      projectId={project.id}
-    />
+class ProjectCard extends React.Component {
+  constructor(props) {
+    super(props);
+    this.onVisibilitySensorChange = this.onVisibilitySensorChange.bind(this);
+    this.state = { visible: false };
+  }
 
-    <div className={style.details}>
-      <h3 className={style.title}>{project.title}</h3>
-      <p className={style.description}>{project.description}</p>
-      {/* <p className={style.roles}>
-        {project.roles.map(role => (
-          <p className={style.role}>{role}</p>
-        ))}
-      </p>
-      <p className={style.technos}>
-        {project.technos.map(techno => (
-          <p className={style.techno}>{techno}</p>
-        ))}
-      </p> */}
-    </div>
+  onVisibilitySensorChange(isVisible) {
+    if (this.state.visible !== isVisible) {
+      this.setState({ visible: isVisible });
+    }
+  }
 
-    <Icon fill="#ededed" className={style.icon} category={project.category} />
-  </div>
-);
+  render() {
+    const { project, assets } = this.props;
+    return (
+      <VisibilitySensor
+        onChange={this.onVisibilitySensorChange}
+        partialVisibility
+      >
+        <div
+          className={classnames([
+            style.project,
+            this.state.visible ? style.show : style.hide
+          ])}
+        >
+          <Image
+            className={style.imageHeader}
+            asset={assets.logo}
+            projectId={project.id}
+          />
+
+          <div className={style.details}>
+            <h3 className={style.title}>{project.title}</h3>
+            <p className={style.description}>{project.description}</p>
+          </div>
+
+          <Icon
+            fill="#ededed"
+            className={style.icon}
+            category={project.category}
+          />
+        </div>
+      </VisibilitySensor>
+    );
+  }
+}
 
 ProjectCard.propTypes = propTypes;
 export default ProjectCard;

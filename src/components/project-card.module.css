@@ -8,6 +8,7 @@
 @value FONT_FAMILY from font;
 
 .project {
+  opacity: 0;
   position: relative;
   display: flex;
   width: 100%;
@@ -18,6 +19,16 @@
   margin: 0 22px 10px;
   overflow: hidden;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 2px 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.show {
+  opacity: 1;
+  animation: show 0.6s;
+}
+
+.hide {
+  opacity: 0;
+  animation: hide 0.6s;
 }
 
 .details {
@@ -68,4 +79,34 @@
 .technos {
 }
 .techno {
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  60% {
+    opacity: 0.4;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(300px);
+  }
 }
