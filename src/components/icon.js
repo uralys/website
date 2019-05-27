@@ -1,4 +1,7 @@
 import React from 'react';
+import { ReactComponent as AppleIcon } from '../icons/apple.svg';
+import { ReactComponent as GithubIcon } from '../icons/github.svg';
+import { ReactComponent as GoogleIcon } from '../icons/google.svg';
 import { ReactComponent as SchoolIcon } from '../icons/school.svg';
 import { ReactComponent as GamepadIcon } from '../icons/gamepad.svg';
 import { ReactComponent as InternshipIcon } from '../icons/internship.svg';
@@ -48,6 +51,42 @@ const Svg = ({ className, category, fill }) => {
         />
       );
 
+    case 'apple':
+      return (
+        <AppleIcon
+          style={{
+            fill
+          }}
+        />
+      );
+
+    case 'github':
+      return (
+        <GithubIcon
+          style={{
+            fill
+          }}
+        />
+      );
+
+    case 'google':
+      return (
+        <GoogleIcon
+          style={{
+            fill
+          }}
+        />
+      );
+
+    case 'ldjam':
+      return (
+        <SchoolIcon
+          style={{
+            fill
+          }}
+        />
+      );
+
     case 'partnership':
     case 'job':
     default:
@@ -55,8 +94,8 @@ const Svg = ({ className, category, fill }) => {
   }
 };
 
-const Icon = ({ className, category, fill }) => (
-  <div className={className}>
+const Icon = ({ style, className, category, fill }) => (
+  <div className={className} style={style}>
     <Svg category={category} fill={fill} />
   </div>
 );

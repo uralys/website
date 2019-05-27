@@ -34,13 +34,17 @@ export const query = graphql`
         node {
           project {
             category
-            id
-            location
-            title
-            roles
-            technos
             dates
             description
+            id
+            links {
+              type
+              url
+            }
+            location
+            roles
+            technos
+            title
           }
         }
       }

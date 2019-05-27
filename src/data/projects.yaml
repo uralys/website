@@ -22,6 +22,11 @@
       - Corona SDK
     dates: April 2019
     description: Submitted another Ludum Dare entry, on Compo category this time!
+    links:
+      - type: github
+        url: https://github.com/chrisdugne/ld44
+      - type: ldjam
+        url: https://ldjam.com/events/ludum-dare/44/uralys-ld44
 
 #-------------------------------------------------------------------------------
 #  Kodo: find the Monster
@@ -40,6 +45,11 @@
       - Corona SDK
     dates: May 2019
     description: Deployed a new theme for Kodo
+    links:
+      - type: apple
+        url: https://ldjam.com/events/ludum-dare/44/uralys-ld44
+      - type: google
+        url: https://ldjam.com/events/ludum-dare/44/uralys-ld44
 
 #-------------------------------------------------------------------------------
 #  Coorpacademy Playground
@@ -139,6 +149,9 @@
       - Corona SDK
     dates: from early 2017
     description: 'Cherry is the backbone to my games released from 2017'
+    links:
+      - type: github
+        url: https://github.com/chrisdugne/cherry
 
 #-------------------------------------------------------------------------------
 #  Velvet Coffee website
@@ -181,6 +194,12 @@
       - Corona SDK
     dates: August 2016
     description: my first Ludum Dare participation
+    links:
+      - type: github
+        url: https://github.com/chrisdugne/ludum-dare-36
+
+      - type: ldjam
+        url: http://ludumdare.com/compo/ludum-dare-36/?action=preview&uid=112097
 
 #-------------------------------------------------------------------------------
 

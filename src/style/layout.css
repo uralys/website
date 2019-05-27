@@ -1,7 +1,7 @@
 @value colors "../style/colors.css";
 @value font "../style/font.css";
 @value dark from colors;
-@value light from colors;
+@value white from colors;
 @value FONT_FAMILY from font;
 
 html {
@@ -13,7 +13,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: light;
+  background-color: white;
   color: dark;
 }
 article,

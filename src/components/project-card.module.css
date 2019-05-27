@@ -2,7 +2,7 @@
 @value mobile, tablet from breakpoints;
 
 @value colors: "../style/colors.css";
-@value dark from colors;
+@value dark, primary, secondary, white, light from colors;
 
 @value font "../style/font.css";
 @value FONT_FAMILY from font;
@@ -18,7 +18,17 @@
   border-radius: 0 15px 15px 0;
   margin: 0 22px 10px;
   overflow: hidden;
+  cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 2px 1px 2px rgba(0, 0, 0, 0.24);
+  transition: background-color 0.3s ease-out;
+}
+.project:hover {
+  background-color: #ededed;
+}
+
+.projectWrap {
+  text-decoration: none;
+  color: black;
 }
 
 .show {
@@ -50,7 +60,7 @@
   width: 45px;
   height: 45px;
   border-radius: 0 15px 0 15px;
-  background-color: #123;
+  background-color: primary;
 }
 
 .text {
@@ -71,14 +81,34 @@
   margin-top: 20px;
 }
 
-.roles {
+.links {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  flex-direction: row;
 }
-.role {
+.link {
+  position: relative;
+  width: 55px;
+  height: 40px;
+  margin-right: -10px;
+  border-top: solid 2px #fff;
+  border-left: solid 2px #fff;
+  border-radius: 10px 0 0px 0;
+  background-color: primary;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease-out;
 }
-
-.technos {
+.link:hover {
+  background-color: light;
 }
-.techno {
+.linkIcon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 17px;
 }
 
 @keyframes show {

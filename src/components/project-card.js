@@ -40,29 +40,64 @@ class ProjectCard extends React.Component {
         onChange={this.onVisibilitySensorChange}
         partialVisibility
       >
-        <div
-          className={classnames([
-            style.project,
-            this.state.visible ? style.show : style.hide
-          ])}
-        >
-          <Image
-            className={style.imageHeader}
-            asset={assets.logo}
-            projectId={project.id}
-          />
+        <a className={style.projectWrap} href={`/${project.id}`}>
+          <div
+            className={classnames([
+              style.project,
+              this.state.visible ? style.show : style.hide
+            ])}
+          >
+            <Image
+              className={style.imageHeader}
+              asset={assets.logo}
+              projectId={project.id}
+            />
 
-          <div className={style.details}>
-            <h3 className={style.title}>{project.title}</h3>
-            <p className={style.description}>{project.description}</p>
+            <div className={style.details}>
+              <h3 className={style.title}>{project.title}</h3>
+              <p className={style.description}>{project.description}</p>
+            </div>
+
+            <Icon
+              fill="#ededed"
+              className={style.icon}
+              category={project.category}
+            />
+
+            {project.links && (
+              <div className={style.links}>
+                {project.links.map(({ type, url }) => (
+                  <a
+                    style={
+                      type === 'apple' || type === 'google'
+                        ? {
+                            width: '125px',
+                            backgroundColor: '#fff'
+                          }
+                        : null
+                    }
+                    className={style.link}
+                    target="_blank"
+                    key={`${project.id}-link-${type}`}
+                    href={url}
+                  >
+                    <Icon
+                      style={{
+                        width:
+                          (type === 'apple' || type === 'google') && '100px'
+                      }}
+                      className={style.linkIcon}
+                      fill={
+                        type === 'apple' || type === 'google' ? '#123' : '#fff'
+                      }
+                      category={type}
+                    />
+                  </a>
+                ))}
+              </div>
+            )}
           </div>
-
-          <Icon
-            fill="#ededed"
-            className={style.icon}
-            category={project.category}
-          />
-        </div>
+        </a>
       </VisibilitySensor>
     );
   }
