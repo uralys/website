@@ -58,44 +58,30 @@ class ProjectCard extends React.Component {
               <p className={style.description}>{project.description}</p>
             </div>
 
-            <Icon
-              fill="#ededed"
-              className={style.icon}
-              category={project.category}
-            />
-
             {project.links && (
               <div className={style.links}>
                 {project.links.map(({ type, url }) => (
                   <a
-                    style={
-                      type === 'apple' || type === 'google'
-                        ? {
-                            width: '125px',
-                            backgroundColor: '#fff'
-                          }
-                        : null
-                    }
                     className={style.link}
                     target="_blank"
                     key={`${project.id}-link-${type}`}
                     href={url}
                   >
                     <Icon
-                      style={{
-                        width:
-                          (type === 'apple' || type === 'google') && '100px'
-                      }}
                       className={style.linkIcon}
-                      fill={
-                        type === 'apple' || type === 'google' ? '#123' : '#fff'
-                      }
+                      fill="#fff"
                       category={type}
                     />
                   </a>
                 ))}
               </div>
             )}
+
+            <Icon
+              fill="#ededed"
+              className={style.icon}
+              category={project.category}
+            />
           </div>
         </a>
       </VisibilitySensor>

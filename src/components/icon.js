@@ -1,7 +1,9 @@
 import React from 'react';
+import { ReactComponent as AndroidIcon } from '../icons/android.svg';
 import { ReactComponent as AppleIcon } from '../icons/apple.svg';
+import { ReactComponent as LDIcon } from '../icons/ld.svg';
 import { ReactComponent as GithubIcon } from '../icons/github.svg';
-import { ReactComponent as GoogleIcon } from '../icons/google.svg';
+import { ReactComponent as PlayIcon } from '../icons/play.svg';
 import { ReactComponent as SchoolIcon } from '../icons/school.svg';
 import { ReactComponent as GamepadIcon } from '../icons/gamepad.svg';
 import { ReactComponent as InternshipIcon } from '../icons/internship.svg';
@@ -60,6 +62,15 @@ const Svg = ({ className, category, fill }) => {
         />
       );
 
+    case 'ld':
+      return (
+        <LDIcon
+          style={{
+            fill
+          }}
+        />
+      );
+
     case 'github':
       return (
         <GithubIcon
@@ -69,18 +80,18 @@ const Svg = ({ className, category, fill }) => {
         />
       );
 
-    case 'google':
+    case 'android':
       return (
-        <GoogleIcon
+        <AndroidIcon
           style={{
             fill
           }}
         />
       );
 
-    case 'ldjam':
+    case 'play':
       return (
-        <SchoolIcon
+        <PlayIcon
           style={{
             fill
           }}
