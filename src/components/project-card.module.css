@@ -8,27 +8,22 @@
 @value FONT_FAMILY from font;
 
 .project {
-  opacity: 0;
   position: relative;
   display: flex;
   width: 100%;
-  max-width: 600px;
-  height: 120px;
+  height: 100%;
   background: #fff;
+  color: dark;
   border-radius: 0 15px 15px 0;
-  margin: 0 22px 10px;
   overflow: hidden;
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 2px 1px 2px rgba(0, 0, 0, 0.24);
   transition: background-color 0.3s ease-out;
+  text-decoration: none;
+  opacity: 0;
 }
 .project:hover {
   background-color: #ededed;
-}
-
-.projectWrap {
-  text-decoration: none;
-  color: black;
 }
 
 .show {
@@ -51,6 +46,13 @@
   height: 120px;
   border-radius: 0 12px 12px 0;
   overflow: hidden;
+}
+
+@media mobile {
+  .imageHeader {
+    width: 160px;
+    height: 160px;
+  }
 }
 
 .icon {

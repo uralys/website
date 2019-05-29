@@ -1,2 +1,2 @@
-@value mobile only screen and (min-width: 768px);
-@value tablet only screen and (min-width: 960px);
+@value mobile only screen and (max-width: 640px);
+@value tablet only screen and (max-width: 1170px);

@@ -40,49 +40,48 @@ class ProjectCard extends React.Component {
         onChange={this.onVisibilitySensorChange}
         partialVisibility
       >
-        <a className={style.projectWrap} href={`/${project.id}`}>
-          <div
-            className={classnames([
-              style.project,
-              this.state.visible ? style.show : style.hide
-            ])}
-          >
-            <Image
-              className={style.imageHeader}
-              asset={assets.logo}
-              projectId={project.id}
-            />
+        <a
+          href={`/${project.id}`}
+          className={classnames([
+            style.project,
+            this.state.visible ? style.show : style.hide
+          ])}
+        >
+          <Image
+            className={style.imageHeader}
+            asset={assets.logo}
+            projectId={project.id}
+          />
 
-            <div className={style.details}>
-              <h3 className={style.title}>{project.title}</h3>
-              <p className={style.description}>{project.description}</p>
-            </div>
-
-            {project.links && (
-              <div className={style.links}>
-                {project.links.map(({ type, url }) => (
-                  <a
-                    className={style.link}
-                    target="_blank"
-                    key={`${project.id}-link-${type}`}
-                    href={url}
-                  >
-                    <Icon
-                      className={style.linkIcon}
-                      fill="#fff"
-                      category={type}
-                    />
-                  </a>
-                ))}
-              </div>
-            )}
-
-            <Icon
-              fill="#ededed"
-              className={style.icon}
-              category={project.category}
-            />
+          <div className={style.details}>
+            <h3 className={style.title}>{project.title}</h3>
+            <p className={style.description}>{project.description}</p>
           </div>
+
+          {project.links && (
+            <div className={style.links}>
+              {project.links.map(({ type, url }) => (
+                <a
+                  className={style.link}
+                  target="_blank"
+                  key={`${project.id}-link-${type}`}
+                  href={url}
+                >
+                  <Icon
+                    className={style.linkIcon}
+                    fill="#fff"
+                    category={type}
+                  />
+                </a>
+              ))}
+            </div>
+          )}
+
+          <Icon
+            fill="#ededed"
+            className={style.icon}
+            category={project.category}
+          />
         </a>
       </VisibilitySensor>
     );
