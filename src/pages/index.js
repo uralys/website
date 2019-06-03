@@ -16,13 +16,12 @@ const IndexPage = ({ data }) => {
     edge => edge.node.highlight
   );
   const projects = data.allProjectsYaml.edges.map(edge => edge.node.project);
-  console.log(projects);
   return (
     <Layout>
       <SEO title="Uralys" keywords={[`gatsby`, `games`, `uralys`]} />
       {/* <Highlights highlights={highlights} /> */}
       <Timeline projects={projects} />
-      <Link to="/page-2/">Go to page 2</Link>
+      <Link to="/phantoms">phantoms</Link>
     </Layout>
   );
 };

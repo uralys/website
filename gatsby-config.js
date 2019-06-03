@@ -29,8 +29,8 @@ module.exports = {
         name: `uralys.com`,
         short_name: `www`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#1c2541`,
+        theme_color: `#1c2541`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png` // This path is relative to the root of the site.
       }

@@ -1,0 +1,142 @@
+--- #-------------------------------------------------------------------------------
+
+- type: logo
+
+- type: intro
+  title: Get ready for labyrinths
+  subtitle: A mobile mind game
+  info: Discover the first Chapters, they're free !
+
+- type: stores
+  google: https://play.google.com/store/apps/details?id=com.uralys.phantoms
+  apple: https://itunes.apple.com/us/app/id1037707233
+
+- type: video
+  url: http://www.youtube.com/embed/JELDE2yfwKI
+
+- type: screenshots
+  from: 1
+  to: 4
+
+- type: screenshots
+  from: 5
+  to: 8
+
+- type: screenshots
+  from: 9
+  to: 12
+
+- type: paragraph
+  value: Phantoms is a mobile mind game providing 2D labyrinths where teams of phantoms trigger colored doors and rooms to modify the paths. Reaching the exit may sometimes be quite easy, but you'll have to find all gems along the way...
+
+- type: paragraph
+  value: You will move phantoms one by one, toggling many kinds of triggers to open doors, rotate rooms, reveal hidden areas, to find a way, step by step, toward the exit. From simple houses to devious castles, you'll be challenged to find all the Gems.
+
+- type: list
+  values:
+    - free!
+    - on iOS and Android, check both phone and tablet versions
+    - 2 chapters, 16 levels for the first public release
+    - Music by Velvet Coffee (be sure to plug your headphones ♫ )
+
+#-------------------------------------------------------------------------------
+
+- type: title
+  value: Credits
+
+- type: html
+  value:
+    'Idea, Coding, Game Design and Soundtracks by <a href="https://twitter.com/chrisdugne">Chris Dugne</a>'
+    # - name:
+    #     - value: Coding
+    #   type: pop
+    # - name:
+    #     - value: Game Design
+    #   type: asset
+    # - name:
+    #     - value: Music + SFX (as a half of
+    #     - value: Velvet Coffee
+    #       link: https://www.facebook.com/velvetcoffeemusic
+    #     - value: )
+    #   type: asset
+    # - name:
+    #     - value: Corona SDK
+    #       link: http://www.coronalabs.com/
+    #     - value: ❤ Lua ❤
+    #   type: tool
+    #   add-margin-top: true
+    #   image:
+    #     url: common/corona.png
+    #     link: http://www.coronalabs.com/
+    # - name:
+    #     - value: 'CBEffects 3.2'
+    #       link: https://github.com/GymbylCoding/CBEffects
+    #     - value: ' : Thanks'
+    #     - value: Gymbyl Coding
+    #       link: http://gymbyl.com
+    #     - value: ❤ for this awesome effects lib !
+    #   type: tool
+    #   add-margin-top: true
+    #   image:
+    #     url: common/cbeffects.png
+    #     link: https://github.com/GymbylCoding/CBEffects
+    # - name:
+    #   type: asset
+    #   add-margin-top: true
+    #   texts:
+    #     - value: Phantoms from Yurike's
+    #     - value: Furry Creatures
+    #       link: http://yurike11.deviantart.com/art/Furry-Creatures-164706499
+    # - name:
+    #   type: asset
+    #   texts:
+    #     - value: Background by
+    #     - value: Oussama Agazzoum
+    #       link: https://www.facebook.com/white.leyth
+    # - name:
+    #   type: asset
+    #   texts:
+    #     - value: GUI by
+    #     - value: GraphicBurger
+    #       link: http://graphicburger.com/mobile-game-gui/
+    # - name:
+    #   type: asset
+    #   texts:
+    #     - value: 'Triggers, buttons and avatars from'
+    #     - value: Tiny Speck
+    #       link: http://www.glitchthegame.com/public-domain-game-art/
+    # - name:
+    #   type: asset
+    #   add-margin-top: true
+    #   texts:
+    #     - value: 'Rooms, doors, walls by.....me and Gimp 2.8...'
+    # - name:
+    #   type: asset
+    #   texts:
+    #     - value: "If you feel like joining me and help me design my next game, don't be shy, I gladly want to hear from you."
+    # - name:
+    #   type: asset
+    #   add-margin-top: true
+    #   texts:
+    #     - value: Few additional icons for buttons come from
+    #     - value: The Noun Project
+    #       link: http://thenounproject.com/
+    #     - value: ':'
+    # - name:
+    #   type: asset
+    #   add-margin-top: true
+    #   texts:
+    #     - value: The headphones
+    #       link: 'https://thenounproject.com/term/headphones/1416/'
+    #     - value: designed by
+    #     - value: Madebyelvis
+    #       link: https://thenounproject.com/Madebyelvis/
+    # - name:
+    #   type: asset
+    #   texts:
+    #     - value: The
+    #     - value: profile
+    #       link: 'http://thenounproject.com/term/profile/77971/'
+    #     - value: button icon designed by
+    #     - value: Miguel C Balandrano
+    #       link: http://thenounproject.com/acider/
