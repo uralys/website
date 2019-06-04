@@ -3,26 +3,23 @@ import { Link, graphql } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import { Images } from '../components/images-provider';
 import Image from '../components/image';
+
+const PROJECT = 'phantoms';
 
 const Intro = ({ title, subtitle, info }) => (
   <div>
     <p>{title}</p>
     <p>{subtitle}</p>
-    <p>todo: cover</p>
+    <Image projectId={PROJECT} assetId="cover" />
     <p>{info}</p>
   </div>
 );
 
 const Section = ({ section }) => {
   switch (section.type) {
-    case 'logo':
-      return (
-        <Images.Consumer>
-          {images => <Image asset={images['phantoms'].title} />}
-        </Images.Consumer>
-      );
+    case 'title':
+      return <Image projectId={PROJECT} assetId="title" />;
     case 'intro':
       return (
         <Intro

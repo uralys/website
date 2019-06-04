@@ -13,7 +13,7 @@ import Header from './header';
 import ImagesProvider from './images-provider';
 import '../style/layout.css';
 
-const Layout = ({ images, children }) => (
+const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {

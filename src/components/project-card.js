@@ -16,8 +16,7 @@ const propTypes = {
     dates: PropTypes.string,
     techno: PropTypes.arrayOf(PropTypes.string),
     duration: PropTypes.string
-  },
-  assets: PropTypes.object
+  }
 };
 
 class ProjectCard extends React.Component {
@@ -34,7 +33,7 @@ class ProjectCard extends React.Component {
   }
 
   render() {
-    const { project, assets } = this.props;
+    const { project } = this.props;
     return (
       <VisibilitySensor
         onChange={this.onVisibilitySensorChange}
@@ -47,7 +46,11 @@ class ProjectCard extends React.Component {
             this.state.visible ? style.show : style.hide
           ])}
         >
-          <Image className={style.imageHeader} asset={assets.logo} />
+          <Image
+            className={style.imageHeader}
+            projectId={project.id}
+            assetId="logo"
+          />
 
           <div className={style.details}>
             <h3 className={style.title}>{project.title}</h3>

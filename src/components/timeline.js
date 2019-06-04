@@ -15,39 +15,25 @@ const timelinePropTypes = {
 };
 
 const Timeline = ({ projects }) => (
-  <Images.Consumer>
-    {images => {
-      return (
-        <div className={style.timelineWrap}>
-          <div className={style.timeline}>
-            {projects.map(project => {
-              if (project.category === 'year') {
-                return (
-                  <div key={project.id} className={style.year}>
-                    {project.id}
-                  </div>
-                );
-              }
+  <div className={style.timelineWrap}>
+    <div className={style.timeline}>
+      {projects.map(project => {
+        if (project.category === 'year') {
+          return (
+            <div key={project.id} className={style.year}>
+              {project.id}
+            </div>
+          );
+        }
 
-              if (!images[project.id]) {
-                throw new Error(`missing images for project ${project.id}`);
-              }
-
-              return (
-                <div className={style.element}>
-                  <ProjectCard
-                    key={project.id}
-                    project={project}
-                    assets={images[project.id]}
-                  />
-                </div>
-              );
-            })}
+        return (
+          <div className={style.element}>
+            <ProjectCard key={project.id} project={project} />
           </div>
-        </div>
-      );
-    }}
-  </Images.Consumer>
+        );
+      })}
+    </div>
+  </div>
 );
 
 Timeline.prototypes = timelinePropTypes;
