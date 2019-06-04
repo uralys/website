@@ -47,11 +47,7 @@ class ProjectCard extends React.Component {
             this.state.visible ? style.show : style.hide
           ])}
         >
-          <Image
-            className={style.imageHeader}
-            asset={assets.logo}
-            projectId={project.id}
-          />
+          <Image className={style.imageHeader} asset={assets.logo} />
 
           <div className={style.details}>
             <h3 className={style.title}>{project.title}</h3>

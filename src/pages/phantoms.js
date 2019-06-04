@@ -3,6 +3,42 @@ import { Link, graphql } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import { Images } from '../components/images-provider';
+import Image from '../components/image';
+
+const Intro = ({ title, subtitle, info }) => (
+  <div>
+    <p>{title}</p>
+    <p>{subtitle}</p>
+    <p>todo: cover</p>
+    <p>{info}</p>
+  </div>
+);
+
+const Section = ({ section }) => {
+  switch (section.type) {
+    case 'logo':
+      return (
+        <Images.Consumer>
+          {images => <Image asset={images['phantoms'].title} />}
+        </Images.Consumer>
+      );
+    case 'intro':
+      return (
+        <Intro
+          title={section.title}
+          subtitle={section.subtitle}
+          info={section.info}
+        />
+      );
+    case 'paragraph':
+      return <p>{section.value}</p>;
+    case 'html':
+      return <p dangerouslySetInnerHTML={{ __html: section.value }} />;
+    default:
+      return <p>todo: {section.type}</p>;
+  }
+};
 
 const PhantomsPage = ({ data }) => {
   const details = data.allPhantomsDetailsYaml.edges.map(edge => edge.node);
@@ -12,8 +48,8 @@ const PhantomsPage = ({ data }) => {
         title="Uralys - Phantoms"
         keywords={['gatsby', 'games', 'uralys', 'phantoms']}
       />
-      {details.map(detail => (
-        <p>{detail.type}</p>
+      {details.map(section => (
+        <Section section={section} />
       ))}
       <Link to="/timeline">timeline</Link>
     </Layout>
@@ -26,7 +62,9 @@ export const query = graphql`
       edges {
         node {
           type
+          title
           subtitle
+          info
           google
           apple
           url
