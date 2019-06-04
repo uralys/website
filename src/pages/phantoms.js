@@ -7,27 +7,30 @@ import Image from '../components/image';
 
 const PROJECT = 'phantoms';
 
-const Intro = ({ title, subtitle, info }) => (
+const Intro = ({ title, subtitle, info, image }) => (
   <div>
     <p>{title}</p>
     <p>{subtitle}</p>
-    <Image projectId={PROJECT} assetId="cover" />
+    <Image projectId={PROJECT} assetId={image} />
     <p>{info}</p>
   </div>
 );
 
 const Section = ({ section }) => {
   switch (section.type) {
-    case 'title':
-      return <Image projectId={PROJECT} assetId="title" />;
+    case 'image':
+      return <Image projectId={PROJECT} assetId={section.asset} />;
     case 'intro':
       return (
         <Intro
           title={section.title}
           subtitle={section.subtitle}
           info={section.info}
+          image={section.image}
         />
       );
+    case 'title':
+      return <h1>{section.value}</h1>;
     case 'paragraph':
       return <p>{section.value}</p>;
     case 'html':
@@ -62,6 +65,8 @@ export const query = graphql`
           title
           subtitle
           info
+          asset
+          image
           google
           apple
           url

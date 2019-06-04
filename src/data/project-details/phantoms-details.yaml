@@ -1,10 +1,12 @@
 --- #-------------------------------------------------------------------------------
 
-- type: logo
+- type: image
+  asset: title
 
 - type: intro
   title: Get ready for labyrinths
   subtitle: A mobile mind game
+  image: cover
   info: Discover the first Chapters, they're free !
 
 - type: stores
