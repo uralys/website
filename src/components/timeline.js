@@ -3,14 +3,9 @@ import React from 'react';
 
 import ProjectCard from './project-card';
 import style from './timeline.module.css';
-import { Images } from './images-provider';
 
 const propTypes = {
-  projects: Array.of(ProjectCard.propTypes)
-};
-
-const timelinePropTypes = {
-  ...propTypes,
+  projects: Array.of(ProjectCard.propTypes),
   images: PropTypes.array.isRequired
 };
 
@@ -20,15 +15,15 @@ const Timeline = ({ projects }) => (
       {projects.map(project => {
         if (project.category === 'year') {
           return (
-            <div key={project.id} className={style.year}>
+            <div key={`year-${project.id}`} className={style.year}>
               {project.id}
             </div>
           );
         }
 
         return (
-          <div className={style.element}>
-            <ProjectCard key={project.id} project={project} />
+          <div key={project.id} className={style.element}>
+            <ProjectCard project={project} />
           </div>
         );
       })}
@@ -36,6 +31,6 @@ const Timeline = ({ projects }) => (
   </div>
 );
 
-Timeline.prototypes = timelinePropTypes;
+Timeline.prototypes = propTypes;
 
 export default Timeline;

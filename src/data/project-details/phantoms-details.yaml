@@ -1,13 +1,16 @@
 --- #-------------------------------------------------------------------------------
 
-- type: image
-  asset: title
+- type: images
+  images:
+    - asset: title
+      style:
+        width: 250px
 
 - type: intro
   title: Get ready for labyrinths
   subtitle: A mobile mind game
-  image: cover
-  info: Discover the first Chapters, they're free !
+  asset: cover
+  info: Discover the first Chapters!
 
 - type: stores
   google: https://play.google.com/store/apps/details?id=com.uralys.phantoms
@@ -16,17 +19,26 @@
 - type: video
   url: http://www.youtube.com/embed/JELDE2yfwKI
 
-- type: screenshots
-  from: 1
-  to: 4
+- type: images
+  images:
+    - asset: '1'
+    - asset: '2'
+    - asset: '3'
+    - asset: '4'
 
-- type: screenshots
-  from: 5
-  to: 8
+- type: images
+  images:
+    - asset: '5'
+    - asset: '6'
+    - asset: '7'
+    - asset: '8'
 
-- type: screenshots
-  from: 9
-  to: 12
+- type: images
+  images:
+    - asset: '9'
+    - asset: '10'
+    - asset: '11'
+    - asset: '12'
 
 - type: paragraph
   value: Phantoms is a mobile mind game providing 2D labyrinths where teams of phantoms trigger colored doors and rooms to modify the paths. Reaching the exit may sometimes be quite easy, but you'll have to find all gems along the way...

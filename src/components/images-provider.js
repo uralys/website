@@ -12,7 +12,6 @@ const extractAssets = images =>
       return _assets;
     }
 
-    const imageName = image.node.base;
     const imageType = image.node.base.split('.')[0];
     const projectName = projectPath.split('/')[0];
 

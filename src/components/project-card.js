@@ -7,7 +7,7 @@ import Image from './image';
 import classnames from 'classnames';
 
 const propTypes = {
-  project: {
+  project: PropTypes.shape({
     category: PropTypes.string,
     id: PropTypes.string,
     location: PropTypes.string,
@@ -16,7 +16,7 @@ const propTypes = {
     dates: PropTypes.string,
     techno: PropTypes.arrayOf(PropTypes.string),
     duration: PropTypes.string
-  }
+  })
 };
 
 class ProjectCard extends React.Component {
@@ -35,54 +35,54 @@ class ProjectCard extends React.Component {
   render() {
     const { project } = this.props;
     return (
-      <VisibilitySensor
-        onChange={this.onVisibilitySensorChange}
-        partialVisibility
-      >
-        <a
-          href={`/${project.id}`}
-          className={classnames([
-            style.project,
-            this.state.visible ? style.show : style.hide
-          ])}
+      <div>
+        <VisibilitySensor
+          onChange={this.onVisibilitySensorChange}
+          partialVisibility
         >
-          <Image
-            className={style.imageHeader}
-            projectId={project.id}
-            assetId="logo"
-          />
+          <a
+            href={`/${project.id}`}
+            className={classnames([
+              style.project,
+              this.state.visible ? style.show : style.hide
+            ])}
+          >
+            <Image
+              className={style.imageHeader}
+              projectId={project.id}
+              assetId="logo"
+            />
 
-          <div className={style.details}>
-            <h3 className={style.title}>{project.title}</h3>
-            <p className={style.description}>{project.description}</p>
-          </div>
-
-          {project.links && (
-            <div className={style.links}>
-              {project.links.map(({ type, url }) => (
-                <a
-                  className={style.link}
-                  target="_blank"
-                  key={`${project.id}-link-${type}`}
-                  href={url}
-                >
-                  <Icon
-                    className={style.linkIcon}
-                    fill="#fff"
-                    category={type}
-                  />
-                </a>
-              ))}
+            <div className={style.details}>
+              <h3 className={style.title}>{project.title}</h3>
+              <p className={style.description}>{project.description}</p>
             </div>
-          )}
 
-          <Icon
-            fill="#ededed"
-            className={style.icon}
-            category={project.category}
-          />
-        </a>
-      </VisibilitySensor>
+            <div className={style.links}>
+              {project.links &&
+                project.links.map(({ type, url }) => (
+                  <a
+                    className={style.link}
+                    key={`${project.id}-link-${type}`}
+                    href={url}
+                  >
+                    <Icon
+                      className={style.linkIcon}
+                      fill="#fff"
+                      category={type}
+                    />
+                  </a>
+                ))}
+            </div>
+
+            <Icon
+              fill="#ededed"
+              className={style.icon}
+              category={project.category}
+            />
+          </a>
+        </VisibilitySensor>
+      </div>
     );
   }
 }

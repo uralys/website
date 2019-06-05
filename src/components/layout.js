@@ -26,7 +26,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <ImagesProvider>
-        {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
+        <Header siteTitle={data.site.siteMetadata.title} />
         <div>
           <main>{children}</main>
           <footer>

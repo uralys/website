@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { ReactComponent as AndroidIcon } from '../icons/android.svg';
 import { ReactComponent as AppleIcon } from '../icons/apple.svg';
 import { ReactComponent as LDIcon } from '../icons/ld.svg';
@@ -9,7 +10,19 @@ import { ReactComponent as GamepadIcon } from '../icons/gamepad.svg';
 import { ReactComponent as InternshipIcon } from '../icons/internship.svg';
 
 const propTypes = {
-  category: 'school' | 'games' | 'internship' | 'partnership' | 'job'
+  category: PropTypes.oneOf([
+    'android',
+    'apple',
+    'freelance',
+    'games',
+    'github',
+    'internship',
+    'job',
+    'ld',
+    'partnership',
+    'play',
+    'school'
+  ])
 };
 
 const Svg = ({ className, category, fill }) => {

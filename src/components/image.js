@@ -1,10 +1,10 @@
 import React from 'react';
 import Img from 'gatsby-image';
-import style from './image.module.css';
+import defaultStyle from './image.module.css';
 import { Images } from './images-provider';
 
-const Image = ({ className, projectId, assetId }) => (
-  <div className={className || style.imageWrap}>
+const Image = ({ className, style = {}, projectId, assetId }) => (
+  <div style={style} className={className || defaultStyle.imageWrap}>
     <Images.Consumer>
       {images => {
         if (!images[projectId]) {
