@@ -25,8 +25,29 @@ const Intro = ({ projectId, title, subtitle, info, asset }) => (
   </>
 );
 
+const Stores = ({ google, apple }) => (
+  <div className={style.storeButtons}>
+    <a className={style.storeButton} href={apple} target="_blank">
+      <Image
+        className={style.storeButtonImage}
+        projectId="global"
+        assetId="appstore"
+      />
+    </a>
+    <a className={style.storeButton} href={google} target="_blank">
+      <Image
+        className={style.storeButtonImage}
+        projectId="global"
+        assetId="playstore"
+      />
+    </a>
+  </div>
+);
+
 const Section = ({ projectId, section }) => {
   switch (section.type) {
+    case 'html':
+      return <p dangerouslySetInnerHTML={{ __html: section.value }} />;
     case 'images':
       return <Images projectId={projectId} images={section.images} />;
     case 'intro':
@@ -39,12 +60,12 @@ const Section = ({ projectId, section }) => {
           asset={section.asset}
         />
       );
-    case 'title':
-      return <h1>{section.value}</h1>;
     case 'paragraph':
       return <p>{section.value}</p>;
-    case 'html':
-      return <p dangerouslySetInnerHTML={{ __html: section.value }} />;
+    case 'stores':
+      return <Stores google={section.google} apple={section.apple} />;
+    case 'title':
+      return <h1>{section.value}</h1>;
     case 'video':
       return (
         <iframe

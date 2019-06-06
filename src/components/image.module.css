@@ -1,4 +1,13 @@
+@value breakpoints "../style/breakpoints.css";
+@value mobile, tablet from breakpoints;
+
 .imageWrap {
   width: 100%;
   padding: 10px;
+}
+
+@media mobile {
+  .imageWrap {
+    padding: 3px;
+  }
 }

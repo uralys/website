@@ -7,18 +7,23 @@ export const Images = React.createContext({
 
 const extractAssets = images =>
   images.reduce((_assets, image) => {
-    const projectPath = image.node.absolutePath.split('images/projects/')[1];
-    if (!projectPath) {
+    let path = image.node.absolutePath.split('images/projects/')[1];
+
+    if (!path) {
+      path = image.node.absolutePath.split('images/')[1];
+    }
+
+    if (!path) {
       return _assets;
     }
 
     const imageType = image.node.base.split('.')[0];
-    const projectName = projectPath.split('/')[0];
+    const folder = path.split('/')[0];
 
     return {
       ..._assets,
-      [projectName]: {
-        ..._assets[projectName],
+      [folder]: {
+        ..._assets[folder],
         [imageType]: image.node.childImageSharp.fluid
       }
     };
@@ -26,6 +31,7 @@ const extractAssets = images =>
 
 const Provider = ({ children, rawImages }) => {
   const images = extractAssets(rawImages);
+  console.log(images);
   return <Images.Provider value={images}>{children}</Images.Provider>;
 };
 
