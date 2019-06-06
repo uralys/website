@@ -32,11 +32,25 @@
   margin-top: 30px;
 }
 
-.images {
+.screenshots {
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: center;
+}
+
+.screenshot {
+  border-radius: 3px;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 15px;
+}
+
+.video {
+  width: 648px;
+  height: 480px;
+  border: 7px solid black;
+  border-radius: 25px;
 }
 
 .storeButtons {
@@ -60,6 +74,18 @@
   .storeButton {
     margin: 10px;
     width: 70%;
+  }
+
+  .video {
+    width: 100vw;
+    height: 70vw;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
+
+  .screenshot {
+    margin: 0 5px;
   }
 }
 

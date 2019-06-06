@@ -4,9 +4,10 @@ import Image from '../components/image';
 import style from './sections.module.css';
 
 const Images = ({ projectId, images }) => (
-  <div className={style.images}>
+  <div className={style.screenshots}>
     {images.map(({ asset, style: imageStyle }) => (
       <Image
+        className={style.screenshot}
         key={`${projectId}-${asset}`}
         style={imageStyle}
         projectId={projectId}
@@ -69,6 +70,7 @@ const Section = ({ projectId, section }) => {
     case 'video':
       return (
         <iframe
+          className={style.video}
           width="648px"
           height="400px"
           src={section.url}
