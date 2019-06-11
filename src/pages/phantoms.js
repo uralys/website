@@ -33,13 +33,20 @@ export const query = graphql`
               width
             }
           }
+          id
           info
           subtitle
           title
+          texts {
+            html
+            icon
+            list
+            paragraph
+            title
+            type
+          }
           type
           url
-          value
-          values
         }
       }
     }

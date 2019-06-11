@@ -1,6 +1,9 @@
 @value breakpoints "../style/breakpoints.css";
 @value mobile, tablet from breakpoints;
 
+@value colors "../style/colors.css";
+@value light from colors;
+
 .sections {
   width: 100%;
   display: flex;
@@ -97,4 +100,64 @@
 .storeButton:hover {
   opacity: 0.7;
   cursor: pointer;
+}
+
+/*------------ credits  */
+
+.title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 32px;
+  width: 100%;
+}
+
+.paragraph {
+  margin: 0;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.list {
+  margin: 0;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.list li {
+  margin: 0;
+  padding: 0;
+}
+
+.creditEntry {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 5px 100px;
+}
+
+.creditEntry a {
+  text-decoration: none;
+  color: light;
+  font-weight: bold;
+  font-size: 18px;
+  transition: opacity 0.5s;
+}
+
+.creditEntry a:hover {
+  opacity: 0.5;
+}
+
+.creditIcon {
+  width: 50px;
+  flex-shrink: 0;
+  margin-right: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+@media mobile {
+  .creditEntry {
+    padding: 0;
+  }
 }

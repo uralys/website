@@ -45,10 +45,48 @@ const Stores = ({ google, apple }) => (
   </div>
 );
 
+const Icon = ({ icon }) => {
+  const splitters = icon.split('/');
+  console.log({ splitters });
+  const projectId = (splitters.length == 2 && splitters[0]) || 'global';
+  const assetId = splitters[1] || splitters[0];
+
+  return (
+    <Image
+      className={style.creditIcon}
+      projectId={projectId}
+      assetId={assetId}
+    />
+  );
+};
+
+const Texts = ({ texts }) => (
+  <>
+    {texts.map(({ paragraph, list, html, icon, title, type = 'default' }) => (
+      <div className={type === 'credit' && style.creditEntry}>
+        {icon && <Icon icon={icon} />}
+        {title && <h1 className={style.title}>{title}</h1>}
+        {html && (
+          <p
+            className={style.paragraph}
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+        )}
+        {paragraph && <p className={style.paragraph}>{paragraph}</p>}
+        {list && (
+          <ul className={style.list}>
+            {list.map(line => (
+              <li>{line}</li>
+            ))}
+          </ul>
+        )}
+      </div>
+    ))}
+  </>
+);
+
 const Section = ({ projectId, section }) => {
   switch (section.type) {
-    case 'html':
-      return <p dangerouslySetInnerHTML={{ __html: section.value }} />;
     case 'images':
       return <Images projectId={projectId} images={section.images} />;
     case 'intro':
@@ -65,6 +103,8 @@ const Section = ({ projectId, section }) => {
       return <p>{section.value}</p>;
     case 'stores':
       return <Stores google={section.google} apple={section.apple} />;
+    case 'texts':
+      return <Texts texts={section.texts} />;
     case 'title':
       return <h1>{section.value}</h1>;
     case 'video':
@@ -79,14 +119,18 @@ const Section = ({ projectId, section }) => {
         />
       );
     default:
-      return <p>todo: {section.type}</p>;
+      return (
+        <p>
+          <b>TODO</b>: {section.type}
+        </p>
+      );
   }
 };
 
 const Sections = ({ projectId, details }) => (
   <div className={style.sections}>
     {details.map((section, index) => (
-      <div key={`section-${index}`} className={style.section}>
+      <div id={section.id} key={`section-${index}`} className={style.section}>
         <Section projectId={projectId} section={section} />
       </div>
     ))}
