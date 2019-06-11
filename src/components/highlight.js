@@ -26,6 +26,13 @@ const Highlight = ({ content }) => (
         </h2>
         <p className={style.subtitle}>{content.id}</p>
         <p className={style.description}>{content.description}</p>
+        {content.details && (
+          <ul className={style.list}>
+            {content.details.map(line => (
+              <li>{line}</li>
+            ))}
+          </ul>
+        )}
       </div>
     </div>
   </div>

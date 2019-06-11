@@ -3,7 +3,6 @@ import { Link, graphql } from 'gatsby';
 
 import Highlight from '../components/highlight';
 import Layout from '../components/layout';
-import Timeline from '../components/timeline';
 import SEO from '../components/seo';
 
 const Highlights = ({ highlights }) =>
@@ -15,39 +14,18 @@ const IndexPage = ({ data }) => {
   const highlights = data.allHighlightsYaml.edges.map(
     edge => edge.node.highlight
   );
-  const projects = data.allProjectsYaml.edges.map(edge => edge.node.project);
   return (
     <Layout>
       <SEO title="Uralys" keywords={[`gatsby`, `games`, `uralys`]} />
-      {/* <Highlights highlights={highlights} /> */}
-      <Timeline projects={projects} />
+      <Highlights highlights={highlights} />
       <Link to="/phantoms">phantoms</Link>
+      <Link to="/timeline">timeline</Link>
     </Layout>
   );
 };
 
 export const query = graphql`
   query {
-    allProjectsYaml {
-      edges {
-        node {
-          project {
-            category
-            dates
-            description
-            id
-            links {
-              type
-              url
-            }
-            location
-            roles
-            technos
-            title
-          }
-        }
-      }
-    }
     allHighlightsYaml {
       edges {
         node {
@@ -55,6 +33,7 @@ export const query = graphql`
             id
             title
             description
+            details
           }
         }
       }

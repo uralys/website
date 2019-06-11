@@ -47,7 +47,6 @@ const Stores = ({ google, apple }) => (
 
 const Icon = ({ icon }) => {
   const splitters = icon.split('/');
-  console.log({ splitters });
   const projectId = (splitters.length == 2 && splitters[0]) || 'global';
   const assetId = splitters[1] || splitters[0];
 
