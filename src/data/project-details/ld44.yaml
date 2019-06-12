@@ -1,0 +1,52 @@
+--- #-------------------------------------------------------------------------------
+
+- type: texts
+  id: title
+  texts:
+    - title: 'Ludum Dare 44'
+    - paragraph: 'Your life is currency'
+
+- type: texts
+  texts:
+    - html: '<p align="center">
+        <img
+        src="https://user-images.githubusercontent.com/910636/56871257-97813780-6a1b-11e9-80c4-fb2a9553b5ae.gif"
+        width="300"
+        >
+        </p>'
+
+- type: texts
+  texts:
+    - title: '1024: Blockfall prototype'
+    - paragraph: 'I managed to find 10 hours that weekend to push an entry. Somehow it was even an advantage not to use these 48h: I was definitely pushed to remove stuffs as the time passed.'
+    - list:
+        - I wanted many rules, (only one remained at the end)
+        - I wanted a leaderboard (but I would have used stuffs already coded)
+        - I wanted music and sounds (guess what)
+    - paragraph: 'You have 10 clicks to destroy the blocks. Try to reach more than 1024 points.'
+
+- type: texts
+  id: links
+  texts:
+    - title: Links
+    - html: '<a href="https://ldjam.com/events/ludum-dare/44/uralys-ld44">LDjam page</a>'
+      type: credit
+    - html: 'Source code on <a href="https://github.com/chrisdugne/ld44">Github</a>'
+      type: credit
+    - html: 'Play the HTML5 version <a href="http://chrisdugne.github.io/ld44/">here</a>'
+      type: credit
+    - html: 'Devlog as a <a href="https://twitter.com/chrisdugne/status/1122041386088505344">Twitter thread</a>'
+      type: credit
+
+#-------------------------------------------------------------------------------
+
+- type: texts
+  id: credits
+  texts:
+    - title: Credits
+    - html: 'Idea, Coding, Game Design and Soundtracks by <a href="https://twitter.com/chrisdugne">Chris Dugne</a>'
+      icon: frog
+      type: credit
+    - html: '❤ Lua ❤ and <a href="http://www.coronalabs.com/">Corona SDK</a> ❤'
+      icon: corona
+      type: credit

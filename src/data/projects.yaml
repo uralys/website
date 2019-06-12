@@ -240,6 +240,7 @@
       - Lua
       - Corona SDK
     dates: Jan 2015 - Dec 2015
+    description: Phantoms is a new kind of mind game. You will have to find different paths in intricate 2D labyrinths. About to be released on Apple Store and Google Play !
     details: true
     links:
       - type: apple
@@ -354,6 +355,7 @@
       - HTML5
       - HTML/CSS
     dates: Oct 2012 - Dec 2014
+    description: Maperial is an open source javascript API to create WebGL maps.
     details: true
 
 #-------------------------------------------------------------------------------

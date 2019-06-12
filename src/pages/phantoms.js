@@ -1,21 +1,14 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
-
-import Layout from '../components/layout';
-import SEO from '../components/seo';
+import { graphql } from 'gatsby';
+import ProjectLayout from './projects-layout';
 import Sections from '../components/sections';
 
-const PhantomsPage = ({ data }) => {
+const Page = ({ data }) => {
   const details = data.allPhantomsDetailsYaml.edges.map(edge => edge.node);
   return (
-    <Layout>
-      <SEO
-        title="Uralys - Phantoms"
-        keywords={['gatsby', 'games', 'uralys', 'phantoms']}
-      />
+    <ProjectLayout title="Phantoms" keywords={['phantoms, games']}>
       <Sections projectId="phantoms" details={details} />
-      <Link to="/timeline">timeline</Link>
-    </Layout>
+    </ProjectLayout>
   );
 };
 
@@ -53,4 +46,4 @@ export const query = graphql`
   }
 `;
 
-export default PhantomsPage;
+export default Page;

@@ -9,7 +9,7 @@ const IndexPage = ({ data }) => {
   const projects = data.allProjectsYaml.edges.map(edge => edge.node.project);
   return (
     <Layout>
-      <SEO title="Uralys" keywords={[`gatsby`, `games`, `uralys`]} />
+      <SEO title="Uralys" keywords={[`games`, `uralys`]} />
       <Timeline projects={projects} />
     </Layout>
   );
