@@ -21,12 +21,6 @@ export const query = graphql`
       edges {
         node {
           id
-          images {
-            asset
-            style {
-              width
-            }
-          }
           texts {
             html
             list
