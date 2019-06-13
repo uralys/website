@@ -1,0 +1,24 @@
+--- #-------------------------------------------------------------------------------
+
+- type: texts
+  id: title
+  texts:
+    - title: 'Kodo: find the monster'
+    - paragraph: 'A Kodo theme'
+
+- type: stores
+  google: https://play.google.com/store/apps/details?id=com.uralys.kodo.monster
+  apple: https://itunes.apple.com/us/app/id1462688847
+
+#-------------------------------------------------------------------------------
+
+- type: texts
+  id: credits
+  texts:
+    - title: Credits
+    - html: 'Idea, Coding, Game Design and Soundtracks by <a href="https://twitter.com/chrisdugne">Chris Dugne</a>'
+      icon: frog
+      type: credit
+    - html: '❤ Lua ❤ and <a href="http://www.coronalabs.com/">Corona SDK</a> ❤'
+      icon: corona
+      type: credit
