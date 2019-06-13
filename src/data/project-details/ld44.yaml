@@ -1,5 +1,3 @@
---- #-------------------------------------------------------------------------------
-
 - type: texts
   id: title
   texts:
@@ -37,8 +35,6 @@
       type: credit
     - html: 'Devlog as a <a href="https://twitter.com/chrisdugne/status/1122041386088505344">Twitter thread</a>'
       type: credit
-
-#-------------------------------------------------------------------------------
 
 - type: texts
   id: credits

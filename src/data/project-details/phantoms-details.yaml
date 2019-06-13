@@ -1,5 +1,3 @@
---- #-------------------------------------------------------------------------------
-
 - type: images
   images:
     - asset: title
@@ -49,8 +47,6 @@
         - on iOS and Android, check both phone and tablet versions
         - 2 chapters, 16 levels for the first public release
         - Music by Velvet Coffee (be sure to plug your headphones ♫ )
-
-#-------------------------------------------------------------------------------
 
 - type: texts
   id: credits
