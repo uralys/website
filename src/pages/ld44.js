@@ -1,39 +1,10 @@
 import React from 'react';
-import { graphql } from 'gatsby';
-import ProjectLayout from './projects-layout';
-import Sections from '../components/sections';
+import Page from './page';
 
-const Page = ({ data }) => {
-  const details = data.allLd44Yaml.edges.map(edge => edge.node);
-  return (
-    <ProjectLayout
-      title="LD44"
-      keywords={['ludum dare', 'ld44', 'games', 'prototype']}
-    >
-      <Sections projectId="ld44" details={details} />
-    </ProjectLayout>
-  );
-};
-
-export const query = graphql`
-  query {
-    allLd44Yaml {
-      edges {
-        node {
-          id
-          texts {
-            html
-            list
-            paragraph
-            title
-            icon
-            type
-          }
-          type
-        }
-      }
-    }
-  }
-`;
-
-export default Page;
+export default () => (
+  <Page
+    projectId="ld44"
+    title="LD44"
+    keywords={['ludum dare', 'ld44', 'games', 'prototype']}
+  />
+);

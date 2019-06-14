@@ -1,0 +1,175 @@
+--- # Projects details for each page
+#-------------------------------------------------------------------------------
+# ld44
+#-------------------------------------------------------------------------------
+
+- page:
+    id: ld44
+    sections:
+      - type: texts
+        id: title
+        texts:
+          - title: 'Ludum Dare 44'
+          - paragraph: 'Your life is currency'
+
+      - type: texts
+        texts:
+          - html: '<p align="center">
+              <img
+              src="https://user-images.githubusercontent.com/910636/56871257-97813780-6a1b-11e9-80c4-fb2a9553b5ae.gif"
+              width="300"
+              >
+              </p>'
+
+      - type: texts
+        texts:
+          - title: '1024: Blockfall prototype'
+          - paragraph: 'I managed to find 10 hours that weekend to push an entry. Somehow it was even an advantage not to use these 48h: I was definitely pushed to remove stuffs as the time passed.'
+          - list:
+              - I wanted many rules, (only one remained at the end)
+              - I wanted a leaderboard (but I would have used stuffs already coded)
+              - I wanted music and sounds (guess what)
+          - paragraph: 'You have 10 clicks to destroy the blocks. Try to reach more than 1024 points.'
+
+      - type: texts
+        id: links
+        texts:
+          - title: Links
+          - html: '<a href="https://ldjam.com/events/ludum-dare/44/uralys-ld44">LDjam page</a>'
+            type: credit
+          - html: 'Source code on <a href="https://github.com/chrisdugne/ld44">Github</a>'
+            type: credit
+          - html: 'Play the HTML5 version <a href="http://chrisdugne.github.io/ld44/">here</a>'
+            type: credit
+          - html: 'Devlog as a <a href="https://twitter.com/chrisdugne/status/1122041386088505344">Twitter thread</a>'
+            type: credit
+
+      - type: texts
+        id: credits
+        texts:
+          - title: Credits
+          - html: 'Idea, Coding, Game Design and Soundtracks by <a href="https://twitter.com/chrisdugne">Chris Dugne</a>'
+            icon: frog
+            type: credit
+          - html: '❤ Lua ❤ and <a href="http://www.coronalabs.com/">Corona SDK</a> ❤'
+            icon: corona
+            type: credit
+
+#-------------------------------------------------------------------------------
+# kodo-monster
+#-------------------------------------------------------------------------------
+
+- page:
+    id: kodo-monster
+    sections:
+      - type: texts
+        id: title
+        texts:
+          - title: 'Kodo: find the monster'
+          - paragraph: 'A Kodo theme'
+
+      - type: stores
+        google: https://play.google.com/store/apps/details?id=com.uralys.kodo.monster
+        apple: https://itunes.apple.com/us/app/id1462688847
+
+      - type: texts
+        id: credits
+        texts:
+          - title: Credits
+          - html: 'Idea, Coding, Game Design and Soundtracks by <a href="https://twitter.com/chrisdugne">Chris Dugne</a>'
+            icon: frog
+            type: credit
+          - html: '❤ Lua ❤ and <a href="http://www.coronalabs.com/">Corona SDK</a> ❤'
+            icon: corona
+            type: credit
+
+#-------------------------------------------------------------------------------
+# phantoms
+#-------------------------------------------------------------------------------
+
+- page:
+    id: phantoms
+    sections:
+      - type: images
+        images:
+          - asset: title
+            style:
+              width: 250px
+
+      - type: intro
+        title: Get ready for labyrinths
+        subtitle: A mobile mind game
+        asset: cover
+        info: Discover the first Chapters!
+
+      - type: stores
+        google: https://play.google.com/store/apps/details?id=com.uralys.phantoms
+        apple: https://itunes.apple.com/us/app/id1037707233
+
+      - type: video
+        url: http://www.youtube.com/embed/JELDE2yfwKI
+
+      - type: images
+        images:
+          - asset: '1'
+          - asset: '2'
+          - asset: '3'
+          - asset: '4'
+
+      - type: images
+        images:
+          - asset: '5'
+          - asset: '6'
+          - asset: '7'
+          - asset: '8'
+
+      - type: images
+        images:
+          - asset: '9'
+          - asset: '10'
+          - asset: '11'
+          - asset: '12'
+
+      - type: texts
+        texts:
+          - paragraph: Phantoms is a mobile mind game providing 2D labyrinths where teams of phantoms trigger colored doors and rooms to modify the paths. Reaching the exit may sometimes be quite easy, but you'll have to find all gems along the way...
+          - paragraph: You will move phantoms one by one, toggling many kinds of triggers to open doors, rotate rooms, reveal hidden areas, to find a way, step by step, toward the exit. From simple houses to devious castles, you'll be challenged to find all the Gems.
+          - list:
+              - free!
+              - on iOS and Android, check both phone and tablet versions
+              - 2 chapters, 16 levels for the first public release
+              - Music by Velvet Coffee (be sure to plug your headphones ♫ )
+
+      - type: texts
+        id: credits
+        texts:
+          - title: Credits
+          - html: 'Idea, Coding, Game Design and Soundtracks by <a href="https://twitter.com/chrisdugne">Chris Dugne</a>'
+            icon: frog
+            credit: true
+          - html: 'Music + SFX (as a half of <a href="https://www.facebook.com/velvetcoffeemusic">Velvet Coffee</a>)'
+            icon: velvetcoffee
+            credit: true
+          - html: '❤ Lua ❤ and <a href="http://www.coronalabs.com/">Corona SDK</a> ❤'
+            icon: corona
+            credit: true
+          - html: '<a href="https://github.com/GymbylCoding/CBEffects">CBEffects 3.2</a>: Thanks <a href="http://gymbyl.com">Gymbyl Coding</a> ❤ for this awesome effects lib !'
+            credit: true
+            icon: cbeffects
+          - html: Phantoms from Yurike's <a href="http://yurike11.deviantart.com/art/Furry-Creatures-164706499">Furry Creatures</a>
+            icon: phantoms/phantom
+            credit: true
+          - html: Background by <a href="https://www.facebook.com/white.leyth">Oussama Agazzoum</a>
+            credit: true
+          - html: GUI by <a href="http://graphicburger.com/mobile-game-gui/">GraphicBurger</a>
+            credit: true
+          - html: Triggers, buttons and avatars from <a href="http://www.glitchthegame.com/public-domain-game-art/">Tiny Speck</a>
+            credit: true
+          - html: Rooms, doors, walls by.....me and Gimp 2.8...
+            credit: true
+          - html: Few additional icons for buttons come from <a href="http://thenounproject.com/">The Noun Project</a>
+            credit: true
+          - html: <a href="https://thenounproject.com/term/headphones/1416/">The headphones</a> designed by <a href="https://thenounproject.com/Madebyelvis/">Madebyelvis</a>
+            credit: true
+          - html: <a href="https://thenounproject.com/term/headphones/77971/">The profile</a> designed by <a href="https://thenounproject.com/acider/">Miguel C Balandrano</a>
+            credit: true

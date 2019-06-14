@@ -31,7 +31,6 @@ const extractAssets = images =>
 
 const Provider = ({ children, rawImages }) => {
   const images = extractAssets(rawImages);
-  console.log(images);
   return <Images.Provider value={images}>{children}</Images.Provider>;
 };
 
