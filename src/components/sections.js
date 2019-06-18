@@ -18,12 +18,12 @@ const Images = ({ projectId, images }) => (
 );
 
 const Intro = ({ projectId, title, subtitle, info, asset }) => (
-  <>
+  <div className={style.intro}>
     <p className={style.introTitle}>{title}</p>
     <p>{subtitle}</p>
     <Image projectId={projectId} assetId={asset} />
     <p className={style.introInfo}>{info}</p>
-  </>
+  </div>
 );
 
 const Stores = ({ google, apple }) => (
@@ -59,28 +59,31 @@ const Icon = ({ icon }) => {
   );
 };
 
-const Texts = ({ texts }) => (
+const Texts = ({ projectId, texts, centered }) => (
   <>
-    {texts.map(({ paragraph, list, html, icon, title, type = 'default' }) => (
-      <div className={type === 'credit' && style.creditEntry}>
-        {icon && <Icon icon={icon} />}
-        {title && <h1 className={style.title}>{title}</h1>}
-        {html && (
-          <p
-            className={style.paragraph}
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
-        )}
-        {paragraph && <p className={style.paragraph}>{paragraph}</p>}
-        {list && (
-          <ul className={style.list}>
-            {list.map(line => (
-              <li>{line}</li>
-            ))}
-          </ul>
-        )}
-      </div>
-    ))}
+    {texts.map(
+      ({ paragraph, list, html, icon, images, title, type = 'default' }) => (
+        <div className={centered ? style.centeredText : style.text}>
+          {icon && <Icon icon={icon} />}
+          {images && <Images projectId={projectId} images={images} />}
+          {title && <h1 className={style.title}>{title}</h1>}
+          {html && (
+            <p
+              className={style.paragraph}
+              dangerouslySetInnerHTML={{ __html: html }}
+            />
+          )}
+          {paragraph && <p className={style.paragraph}>{paragraph}</p>}
+          {list && (
+            <ul className={style.list}>
+              {list.map(line => (
+                <li>{line}</li>
+              ))}
+            </ul>
+          )}
+        </div>
+      )
+    )}
   </>
 );
 
@@ -98,14 +101,17 @@ const Section = ({ projectId, section }) => {
           asset={section.asset}
         />
       );
-    case 'paragraph':
-      return <p>{section.value}</p>;
     case 'stores':
       return <Stores google={section.google} apple={section.apple} />;
     case 'texts':
-      return <Texts texts={section.texts} />;
-    case 'title':
-      return <h1>{section.value}</h1>;
+    case 'centeredText':
+      return (
+        <Texts
+          projectId={projectId}
+          texts={section.texts}
+          centered={section.type === 'centeredText'}
+        />
+      );
     case 'video':
       return (
         <iframe

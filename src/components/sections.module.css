@@ -26,6 +26,10 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 2px 1px 2px rgba(0, 0, 0, 0.24);
 }
 
+.intro {
+  text-align: center;
+}
+
 .introTitle {
   font-weight: bold;
   font-size: 21px;
@@ -105,7 +109,7 @@
 /*------------ credits  */
 
 .title {
-  margin: 0;
+  margin: 20px 0;
   margin-bottom: 30px;
   font-size: 32px;
   width: 100%;
@@ -115,6 +119,7 @@
   margin: 0;
   padding: 10px;
   font-size: 16px;
+  width: 100%;
 }
 
 .list {
@@ -128,7 +133,7 @@
   padding: 0;
 }
 
-.creditEntry {
+.text {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -136,7 +141,12 @@
   padding: 5px 100px;
 }
 
-.creditEntry a {
+.centeredText {
+  composes: text;
+  text-align: center;
+}
+
+.text a {
   text-decoration: none;
   color: light;
   font-weight: bold;
@@ -144,7 +154,7 @@
   transition: opacity 0.5s;
 }
 
-.creditEntry a:hover {
+.text a:hover {
   opacity: 0.5;
 }
 
@@ -157,7 +167,7 @@
 }
 
 @media mobile {
-  .creditEntry {
+  .text {
     padding: 0;
   }
 }

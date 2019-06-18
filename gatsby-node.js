@@ -21,6 +21,12 @@ exports.createPages = ({ graphql, actions }) => {
                   paragraph
                   list
                   icon
+                  images {
+                    asset
+                    style {
+                      width
+                    }
+                  }
                   html
                   credit
                 }
@@ -45,7 +51,7 @@ exports.createPages = ({ graphql, actions }) => {
   `).then(result => {
     result.data.allProjectDetailsYaml.edges.forEach(({ node }) => {
       const { page } = node;
-      console.log(page);
+      console.log(`  creating /${page.id}...`);
       createPage({
         path: `/${page.id}`,
         component: path.resolve(`./src/pages/page.js`),

@@ -230,16 +230,31 @@
     keywords:
       - adillions
       - partnership
+
     sections:
-      - type: texts
+      - type: centeredText
         id: title
         texts:
+          - images:
+              - asset: logo
+                style:
+                  width: 150px
           - title: Adillions
           - paragraph: Free Sweepstake funded by advertisement
 
-      - type: texts
-        id: title
+      - type: centeredText
         texts:
+          - title: Sept 2013 - Nov 2014
+
+      - type: images
+        images:
+          - asset: mobile
+            style:
+              width: 350px
+
+      - type: texts
+        texts:
+          - title: 'Role:'
           - paragraph: I co-founded Adillions as full-stack developer to build a disruptive new sweepstake.
           - paragraph: "I've built the whole platform to launch the game:"
           - list:
@@ -248,3 +263,22 @@
               - Dev, stage and production platforms using Heroku
               - Social networks integration
               - Evaluated and set up Google analytics to track users over the journey on the App.
+
+      - type: texts
+        texts:
+          - title: 'Technos:'
+          - list:
+              - Corona SDK
+              - Node.js
+              - Marionette.js
+              - PostgreSQL
+              - Python
+              - Heroku
+
+      - type: images
+        images:
+          - asset: website
+
+      - type: images
+        images:
+          - asset: stars
