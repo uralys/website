@@ -5,6 +5,12 @@
 
 - page:
     id: ld44
+    title: LD44
+    keywords:
+      - ludum dare
+      - ld44
+      - games
+      - prototype
     sections:
       - type: texts
         id: title
@@ -61,6 +67,10 @@
 
 - page:
     id: kodo-monster
+    title: 'Kodo: find the monster'
+    keywords:
+      - kodo
+      - games
     sections:
       - type: texts
         id: title
@@ -84,11 +94,47 @@
             type: credit
 
 #-------------------------------------------------------------------------------
+# kodo-color
+#-------------------------------------------------------------------------------
+
+- page:
+    id: kodo-color
+    title: 'Kodo: find the color'
+    keywords:
+      - kodo
+      - games
+    sections:
+      - type: texts
+        id: title
+        texts:
+          - title: 'Kodo: find the color'
+          - paragraph: 'the first Kodo theme'
+
+      - type: stores
+        google: https://play.google.com/store/apps/details?id=com.uralys.kodo.monster
+        apple: https://itunes.apple.com/us/app/id1462688847
+
+      - type: texts
+        id: credits
+        texts:
+          - title: Credits
+          - html: 'Idea, Coding, Game Design and Soundtracks by <a href="https://twitter.com/chrisdugne">Chris Dugne</a>'
+            icon: frog
+            type: credit
+          - html: '❤ Lua ❤ and <a href="http://www.coronalabs.com/">Corona SDK</a> ❤'
+            icon: corona
+            type: credit
+
+#-------------------------------------------------------------------------------
 # phantoms
 #-------------------------------------------------------------------------------
 
 - page:
     id: phantoms
+    title: Phantoms
+    keywords:
+      - phantoms
+      - games
     sections:
       - type: images
         images:
@@ -173,3 +219,32 @@
             credit: true
           - html: <a href="https://thenounproject.com/term/headphones/77971/">The profile</a> designed by <a href="https://thenounproject.com/acider/">Miguel C Balandrano</a>
             credit: true
+
+#-------------------------------------------------------------------------------
+# adillions
+#-------------------------------------------------------------------------------
+
+- page:
+    id: adillions
+    title: Adillions
+    keywords:
+      - adillions
+      - partnership
+    sections:
+      - type: texts
+        id: title
+        texts:
+          - title: Adillions
+          - paragraph: Free Sweepstake funded by advertisement
+
+      - type: texts
+        id: title
+        texts:
+          - paragraph: I co-founded Adillions as full-stack developer to build a disruptive new sweepstake.
+          - paragraph: "I've built the whole platform to launch the game:"
+          - list:
+              - The mobile game (iOS + Android)
+              - 'The server side: DB + API'
+              - Dev, stage and production platforms using Heroku
+              - Social networks integration
+              - Evaluated and set up Google analytics to track users over the journey on the App.
