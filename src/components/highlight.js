@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import style from './highlight.module.css';
+import Image from './image';
 
 const propTypes = {
   content: PropTypes.shape({
@@ -21,6 +22,13 @@ const Highlight = ({ content }) => (
 
     <div className={style.contentWrap}>
       <div className={style.content}>
+        {content.image && (
+          <Image
+            className={style.image}
+            projectId="global"
+            assetId={content.image}
+          />
+        )}
         <h2 className={style.title}>
           <a href="/project/write-it-down">{content.title}</a>
         </h2>

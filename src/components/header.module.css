@@ -1,0 +1,21 @@
+@value colors "../style/colors.css";
+@value font "../style/font.css";
+@value dark from colors;
+@value FONT_FAMILY from font;
+
+.header {
+  background-color: dark;
+  height: 120px;
+  display: flex;
+  padding: 0 80px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.link {
+  font-family: FONT_FAMILY;
+  font-weight: bold;
+  font-size: 40px;
+  text-decoration: none;
+  color: white;
+}

@@ -1,17 +1,19 @@
-# - highlight:
-#     id: freelance
-#     title: Freelance
-#     description: Bringing my web and mobile expertise to boost your team.
-#     details:
-#       - Expert knowledge of front end development
-#       - Expert knowledge of mobile development.
-#       - Expert knowledge of JS, Lua.
-#       - Experience building large scale interactive websites and applications.
+- highlight:
+    id: freelance
+    title: Freelance
+    description: Bringing my web and mobile expertise to boost your team.
+    image: freelance
+    details:
+      - Expert knowledge of front end development
+      - Expert knowledge of mobile development.
+      - Expert knowledge of JS, Lua.
+      - Experience building large scale interactive websites and applications.
 
 - highlight:
     id: studio
     title: Game studio
     description: Mobile games for your company.
+    image: gamestudio
     details:
       - Analysing with you to provide the best gameplay for your business.
       - Deploying on Apple and Google stores.
@@ -19,11 +21,12 @@
       - Iterating your UX using Google Analytics.
 
 - highlight:
-    id: monster
-    title: 'Kodo: Find the Monster!'
-    description: 'My latest release on stores: New theme for Kodo: find the monster!'
-
-- highlight:
     id: timeline
+    image: timeline
     title: '2006 - 2020'
     description: Browse all the projects I've created or contributed to.
+
+- highlight:
+    id: monster
+    title: 'Latest release: Find the Monster!'
+    description: 'My latest release on stores: New theme for Kodo: find the monster!'

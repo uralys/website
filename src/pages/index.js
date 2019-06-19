@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 
+import Hero from '../components/hero';
 import Highlight from '../components/highlight';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -17,6 +18,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Uralys" keywords={[`gatsby`, `games`, `uralys`]} />
+      <Hero />
       <Highlights highlights={highlights} />
       <Link to="/phantoms">phantoms</Link>
       <Link to="/timeline">timeline</Link>
@@ -34,6 +36,7 @@ export const query = graphql`
             title
             description
             details
+            image
           }
         }
       }
