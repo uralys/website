@@ -71,6 +71,7 @@
     keywords:
       - kodo
       - games
+
     sections:
       - type: texts
         id: title
@@ -78,9 +79,22 @@
           - title: 'Kodo: find the monster'
           - paragraph: 'A Kodo theme'
 
+      - type: images
+        images:
+          - asset: store
+
       - type: stores
         google: https://play.google.com/store/apps/details?id=com.uralys.kodo.monster
         apple: https://itunes.apple.com/us/app/id1462688847
+
+      - type: texts
+        texts:
+          - title: 'Technos:'
+          - list:
+              - Corona SDK
+              - Node.js
+              - AWS DynamoDb
+              - AWS Lambdas
 
       - type: texts
         id: credits
@@ -92,6 +106,105 @@
           - html: '❤ Lua ❤ and <a href="http://www.coronalabs.com/">Corona SDK</a> ❤'
             icon: corona
             type: credit
+
+#-------------------------------------------------------------------------------
+# exalt
+#-------------------------------------------------------------------------------
+
+- page:
+    id: exalt
+    title: Coorpacademy Playground!
+    keywords:
+      - studio
+      - prototype
+      - games
+      - coorpacademy
+
+    sections:
+      - type: centeredText
+        id: title
+        texts:
+          - title: Coorpacademy Playground!
+          - paragraph: Prototyping new gaming experiences for learners.
+
+      - type: centeredText
+        texts:
+          - subtitle: Jan 2019 - Apr 2019
+
+      - type: texts
+        texts:
+          - paragraph: I've built a quizzer prototype to demonstrate new gameplay for Coorpacademy clients.
+          - paragraph: Using Coorpacademy learning content, 2 games runs with a common quizzer, each having different rules and visual effects.
+
+      - type: images
+        images:
+          - asset: home
+          - asset: gameselection
+
+      - type: images
+        images:
+          - asset: game1
+          - asset: game2
+
+      - type: texts
+        id: credits
+        texts:
+          - title: Credits
+          - html: 'Idea, Coding, Game Design and Soundtracks by <a href="https://twitter.com/chrisdugne">Chris Dugne</a>'
+            icon: frog
+            type: credit
+          - html: '❤ Lua ❤ and <a href="http://www.coronalabs.com/">Corona SDK</a> ❤'
+            icon: corona
+            type: credit
+
+#-------------------------------------------------------------------------------
+# coorp-mobile
+#-------------------------------------------------------------------------------
+
+- page:
+    id: coorp-mobile
+    title: Coorpacademy mobile app
+    keywords:
+      - mission
+      - job
+      - coorpacademy
+
+    sections:
+      - type: centeredText
+        id: title
+        texts:
+          - title: Coorpacademy mobile app
+          - paragraph: Coorpacademy experience in your pocket.
+
+      - type: images
+        images:
+          - asset: store
+
+      - type: texts
+        texts:
+          - title: 'Role:'
+          - paragraph: Member of the mobile team, which delivered the first mobile app on stores for Coorpacademy.
+
+      - type: images
+        images:
+          - asset: store1
+          - asset: store2
+
+      - type: texts
+        texts:
+          - title: 'Technos:'
+          - list:
+              - React Native
+              - Redux
+              - Node.js
+
+      - type: stores
+        google: https://play.google.com/store/apps/details?id=com.coorpacademy.app
+        apple: https://itunes.apple.com/us/app/id1448348795
+
+      - type: images
+        images:
+          - asset: ratings
 
 #-------------------------------------------------------------------------------
 # kodo-color
@@ -103,16 +216,30 @@
     keywords:
       - kodo
       - games
+
     sections:
-      - type: texts
+      - type: centeredText
         id: title
         texts:
           - title: 'Kodo: find the color'
           - paragraph: 'the first Kodo theme'
 
+      - type: images
+        images:
+          - asset: store
+
       - type: stores
-        google: https://play.google.com/store/apps/details?id=com.uralys.kodo.monster
-        apple: https://itunes.apple.com/us/app/id1462688847
+        google: https://play.google.com/store/apps/details?id=com.uralys.kodo.find_the_color
+        apple: https://itunes.apple.com/us/app/id684227637
+
+      - type: texts
+        texts:
+          - title: 'Technos:'
+          - list:
+              - Corona SDK
+              - Node.js
+              - AWS DynamoDb
+              - AWS Lambdas
 
       - type: texts
         id: credits
@@ -123,6 +250,115 @@
             type: credit
           - html: '❤ Lua ❤ and <a href="http://www.coronalabs.com/">Corona SDK</a> ❤'
             icon: corona
+            type: credit
+
+#-------------------------------------------------------------------------------
+# totem
+#-------------------------------------------------------------------------------
+
+- page:
+    id: totem
+    title: Totem
+    keywords:
+      - mission
+      - job
+      - prototype
+      - studio
+      - coorpacademy
+      - games
+
+    sections:
+      - type: centeredText
+        id: title
+        texts:
+          - images:
+              - asset: logo
+                style:
+                  width: 150px
+          - title: Totem
+          - paragraph: A multiplayer game for Coorpacademy
+
+      - type: centeredText
+        texts:
+          - subtitle: Nov 2017 - Oct 2018
+
+      - type: texts
+        texts:
+          - paragraph: I created a real-time multiplayer game for Coorpacademy, based on the classical question player used for the web MOOC.
+          - paragraph: Each player is member of a team, and must answer questions. A good answer gives a new totem part, a bad one removes a part. The first team to reach the top is the winner.
+
+      - type: images
+        images:
+          - asset: game1
+
+      - type: images
+        images:
+          - asset: game2
+
+      - type: images
+        images:
+          - asset: game3
+
+      - type: texts
+        texts:
+          - title: 'Technos:'
+          - list:
+              - Node.js
+              - React/Redux
+
+#-------------------------------------------------------------------------------
+# cherry
+#-------------------------------------------------------------------------------
+
+- page:
+    id: cherry
+    title: Cherry
+    keywords:
+      - cherry
+      - games
+
+    sections:
+      - type: centeredText
+        id: title
+        texts:
+          - title: Cherry
+          - paragraph: Backbone to all my mobile games from 2017
+
+      - type: images
+        images:
+          - asset: cover
+
+      - type: texts
+        texts:
+          - paragraph: Cherry is a layer over Corona SDK providing a toolset to create a Corona game quicker.
+          - list:
+              - Corona SDK
+          - html: 'Full documentation on <a href="https://github.com/chrisdugne/cherry">Github readme</a>'
+            icon: github
+            type: credit
+          - html: 'Game starter <a href="https://github.com/chrisdugne/cherry-starter">example</a>, used for LD44.'
+            icon: github
+            type: credit
+
+      - type: texts
+        texts:
+          - title: 'Technos:'
+          - list:
+              - Corona SDK
+              - Busted
+
+      - type: texts
+        id: credits
+        texts:
+          - title: Credits
+          - html: 'Maintained by <a href="https://twitter.com/chrisdugne">Chris Dugne</a>'
+            icon: frog
+            type: credit
+          - html: '❤ Lua ❤ and <a href="http://www.coronalabs.com/">Corona SDK</a> ❤'
+            icon: corona
+            type: credit
+          - html: 'Unit tests with <a href="http://olivinelabs.com/busted/">Busted</a>'
+            icon: github
             type: credit
 
 #-------------------------------------------------------------------------------
@@ -135,6 +371,7 @@
     keywords:
       - phantoms
       - games
+
     sections:
       - type: images
         images:
@@ -244,7 +481,7 @@
 
       - type: centeredText
         texts:
-          - title: Sept 2013 - Nov 2014
+          - subtitle: Sept 2013 - Nov 2014
 
       - type: images
         images:
@@ -282,3 +519,68 @@
       - type: images
         images:
           - asset: stars
+
+#-------------------------------------------------------------------------------
+# privacy
+#-------------------------------------------------------------------------------
+
+- page:
+    id: privacy
+    title: Privacy Policy
+    keywords:
+      - privacy
+
+    sections:
+      - type: centeredText
+        texts:
+          - title: Privacy Policy
+
+      - type: texts
+        texts:
+          - html: '<a href="http://uralys.com">Uralys</a> games are operated and maintained by <a href="https://twitter.com/chrisdugne">@chrisdugne</a>.'
+          - html: This document outlines the data handling practices for all <i>Uralys</i> mobile games.
+
+      - type: texts
+        texts:
+          - subtitle: 'My games:'
+          - list:
+              - Do not collect any personal information
+              - Do not collect location data
+              - Do not have third party advertisements
+
+      - type: texts
+        texts:
+          - paragraph: The term “personal information” refers to personally identifiable information through which a user can be identified as an individual.
+          - paragraph: The term “Non-personal information” refers to information that does not directly identify a user.
+
+      - type: texts
+        texts:
+          - subtitle: 'Collection and Use of Personal Information via my games:'
+          - paragraph: I do not collect any personal information through my apps. Simple as that.
+
+          - subtitle: 'Collection and Use of Non-Personal Information via our games:'
+          - paragraph: For analytics purposes, anonymous and aggregated data may be collected, using Google Analytics.
+          - list:
+              - 'Navigational information: What screen you access on the game, how long you spend on each page;'
+              - 'Usage information: Analytics tied to your use of the game features, such as when you start, win or lose a game, get gems etc...'
+          - html: For more information on how Google Analytics use this data see this <a href="https://support.google.com/analytics/answer/6004245">document</a>
+
+      - type: texts
+        texts:
+          - title: What other third parties are used within the games?
+          - subtitle: Corona Labs for coding
+          - paragraph: I develop my games with Corona SDK owned by Corona Labs Inc. which may collect non-personal information data to improve their software.
+          - html: You can read their privacy policy <a href="https://coronalabs.com/privacy-policy/">here</a>
+
+          - subtitle: AWS for the leaderboards
+          - paragraph: Scores are anonymously stored using Amazon Web Services.
+          - html: You can read their privacy policy <a href="https://aws.amazon.com/privacy/">here</a>
+
+          - subtitle: Firebase for push notifications
+          - paragraph: Notifications may be pushed daily with FCM.
+          - html: You can read their privacy policy <a href="https://firebase.google.com/support/privacy/">here</a>
+
+      - type: texts
+        texts:
+          - paragraph: 'Last update: 2019-06-20'
+          - paragraph: If you have any questions, feel free to email `hello@uralys.com`

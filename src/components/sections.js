@@ -62,11 +62,21 @@ const Icon = ({ icon }) => {
 const Texts = ({ projectId, texts, centered }) => (
   <>
     {texts.map(
-      ({ paragraph, list, html, icon, images, title, type = 'default' }) => (
+      ({
+        paragraph,
+        list,
+        html,
+        icon,
+        images,
+        subtitle,
+        title,
+        type = 'default'
+      }) => (
         <div className={centered ? style.centeredText : style.text}>
           {icon && <Icon icon={icon} />}
           {images && <Images projectId={projectId} images={images} />}
           {title && <h1 className={style.title}>{title}</h1>}
+          {subtitle && <h3 className={style.subtitle}>{subtitle}</h3>}
           {html && (
             <p
               className={style.paragraph}

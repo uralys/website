@@ -4,7 +4,7 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
   return graphql(`
     {
-      allProjectDetailsYaml {
+      allPagesYaml {
         edges {
           node {
             page {
@@ -18,6 +18,7 @@ exports.createPages = ({ graphql, actions }) => {
                 texts {
                   type
                   title
+                  subtitle
                   paragraph
                   list
                   icon
@@ -49,7 +50,7 @@ exports.createPages = ({ graphql, actions }) => {
       }
     }
   `).then(result => {
-    result.data.allProjectDetailsYaml.edges.forEach(({ node }) => {
+    result.data.allPagesYaml.edges.forEach(({ node }) => {
       const { page } = node;
       console.log(`  creating /${page.id}...`);
       createPage({
