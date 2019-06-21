@@ -6,13 +6,14 @@ import style from './timeline.module.css';
 
 const propTypes = {
   projects: Array.of(ProjectCard.propTypes),
-  images: PropTypes.array.isRequired
+  pages: Array
 };
 
-const Timeline = ({ projects }) => (
+const Timeline = ({ projects, pages }) => (
   <div className={style.timelineWrap}>
     <div className={style.timeline}>
       {projects.map(project => {
+        const page = pages.find(page => page.id === project.id);
         if (project.category === 'year') {
           return (
             <div key={`year-${project.id}`} className={style.year}>
@@ -22,9 +23,11 @@ const Timeline = ({ projects }) => (
         }
 
         return (
-          <div key={project.id} className={style.element}>
-            <ProjectCard project={project} />
-          </div>
+          <ProjectCard
+            key={project.id}
+            project={project}
+            sections={page && page.sections}
+          />
         );
       })}
     </div>

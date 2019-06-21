@@ -21,7 +21,7 @@
       - Lua
       - Corona SDK
     dates: April 2019
-    description: Submitted another Ludum Dare entry, on Compo category this time!
+    description: 'I submitted another Ludum Dare entry, on Compo category this time. Theme: Your life is currency'
     links:
       - type: github
         url: https://github.com/chrisdugne/ld44
@@ -84,7 +84,7 @@
       - Mobile Developer
     technos:
       - React Native
-    dates: Nov 2018 - May 2019
+    dates: Nov 2018 - June 2019
     description: Member of the mobile team, which delivered the first mobile app on stores for Coorpacademy.
     links:
       - type: github
@@ -139,7 +139,7 @@
       - React.js/Redux
       - Node.js
     dates: Nov 2017 - Oct 2018
-    description: Created a multiplayer game for Coorpacademy
+    description: Created a real-time multiplayer game for Coorpacademy
 
 #-------------------------------------------------------------------------------
 
@@ -293,7 +293,7 @@
       - Lua
       - Corona SDK
     dates: Sept 2013 - Nov 2014
-    details: true
+    description: I co-founded Adillions as full-stack developer to build a disruptive new sweepstake.
 
 #-------------------------------------------------------------------------------
 #  Photobox MStudio
@@ -312,7 +312,7 @@
       - Marionette.js
       - HTML/CSS
     dates: Dec 2013 - Nov 2014
-    description: "Draft a phonecase, a mug or a calendar with your mobile tablet. I've spent one year with the Photobox 'Creation Team' as Front-end developer to help building their new web-mobile Studio"
+    description: "Customise a phonecase, a mug or a calendar with your mobile tablet: I've spent one year with Photobox as Front-end developer to help building their new web-mobile Studio"
 
 #-------------------------------------------------------------------------------
 #  Behind The Wind

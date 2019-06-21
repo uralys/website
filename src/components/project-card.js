@@ -4,6 +4,7 @@ import React from 'react';
 import style from './project-card.module.css';
 import Icon from './icon';
 import Image from './image';
+import Sections from './sections';
 import classnames from 'classnames';
 
 const propTypes = {
@@ -23,7 +24,8 @@ class ProjectCard extends React.Component {
   constructor(props) {
     super(props);
     this.onVisibilitySensorChange = this.onVisibilitySensorChange.bind(this);
-    this.state = { visible: false };
+    this.onClick = this.onClick.bind(this);
+    this.state = { visible: false, open: false };
   }
 
   onVisibilitySensorChange(isVisible) {
@@ -32,21 +34,25 @@ class ProjectCard extends React.Component {
     }
   }
 
+  onClick() {
+    this.setState({ open: !this.state.open });
+  }
+
   render() {
-    const { project } = this.props;
+    const { project, sections } = this.props;
     return (
-      <div>
-        <VisibilitySensor
-          onChange={this.onVisibilitySensorChange}
-          partialVisibility
+      <VisibilitySensor
+        onChange={this.onVisibilitySensorChange}
+        partialVisibility
+      >
+        <div
+          onClick={sections && this.onClick}
+          className={classnames([
+            style.project,
+            this.state.visible ? style.show : style.hide
+          ])}
         >
-          <a
-            href={`/${project.id}`}
-            className={classnames([
-              style.project,
-              this.state.visible ? style.show : style.hide
-            ])}
-          >
+          <div className={style.summary}>
             <Image
               className={style.imageHeader}
               projectId={project.id}
@@ -80,9 +86,19 @@ class ProjectCard extends React.Component {
               className={style.icon}
               category={project.category}
             />
-          </a>
-        </VisibilitySensor>
-      </div>
+          </div>
+          <div
+            className={classnames([
+              style.sections,
+              this.state.open ? style.open : style.collapse
+            ])}
+          >
+            {this.state.open && (
+              <Sections projectId={project.id} details={sections} />
+            )}
+          </div>
+        </div>
+      </VisibilitySensor>
     );
   }
 }

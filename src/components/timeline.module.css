@@ -43,13 +43,6 @@
   border-left: none;
 }
 
-.element {
-  position: relative;
-  width: 100%;
-  height: 120px;
-  margin-bottom: 10px;
-}
-
 @media mobile {
   .element {
     height: 160px;
