@@ -142,13 +142,26 @@ const Section = ({ projectId, section }) => {
   }
 };
 
-const Sections = ({ projectId, details }) => (
+const Sections = ({ projectId, details, filter = false }) => (
   <div className={style.sections}>
-    {details.map((section, index) => (
-      <div id={section.id} key={`section-${index}`} className={style.section}>
-        <Section projectId={projectId} section={section} />
-      </div>
-    ))}
+    {details.map((section, index) => {
+      if (!filter || section.timeline) {
+        return (
+          <div
+            id={section.id}
+            key={`section-${index}`}
+            className={style.section}
+          >
+            <Section projectId={projectId} section={section} />
+            {filter && (
+              <a className={style.seeMore} href={`/${projectId}`}>
+                More details
+              </a>
+            )}
+          </div>
+        );
+      }
+    })}
   </div>
 );
 

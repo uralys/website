@@ -46,13 +46,18 @@ class ProjectCard extends React.Component {
         partialVisibility
       >
         <div
-          onClick={sections && this.onClick}
           className={classnames([
             style.project,
             this.state.visible ? style.show : style.hide
           ])}
         >
-          <div className={style.summary}>
+          <div
+            className={classnames([
+              style.summary,
+              this.state.open && style.fixedSummary
+            ])}
+            onClick={sections && this.onClick}
+          >
             <Image
               className={style.imageHeader}
               projectId={project.id}
@@ -87,16 +92,16 @@ class ProjectCard extends React.Component {
               category={project.category}
             />
           </div>
-          <div
-            className={classnames([
-              style.sections,
-              this.state.open ? style.open : style.collapse
-            ])}
-          >
-            {this.state.open && (
-              <Sections projectId={project.id} details={sections} />
-            )}
-          </div>
+          {sections && (
+            <div
+              className={classnames([
+                style.sections,
+                this.state.open ? style.open : style.collapse
+              ])}
+            >
+              <Sections projectId={project.id} details={sections} filter />
+            </div>
+          )}
         </div>
       </VisibilitySensor>
     );

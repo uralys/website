@@ -23,9 +23,9 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Uralys" keywords={[`gatsby`, `games`, `uralys`]} />
+      <Timeline projects={projects} pages={pages} />
       <Hero />
       <Highlights highlights={highlights} />
-      <Timeline projects={projects} pages={pages} />
     </Layout>
   );
 };
@@ -76,6 +76,7 @@ export const query = graphql`
               url
               type
               title
+              timeline
               texts {
                 type
                 title

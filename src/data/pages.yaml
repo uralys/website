@@ -19,11 +19,12 @@
           - paragraph: 'Your life is currency'
 
       - type: texts
+        timeline: true
         texts:
           - html: '<p align="center">
               <img
               src="https://user-images.githubusercontent.com/910636/56871257-97813780-6a1b-11e9-80c4-fb2a9553b5ae.gif"
-              width="300"
+              width="200"
               >
               </p>'
 
@@ -80,6 +81,7 @@
           - paragraph: 'A Kodo theme'
 
       - type: images
+        timeline: true
         images:
           - asset: store
 
@@ -142,6 +144,7 @@
           - asset: gameselection
 
       - type: images
+        timeline: true
         images:
           - asset: game1
           - asset: game2
@@ -186,6 +189,7 @@
           - paragraph: Member of the mobile team, which delivered the first mobile app on stores for Coorpacademy.
 
       - type: images
+        timeline: true
         images:
           - asset: store1
           - asset: store2
@@ -225,6 +229,7 @@
           - paragraph: 'the first Kodo theme'
 
       - type: images
+        timeline: true
         images:
           - asset: store
 
@@ -299,6 +304,12 @@
         images:
           - asset: game3
 
+      - type: images
+        timeline: true
+        images:
+          - asset: game1
+          - asset: game3
+
       - type: texts
         texts:
           - title: 'Technos:'
@@ -325,14 +336,14 @@
           - paragraph: Backbone to all my mobile games from 2017
 
       - type: images
+        timeline: true
         images:
           - asset: cover
 
       - type: texts
+        timeline: true
         texts:
-          - paragraph: Cherry is a layer over Corona SDK providing a toolset to create a Corona game quicker.
-          - list:
-              - Corona SDK
+          - paragraph: Cherry is a layer above Corona SDK, providing a toolset to create Corona games quicker.
           - html: 'Full documentation on <a href="https://github.com/chrisdugne/cherry">Github readme</a>'
             icon: github
             type: credit
@@ -400,6 +411,7 @@
           - asset: '4'
 
       - type: images
+        timeline: true
         images:
           - asset: '5'
           - asset: '6'
@@ -407,6 +419,7 @@
           - asset: '8'
 
       - type: images
+        timeline: true
         images:
           - asset: '9'
           - asset: '10'
@@ -484,10 +497,11 @@
           - subtitle: Sept 2013 - Nov 2014
 
       - type: images
+        timeline: true
         images:
           - asset: mobile
             style:
-              width: 350px
+              width: 250px
 
       - type: texts
         texts:

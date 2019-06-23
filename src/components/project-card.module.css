@@ -2,7 +2,7 @@
 @value mobile, tablet from breakpoints;
 
 @value colors: "../style/colors.css";
-@value dark, primary, secondary, white, light from colors;
+@value dark, primary, secondary, white, light, red from colors;
 
 @value font "../style/font.css";
 @value FONT_FAMILY from font;
@@ -43,16 +43,17 @@
 }
 
 .sections {
-  transition: height 0.3s ease-out;
-  overflow-y: scroll;
+  background: #fff5;
 }
 
 .collapse {
-  height: 0;
+  transition: max-height 0.2s ease-out;
+  max-height: 0;
 }
 
 .open {
-  height: 500px;
+  transition: max-height 0.5s ease-in;
+  max-height: 1000px;
 }
 
 .details {
