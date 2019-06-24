@@ -4,7 +4,7 @@ import Image from './image';
 
 const Hero = () => (
   <div className={style.hero}>
-    <Image className={style.image} projectId="global" assetId="hero" />
+    <Image wrapperClassName={style.image} projectId="global" assetId="hero" />
     <div className={style.heroOverlay} />
     <div className={style.content}>
       <h1 className={style.title}>Indie game studio.</h1>

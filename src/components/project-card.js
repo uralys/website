@@ -59,7 +59,7 @@ class ProjectCard extends React.Component {
             onClick={sections && this.onClick}
           >
             <Image
-              className={style.imageHeader}
+              wrapperClassName={style.imageHeader}
               projectId={project.id}
               assetId="logo"
             />

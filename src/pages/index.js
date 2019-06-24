@@ -2,15 +2,10 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 
 import Hero from '../components/hero';
-import Highlight from '../components/highlight';
+import Highlights from '../components/highlights';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Timeline from '../components/timeline';
-
-const Highlights = ({ highlights }) =>
-  highlights.map(highlight => (
-    <Highlight key={highlight.id} content={highlight} />
-  ));
 
 const IndexPage = ({ data }) => {
   const highlights = data.allHighlightsYaml.edges.map(
@@ -23,9 +18,9 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Uralys" keywords={[`gatsby`, `games`, `uralys`]} />
-      <Timeline projects={projects} pages={pages} />
       <Hero />
       <Highlights highlights={highlights} />
+      <Timeline projects={projects} pages={pages} />
     </Layout>
   );
 };

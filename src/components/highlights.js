@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import style from './highlight.module.css';
+import style from './highlights.module.css';
 import Image from './image';
 
 const propTypes = {
@@ -14,21 +14,18 @@ const propTypes = {
 const Highlight = ({ content }) => (
   <div className={style.post}>
     <div className={style.imageWrap}>
-      <div
-        className={style.image}
-        data-cms-original-style="background-image: url(/images/demo/work-01.jpg)"
-      />
+      {content.image && (
+        <Image
+          style={{ position: 'unset' }}
+          wrapperClassName={style.image}
+          projectId="global"
+          assetId={content.image}
+        />
+      )}
     </div>
 
     <div className={style.contentWrap}>
       <div className={style.content}>
-        {content.image && (
-          <Image
-            className={style.image}
-            projectId="global"
-            assetId={content.image}
-          />
-        )}
         <h2 className={style.title}>
           <a href="/project/write-it-down">{content.title}</a>
         </h2>
@@ -47,4 +44,13 @@ const Highlight = ({ content }) => (
 );
 
 Highlight.propTypes = propTypes;
-export default Highlight;
+
+const Highlights = ({ highlights }) => (
+  <div className={style.highlights}>
+    {highlights.map(highlight => (
+      <Highlight key={highlight.id} content={highlight} />
+    ))}
+  </div>
+);
+
+export default Highlights;

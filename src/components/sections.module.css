@@ -31,6 +31,7 @@
 }
 
 .intro {
+  width: 90%;
   text-align: center;
 }
 
@@ -46,15 +47,16 @@
 .screenshots {
   display: flex;
   flex-direction: row;
-  width: 100%;
   justify-content: center;
+  width: 100%;
 }
 
 .screenshot {
   border-radius: 3px;
-  width: 100%;
   overflow: hidden;
   margin: 0 15px;
+  position: relative;
+  width: 100%;
 }
 
 .video {
@@ -72,6 +74,7 @@
 }
 
 .storeButton {
+  position: relative;
   width: 280px;
   transition: opacity 0.6s;
 }
@@ -165,6 +168,7 @@
 }
 
 .creditIcon {
+  position: relative;
   width: 50px;
   flex-shrink: 0;
   margin-right: 10px;

@@ -7,9 +7,9 @@ const Images = ({ projectId, images }) => (
   <div className={style.screenshots}>
     {images.map(({ asset, style: imageStyle }) => (
       <Image
-        className={style.screenshot}
         key={`${projectId}-${asset}`}
-        style={imageStyle}
+        wrapperClassName={style.screenshot}
+        wrapperStyle={imageStyle}
         projectId={projectId}
         assetId={asset}
       />
@@ -21,7 +21,11 @@ const Intro = ({ projectId, title, subtitle, info, asset }) => (
   <div className={style.intro}>
     <p className={style.introTitle}>{title}</p>
     <p>{subtitle}</p>
-    <Image projectId={projectId} assetId={asset} />
+    <Image
+      wrapperClassName={style.screenshot}
+      projectId={projectId}
+      assetId={asset}
+    />
     <p className={style.introInfo}>{info}</p>
   </div>
 );
@@ -30,14 +34,14 @@ const Stores = ({ google, apple }) => (
   <div className={style.storeButtons}>
     <a className={style.storeButton} href={apple} target="_blank">
       <Image
-        className={style.storeButtonImage}
+        wrapperClassName={style.storeButtonImage}
         projectId="global"
         assetId="appstore"
       />
     </a>
     <a className={style.storeButton} href={google} target="_blank">
       <Image
-        className={style.storeButtonImage}
+        wrapperClassName={style.storeButtonImage}
         projectId="global"
         assetId="playstore"
       />
@@ -52,7 +56,7 @@ const Icon = ({ icon }) => {
 
   return (
     <Image
-      className={style.creditIcon}
+      wrapperClassName={style.creditIcon}
       projectId={projectId}
       assetId={assetId}
     />
