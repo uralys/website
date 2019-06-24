@@ -411,7 +411,6 @@
           - asset: '4'
 
       - type: images
-        timeline: true
         images:
           - asset: '5'
           - asset: '6'

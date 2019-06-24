@@ -1,0 +1,15 @@
+@value colors "../style/colors.css";
+@value light from colors;
+
+.link {
+  text-decoration: none;
+  color: light;
+  font-weight: bold;
+  font-size: 18px;
+  transition: opacity 0.5s;
+}
+
+.link:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}

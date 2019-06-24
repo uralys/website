@@ -11,12 +11,11 @@ const propTypes = {
   })
 };
 
-const Highlight = ({ content }) => (
-  <div className={style.post}>
+const Highlight = ({ content, reverse = false }) => (
+  <div className={reverse ? style.postReversed : style.post}>
     <div className={style.imageWrap}>
       {content.image && (
         <Image
-          style={{ position: 'unset' }}
           wrapperClassName={style.image}
           projectId="global"
           assetId={content.image}
@@ -26,15 +25,12 @@ const Highlight = ({ content }) => (
 
     <div className={style.contentWrap}>
       <div className={style.content}>
-        <h2 className={style.title}>
-          <a href="/project/write-it-down">{content.title}</a>
-        </h2>
-        <p className={style.subtitle}>{content.id}</p>
+        <h2 className={style.title}>{content.title}</h2>
         <p className={style.description}>{content.description}</p>
         {content.details && (
           <ul className={style.list}>
             {content.details.map(line => (
-              <li>{line}</li>
+              <li className={style.line}>{line}</li>
             ))}
           </ul>
         )}
@@ -47,8 +43,12 @@ Highlight.propTypes = propTypes;
 
 const Highlights = ({ highlights }) => (
   <div className={style.highlights}>
-    {highlights.map(highlight => (
-      <Highlight key={highlight.id} content={highlight} />
+    {highlights.map((highlight, index) => (
+      <Highlight
+        key={highlight.id}
+        content={highlight}
+        reverse={index % 2 === 1}
+      />
     ))}
   </div>
 );

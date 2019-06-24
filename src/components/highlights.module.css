@@ -1,5 +1,7 @@
 @value breakpoints "../style/breakpoints.css";
 @value mobile, tablet from breakpoints;
+@value colors "../style/colors.css";
+@value primary from colors;
 
 .highlights {
   width: 100%;
@@ -20,12 +22,18 @@
   width: 100%;
   margin: 0px;
   padding: 0px;
-  background: #fff;
+  background: #ededed;
   border-radius: 8px;
-  box-shadow: 0 11 0px 1px #bbb;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 2px 1px 2px rgba(0, 0, 0, 0.24);
   height: 450px;
   overflow: hidden;
   margin-top: 60px;
+  margin-bottom: 5px;
+}
+
+.postReversed {
+  composes: post;
+  flex-direction: row-reverse;
 }
 
 @media tablet {
@@ -60,16 +68,38 @@
 
 .contentWrap {
   flex: 1;
+  position: relative;
 }
 
 .content {
+  background: #fff;
+  width: 100%;
+  margin-left: -30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 30px;
+}
+
+.link {
+  composes: link from '../style/link.css';
+}
+
+.postReversed .content {
+  margin-left: 30px;
 }
 
 .title {
-}
-
-.subtitle {
+  font-size: 36px;
+  color: primary;
 }
 
 .description {
+  font-size: 21px;
+}
+
+.list {
+}
+
+.line {
 }

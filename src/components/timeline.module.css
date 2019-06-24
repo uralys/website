@@ -2,7 +2,7 @@
 @value mobile, tablet from breakpoints;
 
 @value colors: "../style/colors.css";
-@value primary, dark from colors;
+@value primary, light, dark from colors;
 
 .timelineWrap {
   width: 100%;
@@ -24,7 +24,7 @@
   right: 100%;
   height: 100%;
   width: 22px;
-  border-right: 4px solid #fff;
+  border-right: 2px solid light;
 }
 
 .year {

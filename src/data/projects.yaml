@@ -6,6 +6,24 @@
     id: '2019'
 
 #-------------------------------------------------------------------------------
+#  Coorpacademy Playground
+#-------------------------------------------------------------------------------
+
+- project:
+    category: games
+    id: exalt
+    title: Coorpacademy Playground
+    location: Paris, France
+    roles:
+      - Mobile Developer
+      - Game Designer
+    technos:
+      - Lua
+      - Corona SDK
+    dates: from Jan 2019
+    description: Designed and created a prototype to demonstrate my potential as game studio for Coorpacademy.
+
+#-------------------------------------------------------------------------------
 #  1024
 #-------------------------------------------------------------------------------
 
@@ -52,24 +70,6 @@
         url: https://itunes.apple.com/us/app/id1462688847
       - type: android
         url: https://play.google.com/store/apps/details?id=com.uralys.kodo.monster
-
-#-------------------------------------------------------------------------------
-#  Coorpacademy Playground
-#-------------------------------------------------------------------------------
-
-- project:
-    category: games
-    id: exalt
-    title: Coorpacademy Playground
-    location: Paris, France
-    roles:
-      - Mobile Developer
-      - Game Designer
-    technos:
-      - Lua
-      - Corona SDK
-    dates: Jan 2019 - Apr 2019
-    description: Designed and created a prototype to demonstrate my potential as game studio for Coorpacademy.
 
 #-------------------------------------------------------------------------------
 #  Coorpacademy mobile
