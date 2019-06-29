@@ -1,0 +1,28 @@
+@value colors "../style/colors.css";
+@value font "../style/font.css";
+@value dark, light, white from colors;
+@value FONT_FAMILY from font;
+
+.footer {
+  color: white;
+  background-color: dark;
+  height: 120px;
+  display: flex;
+  padding: 0 80px;
+  align-items: center;
+  flex-direction: raw;
+}
+
+.links {
+  margin: 0;
+  margin-left: 50px;
+}
+
+.links a {
+  background-color: dark;
+  color: #fff;
+}
+
+.links a:hover {
+  background-color: light;
+}

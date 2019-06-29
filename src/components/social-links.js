@@ -19,13 +19,18 @@ const socials = [
 ];
 
 const SocialLinks = ({ className }) => (
-  <ul className={classnames([className, style.links])}>
+  <div className={classnames([className, style.links])}>
     {socials.map(social => (
-      <li className={style.link}>
+      <a
+        className={style.link}
+        href={social.link}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <Icon className={style.icon} category={social.icon} />
-      </li>
+      </a>
     ))}
-  </ul>
+  </div>
 );
 
 export default SocialLinks;
