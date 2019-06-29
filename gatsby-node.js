@@ -1,5 +1,13 @@
 const path = require('path');
 
+exports.onCreatePage = async ({ page, actions }) => {
+  const { createPage } = actions;
+  if (page.path.match(/^\/router/)) {
+    page.matchPath = `/router/*`;
+    createPage(page);
+  }
+};
+
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
   return graphql(`
@@ -55,7 +63,7 @@ exports.createPages = ({ graphql, actions }) => {
       console.log(`  creating /${page.id}...`);
       createPage({
         path: `/${page.id}`,
-        component: path.resolve(`./src/pages/page.js`),
+        component: path.resolve(`./src/components/page.js`),
         context: page
       });
     });

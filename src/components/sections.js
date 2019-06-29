@@ -32,14 +32,24 @@ const Intro = ({ projectId, title, subtitle, info, asset }) => (
 
 const Stores = ({ google, apple }) => (
   <div className={style.storeButtons}>
-    <a className={style.storeButton} href={apple} target="_blank">
+    <a
+      className={style.storeButton}
+      href={apple}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <Image
         wrapperClassName={style.storeButtonImage}
         projectId="global"
         assetId="appstore"
       />
     </a>
-    <a className={style.storeButton} href={google} target="_blank">
+    <a
+      className={style.storeButton}
+      href={google}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <Image
         wrapperClassName={style.storeButtonImage}
         projectId="global"
@@ -51,7 +61,7 @@ const Stores = ({ google, apple }) => (
 
 const Icon = ({ icon }) => {
   const splitters = icon.split('/');
-  const projectId = (splitters.length == 2 && splitters[0]) || 'global';
+  const projectId = (splitters.length === 2 && splitters[0]) || 'global';
   const assetId = splitters[1] || splitters[0];
 
   return (
@@ -129,6 +139,7 @@ const Section = ({ projectId, section }) => {
     case 'video':
       return (
         <iframe
+          title="video"
           className={style.video}
           width="648px"
           height="400px"
@@ -164,6 +175,8 @@ const Sections = ({ projectId, details, filter = false }) => (
             )}
           </div>
         );
+      } else {
+        return null;
       }
     })}
   </div>

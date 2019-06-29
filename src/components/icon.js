@@ -2,17 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { ReactComponent as AndroidIcon } from '../icons/android.svg';
 import { ReactComponent as AppleIcon } from '../icons/apple.svg';
-import { ReactComponent as LDIcon } from '../icons/ld.svg';
+import { ReactComponent as FacebookIcon } from '../icons/facebook.svg';
+import { ReactComponent as GamepadIcon } from '../icons/gamepad.svg';
 import { ReactComponent as GithubIcon } from '../icons/github.svg';
+import { ReactComponent as InternshipIcon } from '../icons/internship.svg';
+import { ReactComponent as LDIcon } from '../icons/ld.svg';
 import { ReactComponent as PlayIcon } from '../icons/play.svg';
 import { ReactComponent as SchoolIcon } from '../icons/school.svg';
-import { ReactComponent as GamepadIcon } from '../icons/gamepad.svg';
-import { ReactComponent as InternshipIcon } from '../icons/internship.svg';
+import { ReactComponent as TwitterIcon } from '../icons/twitter.svg';
 
 const propTypes = {
   category: PropTypes.oneOf([
     'android',
     'apple',
+    'facebook',
     'freelance',
     'games',
     'github',
@@ -21,11 +24,12 @@ const propTypes = {
     'ld',
     'partnership',
     'play',
-    'school'
+    'school',
+    'twitter'
   ])
 };
 
-const Svg = ({ className, category, fill }) => {
+const Svg = ({ className, style, category, fill }) => {
   switch (category) {
     case 'school':
       return (
@@ -39,74 +43,54 @@ const Svg = ({ className, category, fill }) => {
     case 'games':
       return (
         <GamepadIcon
-          className={className}
           style={{
-            width: '100%',
-            height: '100%',
-            fill,
-            margin: 'auto',
-            top: '10px',
-            left: '10px'
+            ...style,
+            width: '90%'
           }}
         />
       );
 
     case 'internship':
-      return (
-        <InternshipIcon
-          className={className}
-          style={{
-            width: '100%',
-            height: '100%',
-            fill,
-            margin: 'auto',
-            top: '10px',
-            left: '10px'
-          }}
-        />
-      );
+      return <InternshipIcon style={style} />;
 
     case 'apple':
+      return <AppleIcon style={style} />;
+
+    case 'facebook':
       return (
-        <AppleIcon
+        <FacebookIcon
           style={{
-            fill
+            ...style,
+            width: '30%'
           }}
         />
       );
 
     case 'ld':
-      return (
-        <LDIcon
-          style={{
-            fill
-          }}
-        />
-      );
+      return <LDIcon style={style} />;
 
     case 'github':
       return (
         <GithubIcon
           style={{
-            fill
+            ...style,
+            width: '90%'
           }}
         />
       );
 
     case 'android':
-      return (
-        <AndroidIcon
-          style={{
-            fill
-          }}
-        />
-      );
+      return <AndroidIcon style={style} />;
 
     case 'play':
+      return <PlayIcon style={style} />;
+
+    case 'twitter':
       return (
-        <PlayIcon
+        <TwitterIcon
           style={{
-            fill
+            ...style,
+            width: '70%'
           }}
         />
       );
@@ -119,9 +103,17 @@ const Svg = ({ className, category, fill }) => {
 };
 
 const Icon = ({ style, className, category, fill }) => (
-  <div className={className} style={style}>
-    <Svg category={category} fill={fill} />
-  </div>
+  <Svg
+    category={category}
+    fill={fill}
+    style={{
+      width: '100%',
+      top: '50%',
+      left: '50%',
+      position: 'absolute',
+      transform: 'translate(-50%, -50%)'
+    }}
+  />
 );
 
 Icon.propTypes = propTypes;

@@ -1,0 +1,29 @@
+@value breakpoints "../style/breakpoints.css";
+@value mobile, tablet from breakpoints;
+
+@value colors "../style/colors.css";
+@value secondary, light from colors;
+
+.links {
+  display: flex;
+  list-style: none;
+}
+
+.link {
+  position: relative;
+  background: #ededed;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-out;
+}
+
+.link:hover {
+  background-color: #bbb;
+}
+
+@media mobile {
+}

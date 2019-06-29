@@ -1,7 +1,7 @@
 @value breakpoints "../style/breakpoints.css";
 @value mobile, tablet from breakpoints;
 @value colors "../style/colors.css";
-@value primary from colors;
+@value dark from colors;
 
 .highlights {
   width: 100%;
@@ -69,6 +69,7 @@
 .contentWrap {
   flex: 1;
   position: relative;
+  height: 100%;
 }
 
 .content {
@@ -81,6 +82,31 @@
   padding: 30px;
 }
 
+@media tablet {
+  .post {
+    height: 700px;
+  }
+
+  .imageWrap {
+    width: 100%;
+  }
+
+  .contentWrap {
+    width: 100%;
+  }
+
+  .content {
+    margin: 0;
+    margin-top: -20px;
+    width: 90%;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+}
+
+/* ------------------------------------------- */
+
 .link {
   composes: link from '../style/link.css';
 }
@@ -91,7 +117,7 @@
 
 .title {
   font-size: 36px;
-  color: primary;
+  color: dark;
 }
 
 .description {

@@ -77,20 +77,16 @@ class ProjectCard extends React.Component {
                     key={`${project.id}-link-${type}`}
                     href={url}
                   >
-                    <Icon
-                      className={style.linkIcon}
-                      fill="#fff"
-                      category={type}
-                    />
+                    <div className={style.linkIcon}>
+                      <Icon fill="#fff" category={type} />
+                    </div>
                   </a>
                 ))}
             </div>
 
-            <Icon
-              fill="#ededed"
-              className={style.icon}
-              category={project.category}
-            />
+            <div className={style.icon}>
+              <Icon fill="#ededed" category={project.category} />
+            </div>
           </div>
           {sections && (
             <div

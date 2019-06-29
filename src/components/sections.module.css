@@ -80,6 +80,10 @@
 }
 
 @media mobile {
+  .section {
+    padding: 20px 5px;
+  }
+
   .storeButtons {
     flex-direction: column;
     align-items: center;

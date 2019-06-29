@@ -1,10 +1,10 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 
 import ProjectCard from './project-card';
 import style from './timeline.module.css';
 
 const propTypes = {
+  // eslint-disable-next-line react/forbid-foreign-prop-types
   projects: Array.of(ProjectCard.propTypes),
   pages: Array
 };

@@ -1,0 +1,22 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.uralys.kodo",
+      "sha256_cert_fingerprints": [
+        "70:20:8D:B8:E1:63:9D:4F:FE:D0:69:A6:CD:1A:4D:60:65:A8:04:84:DE:7E:6F:46:66:9A:DC:63:8C:FE:1A:C7"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.uralys.exalt",
+      "sha256_cert_fingerprints": [
+        "FC:09:08:77:53:45:DC:74:9B:DD:84:85:BB:CF:0B:87:68:B1:A0:E6:A4:BC:9D:CE:FB:87:B1:00:D2:6F:65:BF"
+      ]
+    }
+  }
+]

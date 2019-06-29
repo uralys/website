@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './hero.module.css';
 import Image from './image';
+import SocialLinks from './social-links';
 
 const Hero = () => (
   <div className={style.hero}>
@@ -11,6 +12,7 @@ const Hero = () => (
       <p className={style.punchLine}>
         Let's build the perfect game for your customers.
       </p>
+      <SocialLinks className={style.links} />
     </div>
   </div>
 );
