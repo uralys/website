@@ -1,1 +1,0 @@
-java -jar BlubApplet.jar
