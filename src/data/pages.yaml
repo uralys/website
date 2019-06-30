@@ -401,7 +401,7 @@
         apple: https://itunes.apple.com/us/app/id1037707233
 
       - type: video
-        url: http://www.youtube.com/embed/JELDE2yfwKI
+        url: https://www.youtube.com/embed/JELDE2yfwKI
 
       - type: images
         images:
