@@ -3,7 +3,7 @@
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
-      "package_name": "com.uralys.kodo",
+      "package_name": "com.uralys.kodo.find_the_color",
       "sha256_cert_fingerprints": [
         "70:20:8D:B8:E1:63:9D:4F:FE:D0:69:A6:CD:1A:4D:60:65:A8:04:84:DE:7E:6F:46:66:9A:DC:63:8C:FE:1A:C7"
       ]

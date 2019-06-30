@@ -5,13 +5,13 @@
       {
         "appID": "3D6S6JX855.com.uralys.kodo",
         "paths": [
-          "/kodo/*"
+          "/router/kodo/*"
         ]
       },
       {
         "appID": "3D6S6JX855.com.uralys.exalt",
         "paths": [
-          "/exalt/*"
+          "/router/exalt/*"
         ]
       }
     ]

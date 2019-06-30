@@ -18,6 +18,15 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Uralys" keywords={[`gatsby`, `games`, `uralys`]} />
+      <a
+        style={{
+          color: 'white',
+          padding: '20px'
+        }}
+        href="/router/kodo"
+      >
+        link kodo
+      </a>
       <Hero />
       <Highlights highlights={highlights} />
       <Timeline projects={projects} pages={pages} />
