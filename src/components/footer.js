@@ -4,7 +4,11 @@ import SocialLinks from './social-links';
 
 const Footer = ({ siteTitle }) => (
   <footer className={style.footer}>
-    © 2010-{new Date().getFullYear()}, Christophe Dugne-Esquevin, Uralys
+    <p className={style.texts}>
+      <span>© 2010-{new Date().getFullYear()}</span>
+      <span>Uralys</span>
+      <span>Christophe Dugne-Esquevin</span>
+    </p>
     <SocialLinks className={style.links} />
   </footer>
 );

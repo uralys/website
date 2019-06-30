@@ -20,7 +20,7 @@ function Redirect({ app, params }) {
   const textAreaRef = useRef(null);
 
   function openStore(e) {
-    // window.location.href = '/phantoms';
+    window.location.href = PLAYSTORE.kodo;
     // const userAgent = new UAParser(event.headers['User-Agent']);
     // const { os: platform } = userAgent.getResult();
     // switch (platform.name) {

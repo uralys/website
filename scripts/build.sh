@@ -1,4 +1,4 @@
-echo "[building uralys.com]"
+echo "[deploying to localhost]"
 echo "> gatsby build"
 gatsby build;
 echo "> copy to local apache server"
