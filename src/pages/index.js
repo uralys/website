@@ -30,9 +30,9 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Uralys" keywords={[`gatsby`, `games`, `uralys`]} />
-      <A path="kodo" name="/router/kodo" />
-      <A path="spaceship " name="/router/exalt/spaceship/dis_N1VeAuHzI" />
-      <A path="forest " name="/router/exalt/spaceship/dis_VJaNTEq0r" />
+      <A name="kodo" path="/router/kodo" />
+      <A name="spaceship " path="/router/exalt/spaceship/dis_N1VeAuHzI" />
+      <A name="forest " path="/router/exalt/forest/dis_VJaNTEq0r" />
       <Hero />
       <Highlights highlights={highlights} />
       <Timeline projects={projects} pages={pages} />

@@ -19,7 +19,7 @@ Built with Gatsby
 
 ## 🐝 deploy
 
-on source branche:
+on source branch:
 
 ```shell
 > npm run deploy
