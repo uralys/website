@@ -7,18 +7,6 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Timeline from '../components/timeline';
 
-const A = ({ name, path }) => (
-  <a
-    style={{
-      color: 'white',
-      padding: '20px'
-    }}
-    href={path}
-  >
-    {name}
-  </a>
-);
-
 const IndexPage = ({ data }) => {
   const highlights = data.allHighlightsYaml.edges.map(
     edge => edge.node.highlight
@@ -30,9 +18,6 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Uralys" keywords={[`gatsby`, `games`, `uralys`]} />
-      <A name="kodo" path="/router/kodo" />
-      <A name="spaceship " path="/router/exalt/spaceship/dis_N1VeAuHzI" />
-      <A name="forest " path="/router/exalt/forest/dis_VJaNTEq0r" />
       <Hero />
       <Highlights highlights={highlights} />
       <Timeline projects={projects} pages={pages} />
