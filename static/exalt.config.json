@@ -1,0 +1,30 @@
+{
+  "joker": {
+    "cards": [
+      {
+        "game": "forest",
+        "chapter": "cha_41DRuNSpH"
+      },
+      {
+        "game": "forest",
+        "chapter": "cha_4yP1tNBpS"
+      },
+      {
+        "game": "spaceship",
+        "chapter": "cha_4J6x5NrpS"
+      }
+    ]
+  },
+  "default": {
+    "cards": [
+      {
+        "game": "forest",
+        "chapter": "cha_4yP1tNBpS"
+      },
+      {
+        "game": "spaceship",
+        "chapter": "cha_4J6x5NrpS"
+      }
+    ]
+  }
+}
