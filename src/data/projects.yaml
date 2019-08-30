@@ -64,7 +64,7 @@
       - Lua
       - Corona SDK
     dates: May 2019
-    description: Deployed a new theme for Kodo
+    description: Landed a new Kodo theme on both iOS and Android
     links:
       - type: apple
         url: https://itunes.apple.com/us/app/id1462688847
@@ -84,8 +84,9 @@
       - Mobile Developer
     technos:
       - React Native
-    dates: Nov 2018 - June 2019
-    description: Member of the mobile team, which delivered the first mobile app on stores for Coorpacademy.
+      - Ndde.js
+    dates: Nov 2018 - September 2019
+    description: Member of the mobile team, which delivered the first React Native app on stores for Coorpacademy.
     links:
       - type: github
         url: https://github.com/CoorpAcademy/mobile
@@ -116,7 +117,7 @@
       - Lua
       - Corona SDK
     dates: May 2019
-    description: 'Kodo 3.0: new gameplay, leaderboard, IAP'
+    description: 'Kodo 3.0: created a mobile game for iOS and Android. This is the first app using my common leaderboard and common IAP.'
     links:
       - type: apple
         url: https://itunes.apple.com/us/app/id684227637
@@ -139,7 +140,7 @@
       - React.js/Redux
       - Node.js
     dates: Nov 2017 - Oct 2018
-    description: Created a real-time multiplayer game for Coorpacademy
+    description: Created a real-time multiplayer game for Coorpacademy. Each player answering questions on their on device, the first team completing the Totem wins.
 
 #-------------------------------------------------------------------------------
 
@@ -162,7 +163,7 @@
       - Lua
       - Corona SDK
     dates: from early 2017
-    description: 'Cherry is the backbone to my games released from 2017'
+    description: 'Cherry is the backbone to my games released from 2017. This is a toolset to help being quicker developing with Corona SDK'
     links:
       - type: github
         url: https://github.com/chrisdugne/cherry
@@ -211,7 +212,7 @@
       - Lua
       - Corona SDK
     dates: August 2016
-    description: my first Ludum Dare participation
+    description: My first Ludum Dare participation. A mobile game developed with Corona SDK, with my daughter's drawings <3
     links:
       - type: github
         url: https://github.com/chrisdugne/ludum-dare-36
@@ -240,7 +241,7 @@
       - Lua
       - Corona SDK
     dates: Jan 2015 - Dec 2015
-    description: Phantoms is a new kind of mind game. You will have to find different paths in intricate 2D labyrinths. About to be released on Apple Store and Google Play !
+    description: Phantoms is a new kind of mind game. You will have to find different paths in intricate 2D labyrinths. a mobile game released on Apple Store and Google Play.
     details: true
     links:
       - type: apple
@@ -263,7 +264,7 @@
       - React.js/Redux
       - Node.js
     dates: since March 2015
-    description: 'Member of the dev team, we refactored the existing monolith into many React/Redux apps: Coorpacademy offers a MOOC solution designed for corporations.'
+    description: 'Member of the dev team, we refactored the existing monolith into many React/Redux apps and AWS services. Coorpacademy offers a MOOC solution designed for corporations.'
     links:
       - type: github
         url: https://github.com/CoorpAcademy/components/graphs/contributors
@@ -312,7 +313,7 @@
       - Marionette.js
       - HTML/CSS
     dates: Dec 2013 - Nov 2014
-    description: "Customise a phonecase, a mug or a calendar with your mobile tablet: I've spent one year with Photobox as Front-end developer to help building their new web-mobile Studio"
+    description: "Customise a phonecase, a mug or a calendar with your mobile tablet: I've spent one year with Photobox as front-end freelance to help building their new web-mobile application."
 
 #-------------------------------------------------------------------------------
 #  Behind The Wind
@@ -330,7 +331,7 @@
       - Lua
       - Corona SDK
     dates: Jan - Apr 2014
-    details: true
+    description: My first platform game! Developed with Corona SDK, with its twin app meant for level designing. Delivered on both iOS and Android.
 
 #-------------------------------------------------------------------------------
 
@@ -355,8 +356,7 @@
       - HTML5
       - HTML/CSS
     dates: Oct 2012 - Dec 2014
-    description: Maperial is an open source javascript API to create WebGL maps.
-    details: true
+    description: Maperial was an open source javascript API to create WebGL maps. It was the front to my teamates' awesome backend exposing tiles from scientist data.
 
 #-------------------------------------------------------------------------------
 #  Kodo 1.0
@@ -374,7 +374,7 @@
       - Lua
       - Corona SDK
     dates: August 2013
-    details: true
+    description: Extending the previous mobile game to play with a funnier theme. Available on iOS and Android.
 
 #-------------------------------------------------------------------------------
 #  The Lightning Planet
@@ -392,7 +392,7 @@
       - Lua
       - Corona SDK
     dates: July - August 2013
-    details: true
+    description: My first mobile game developed with Corona SDK. Available on iOS and Android.
 
 #-------------------------------------------------------------------------------
 # Diligis
@@ -412,7 +412,7 @@
       - Lua
       - Corona SDK
     dates: Apr – Jun 2013
-    details: true
+    description: "Diligis was an app that helped you meet new business connections during your business trips. I've build the whole platform and mobile prototype"
 
 #-------------------------------------------------------------------------------
 
@@ -437,6 +437,7 @@
       - JavaScript
       - HTML/CSS
     dates: Aug – Oct 2012
+    description: Developed a wishlist as Facebook app with 4 teamates. The app was connected to many API such as Amazon to centralise items.
 
 #-------------------------------------------------------------------------------
 #  The Band
@@ -457,6 +458,7 @@
       - JavaScript
       - HTML/CSS
     dates: Apr – May 2012
+    description: Developed a composition tool prototype with Flex. Inspired by dance e-jay saga!
 
 #-------------------------------------------------------------------------------
 
@@ -479,6 +481,7 @@
     technos:
       - Flex 4
     dates: Mar 2011 – Sept 2012
+    description: Developed 2 internal tools for Eram as freelance.
 
 #-------------------------------------------------------------------------------
 #  Tribes And Khans
@@ -498,7 +501,7 @@
       - Google AppEngine
       - Flex 4
     dates: Dec 2010 - Jul 2012
-    details: true
+    description: Tribes And Khans was a free MMO Strategy game. Build cities, raise armies to extend your lands, use merchants caravans to share your resources.
 
 #-------------------------------------------------------------------------------
 
@@ -521,6 +524,7 @@
       - PHP5
       - Flex 4
     dates: Oct - Dec 2010
+    description: 'My first freelance mission: I joined a team on a Flex project'
 
 #-------------------------------------------------------------------------------
 #  Fools
@@ -538,6 +542,7 @@
       - Facebook Graph API
       - Flex 3
     dates: Aug - Oct 2010
+    description: Created a multiplayer Flash game, deployed as Facebook application.
 
 #-------------------------------------------------------------------------------
 #  Skooairs
@@ -557,6 +562,7 @@
       - Google AppEngine
       - Flex 3
     dates: Jul - Aug 2010
+    description: Created a reflexion Flash game about squares.
 
 #-------------------------------------------------------------------------------
 
@@ -582,6 +588,7 @@
       - Google AppEngine
       - Flex 3
     dates: Jan 2008 - Jun 2010
+    description: Developed a MMO browser game. The player controlled a dynasty of magicians and warriors, crafted items and fought against other players on turned based battles.
 
 #-------------------------------------------------------------------------------
 # Serendi
@@ -677,6 +684,9 @@
       - Software Engineering
     dates: sept 2003 - sept 2006
     description: ENSEIRB delivers a Diploma of Engineering at a level equivalent to 5 years of higher education.
+    links:
+      - type: github
+        url: http://www.enseirb-matmeca.fr/
 
 #-------------------------------------------------------------------------------
 
@@ -696,4 +706,7 @@
     technos:
       - Maths/Physics
     dates: 2001 - 2003
-    description: Specialized in Mathematics and Physics (MP/MPSI).
+    description: Scientific CPGE, specialized in Mathematics and Physics (MP/MPSI).
+    links:
+      - type: github
+        url: http://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles
