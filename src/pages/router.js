@@ -17,10 +17,16 @@ const PLAYSTORE = {
 // };
 
 function Redirect({ app, params }) {
-  const textAreaRef = useRef(null);
-
   function openStore(e) {
-    window.location.href = PLAYSTORE.kodo;
+    const splitters = document.URL.split('/');
+    const game = splitters[splitters.length - 3];
+
+    if (PLAYSTORE[game]) {
+      window.location.href = PLAYSTORE[game];
+    } else {
+      window.location.href = '/';
+    }
+
     // const userAgent = new UAParser(event.headers['User-Agent']);
     // const { os: platform } = userAgent.getResult();
     // switch (platform.name) {
@@ -46,35 +52,24 @@ function Redirect({ app, params }) {
     // }
   }
 
-  function copyToClipboard(e) {
-    const el = textAreaRef.current;
-
-    var oldContentEditable = el.contentEditable,
-      oldReadOnly = el.readOnly,
-      range = document.createRange();
-
-    el.contentEditable = true;
-    el.readOnly = false;
-    el.value = document.URL;
-    range.selectNodeContents(el);
-
-    var s = window.getSelection();
-    s.removeAllRanges();
-    s.addRange(range);
-
-    el.setSelectionRange(0, 999999); // A big number, to cover anything that could be inside the element.
-
-    el.contentEditable = oldContentEditable;
-    el.readOnly = oldReadOnly;
-
+  function copyToClipboard() {
+    const copyText = document.getElementById('textarea');
+    copyText.value = document.URL;
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
     document.execCommand('copy');
+  }
+
+  function validate(e) {
+    copyToClipboard();
     e.preventDefault();
     openStore();
   }
 
   return (
-    <form onSubmit={copyToClipboard}>
-      <textarea style={{ display: 'none' }} ref={textAreaRef} />
+    <form onSubmit={validate}>
+      <textarea style={{ opacity: 0 }} id="textarea" />
+      {/* <textarea style={{ display: 'none' }} id="textarea" /> */}
       <p>{`You'll be redirected to the stores to download "${app}".`}</p>
       <button>Continue</button>
     </form>
