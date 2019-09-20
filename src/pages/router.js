@@ -17,27 +17,12 @@ const APPSTORE = {
   'kodo-monster': 'https://apps.apple.com/us/app/id1462688847'
 };
 
-const Redirect = ({ app, params }) => {
-  const copyToClipboard = () => {
-    const copyText = document.getElementById('textarea');
-    copyText.value = document.URL;
-    copyText.select();
-    copyText.setSelectionRange(0, 99999);
-    document.execCommand('copy');
-  };
-
-  const validate = redirection => event => {
-    copyToClipboard();
-    event.preventDefault();
-    window.location.href = redirection;
-  };
-
+const Redirect = ({ app, link }) => {
   let info = `You'll be redirected to the stores to download "${app}".`;
+  let redirection = '/';
 
-  const redirection = '/';
   const parser = new UAParser();
   const os = parser.getOS().name;
-  console.log({ os });
 
   switch (os) {
     case 'Android':
@@ -50,8 +35,22 @@ const Redirect = ({ app, params }) => {
       info = 'This link should be opened in Android or iOS.';
   }
 
+  const copyToClipboard = () => {
+    const copyText = document.getElementById('textarea');
+    copyText.value = link;
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    document.execCommand('copy');
+  };
+
+  const validate = event => {
+    copyToClipboard();
+    event.preventDefault();
+    window.location.href = redirection;
+  };
+
   return (
-    <form onSubmit={validate(redirection)}>
+    <form onSubmit={validate}>
       <textarea style={{ opacity: 0 }} id="textarea" />
       <p>{info}</p>
       <button>Continue</button>
@@ -60,16 +59,15 @@ const Redirect = ({ app, params }) => {
 };
 
 const Router = context => {
-  const slugs = context.location.pathname.split('/');
-  const app = slugs[2];
-  const params = slugs.slice(2, slugs.length);
+  const [hostname, path] = document.URL.split('/router/?link=');
+  const app = path && path.split('/')[1];
   const isKnown = name => Object.keys(PLAYSTORE).includes(name);
 
   return (
     <Layout>
       <SEO title={'[router]'} keywords={['uralys', 'games', 'mobile']} />
       {isKnown(app) ? (
-        <Redirect app={app} params={params} />
+        <Redirect app={app} link={`${hostname}${path}`} />
       ) : (
         <p>{`unknown app "${app}"`}</p>
       )}
