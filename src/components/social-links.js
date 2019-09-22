@@ -20,10 +20,11 @@ const socials = [
 
 const SocialLinks = ({ className }) => (
   <div className={classnames([className, style.links])}>
-    {socials.map(social => (
+    {socials.map((social, index) => (
       <a
         className={style.link}
         href={social.link}
+        key={`social-link-${index}`}
         target="_blank"
         rel="noopener noreferrer"
       >

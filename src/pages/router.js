@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import UAParser from 'ua-parser-js';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -17,27 +17,47 @@ const APPSTORE = {
   'kodo-monster': 'https://apps.apple.com/us/app/id1462688847'
 };
 
-const Redirect = ({ app, link }) => {
-  let info = `You'll be redirected to the stores to download "${app}".`;
-  let redirection = '/';
+const isKnown = name => Object.keys(PLAYSTORE).includes(name);
 
+const Router = () => {
   const parser = new UAParser();
   const os = parser.getOS().name;
 
-  switch (os) {
-    case 'Android':
-      redirection = PLAYSTORE[app];
-      break;
-    case 'iOS':
-      redirection = APPSTORE[app];
-      break;
-    default:
-      info = 'This link should be opened in Android or iOS.';
-  }
+  const [app, setApp] = useState(null);
+  const [appLink, setAppLink] = useState('');
+  const [redirection, setRedirection] = useState('/');
+  const [info, setInfo] = useState('');
+
+  useEffect(() => {
+    console.log('-------> useEffect');
+    const [hostname, path] = document.URL.split('/router');
+    const _app = path && path.split('/')[1];
+
+    setAppLink(`${hostname}${path}`);
+    setApp(_app);
+
+    if (!isKnown(_app)) {
+      setInfo(`unknown app "${_app}"`);
+      return;
+    }
+
+    setInfo(`You'll be redirected to the stores to download "${_app}".`);
+
+    switch (os) {
+      case 'Android':
+        setRedirection(PLAYSTORE[_app]);
+        break;
+      case 'iOS':
+        setRedirection(APPSTORE[_app]);
+        break;
+      default:
+        setInfo('This link should be opened in Android or iOS.');
+    }
+  }, []);
 
   const copyToClipboard = () => {
     const copyText = document.getElementById('textarea');
-    copyText.value = link;
+    copyText.value = appLink;
     copyText.select();
     copyText.setSelectionRange(0, 99999);
     document.execCommand('copy');
@@ -50,27 +70,13 @@ const Redirect = ({ app, link }) => {
   };
 
   return (
-    <form onSubmit={validate}>
-      <textarea style={{ opacity: 0 }} id="textarea" />
-      <p>{info}</p>
-      <button>Continue</button>
-    </form>
-  );
-};
-
-const Router = context => {
-  const [hostname, path] = document.URL.split('/router/?link=');
-  const app = path && path.split('/')[1];
-  const isKnown = name => Object.keys(PLAYSTORE).includes(name);
-
-  return (
     <Layout>
       <SEO title={'[router]'} keywords={['uralys', 'games', 'mobile']} />
-      {isKnown(app) ? (
-        <Redirect app={app} link={`${hostname}${path}`} />
-      ) : (
-        <p>{`unknown app "${app}"`}</p>
-      )}
+      <form onSubmit={validate}>
+        <textarea style={{ opacity: 0 }} id="textarea" />
+        <p>{info}</p>
+        {isKnown(app) && <button>Continue</button>}
+      </form>
     </Layout>
   );
 };
