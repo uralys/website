@@ -9,9 +9,7 @@ const Hero = () => (
     <div className={style.heroOverlay} />
     <div className={style.content}>
       <h1 className={style.title}>Indie game studio.</h1>
-      <p className={style.punchLine}>
-        Let's build the perfect game for your customers.
-      </p>
+      <p className={style.punchLine}>2D mobile games.</p>
       <SocialLinks className={style.links} />
     </div>
   </div>
