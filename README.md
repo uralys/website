@@ -1,5 +1,5 @@
 <p align="center">
-  <h2 align="center">🎮 www.uralys.com 🐸</h2>
+  <h2 align="center">🎮 <a style="color: #328896;" href="https://www.uralys.com">www.uralys.com</a> 🐸</h2>
 </p>
 
 <p align="center">
@@ -8,22 +8,11 @@
   </a>
 </p>
 
-<h1 align="center">
+<h3 align="center">
 Built with Gatsby
-</h1>
+</h3>
 
-## 🌱 branches: don't read master!
-
-- Since this is an [Organization Pages site](https://help.github.com/en/articles/user-organization-and-project-pages#user-and-organization-pages-sites), `master` is the _deployment_ branch and contains the **built website**.
-- [source](https://github.com/chrisdugne/chrisdugne.github.io/tree/source): contains the actual development sources, where you can read react + gatsbyjs cool code.
-
-## 🐝 deploy
-
-on source branch:
-
-```shell
-> npm run deploy
-```
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b119faf7-3230-4571-a50e-ab522c37033d/deploy-status)](https://app.netlify.com/sites/uralys/deploys)
 
 ## 🛠 Credits
 
