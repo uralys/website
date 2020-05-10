@@ -1,23 +1,21 @@
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import UAParser from 'ua-parser-js';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 const PLAYSTORE = {
   exalt: 'https://play.google.com/store/apps/details?id=com.uralys.exalt',
-  kodo:
-    'https://play.google.com/store/apps/details?id=com.uralys.kodo.find_the_color',
-  'kodo-monster':
-    'https://play.google.com/store/apps/details?id=com.uralys.kodo.monster'
+  kodo: 'https://play.google.com/store/apps/details?id=com.uralys.kodo.find_the_color',
+  'kodo-monster': 'https://play.google.com/store/apps/details?id=com.uralys.kodo.monster',
 };
 
 const APPSTORE = {
   exalt: 'https://apps.apple.com/us/app/testflight/id899247664',
   kodo: 'https://apps.apple.com/us/app/kodo-find-the-color/id684227637',
-  'kodo-monster': 'https://apps.apple.com/us/app/id1462688847'
+  'kodo-monster': 'https://apps.apple.com/us/app/id1462688847',
 };
 
-const isKnown = name => Object.keys(PLAYSTORE).includes(name);
+const isKnown = (name) => Object.keys(PLAYSTORE).includes(name);
 
 const Router = () => {
   const parser = new UAParser();
@@ -29,7 +27,6 @@ const Router = () => {
   const [info, setInfo] = useState('');
 
   useEffect(() => {
-    console.log('-------> useEffect');
     const [hostname, path] = document.URL.split('/router');
     const _app = path && path.split('/')[1];
 
@@ -63,7 +60,7 @@ const Router = () => {
     document.execCommand('copy');
   };
 
-  const validate = event => {
+  const validate = (event) => {
     copyToClipboard();
     event.preventDefault();
     window.location.href = redirection;
@@ -73,7 +70,7 @@ const Router = () => {
     <Layout>
       <SEO title={'[router]'} keywords={['uralys', 'games', 'mobile']} />
       <form onSubmit={validate}>
-        <textarea style={{ opacity: 0 }} id="textarea" />
+        <textarea style={{opacity: 0}} id="textarea" />
         <p>{info}</p>
         {isKnown(app) && <button>Continue</button>}
       </form>

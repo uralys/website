@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import {graphql} from 'gatsby';
 
 import Hero from '../components/hero';
 import Highlights from '../components/highlights';
@@ -7,10 +7,8 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Timeline from '../components/timeline';
 
-const IndexPage = ({ data }) => {
-  const highlights = data.allHighlightsYaml.edges.map(
-    edge => edge.node.highlight
-  );
+const IndexPage = ({data}) => {
+  const highlights = data.allHighlightsYaml.edges.map(edge => edge.node.highlight);
 
   const projects = data.allProjectsYaml.edges.map(edge => edge.node.project);
   const pages = data.allPagesYaml.edges.map(edge => edge.node.page);
