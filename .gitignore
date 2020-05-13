@@ -58,8 +58,8 @@ typings/
 .cache/
 public
 
-# Mac files
-.DS_Store
+# osx
+*.DS_Store
 
 # Yarn
 yarn-error.log
