@@ -6,22 +6,22 @@
     id: '2019'
 
 #-------------------------------------------------------------------------------
-#  Coorpacademy Playground
+#  Exalt
 #-------------------------------------------------------------------------------
 
 - project:
     category: games
     id: exalt
-    title: Coorpacademy Playground
+    title: Exalt
     location: Paris, France
     roles:
       - Mobile Developer
       - Game Designer
     technos:
       - Lua
-      - Corona SDK
+      - Solar2d
     dates: from Jan 2019
-    description: Designed and created a prototype to demonstrate my potential as game studio for Coorpacademy.
+    description: Designed and created a prototype for Coorpacademy R&D on gaming.
 
 #-------------------------------------------------------------------------------
 #  1024
@@ -37,7 +37,7 @@
       - Game Designer
     technos:
       - Lua
-      - Corona SDK
+      - Solar2d
     dates: April 2019
     description: 'I submitted another Ludum Dare entry, on Compo category this time. Theme: Your life is currency'
     links:
@@ -62,7 +62,7 @@
       - Game Designer
     technos:
       - Lua
-      - Corona SDK
+      - Solar2d
     dates: May 2019
     description: Landed a new Kodo theme on both iOS and Android
     links:
@@ -115,7 +115,7 @@
       - Game Designer
     technos:
       - Lua
-      - Corona SDK
+      - Solar2d
     dates: May 2019
     description: 'Kodo 3.0: created a mobile game for iOS and Android. This is the first app using my common leaderboard and common IAP.'
     links:
@@ -161,7 +161,7 @@
       - Mobile Developer
     technos:
       - Lua
-      - Corona SDK
+      - Solar2d
     dates: from early 2017
     description: 'Cherry is the backbone to my games released from 2017. This is a toolset to help being quicker developing with Corona SDK'
     links:
