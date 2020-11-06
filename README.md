@@ -1,18 +1,20 @@
-<p align="center">
-  <h2 align="center">🎮 <a style="color: #362036;" href="https://www.uralys.com">www.uralys.com</a> 🐸</h2>
+![FullColor_TransparentBg_1280x1024_72dpi](https://user-images.githubusercontent.com/910636/98414468-b5514300-207b-11eb-84e0-b7410d872ecc.png)
+
 </p>
 
+---
+
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
+  <h1 align="center"> <a style="color: #533153;" href="https://www.uralys.com">www.uralys.com</a> </h1>
 
 <h3 align="center">
-Built with Gatsby
-</h3>
+Created with Gatsby
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b119faf7-3230-4571-a50e-ab522c37033d/deploy-status)](https://app.netlify.com/sites/uralys/deploys)
+
+</h3>
+
+---
 
 ## 🛠 Credits
 
