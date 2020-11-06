@@ -1,5 +1,5 @@
 <p align="center">
-  <h2 align="center">🎮 <a style="color: #328896;" href="https://www.uralys.com">www.uralys.com</a> 🐸</h2>
+  <h2 align="center">🎮 <a style="color: #362036;" href="https://www.uralys.com">www.uralys.com</a> 🐸</h2>
 </p>
 
 <p align="center">
