@@ -1,12 +1,4 @@
 - highlight:
-    id: freelance
-    title: Freelance
-    description: Bringing my web and mobile expertise to boost your team.
-    image: freelance
-    details:
-      - Expert at building large scale interactive websites and applications.
-      - Expert knowledge of mobile development.
-- highlight:
     id: studio
     title: Game studio
     description: 'Mobile games for your company:'
@@ -16,3 +8,12 @@
       - Deploying on Apple and Google stores.
       - Scaling up your data and backend services on AWS.
       - Iterating your UX using Google Analytics.
+
+- highlight:
+    id: freelance
+    title: Freelance
+    description: Bringing my web and mobile expertise to boost your team.
+    image: freelance
+    details:
+      - Expert at building large scale interactive websites and applications.
+      - Expert knowledge of mobile development.

@@ -13,6 +13,16 @@
   margin-bottom: -100px;
 }
 
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: dark;
+  opacity: 0.45;
+}
+
 .image {
   position: absolute;
   width: 100%;
@@ -46,6 +56,9 @@
 }
 
 @media mobile {
+  .hero {
+    margin-bottom: 10px;
+  }
   .content {
     padding: 0 60px;
   }

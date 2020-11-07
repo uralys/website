@@ -42,7 +42,7 @@
 
 @media tablet, mobile {
   .footer {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .links {

@@ -22,7 +22,7 @@
   width: 100%;
   margin: 0px;
   padding: 0px;
-  background: #ededed;
+  background: rgba(0, 0, 0, 0.4);
   border-radius: 8px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 2px 1px 2px rgba(0, 0, 0, 0.24);
   height: 450px;
@@ -36,12 +36,6 @@
   flex-direction: row-reverse;
 }
 
-@media tablet {
-  .post {
-    max-width: 900px;
-    flex-direction: column;
-  }
-}
 .post:first-child {
   margin-top: 0;
 }
@@ -82,29 +76,6 @@
   padding: 30px;
 }
 
-@media tablet {
-  .post {
-    height: 700px;
-  }
-
-  .imageWrap {
-    width: 100%;
-  }
-
-  .contentWrap {
-    width: 100%;
-  }
-
-  .content {
-    margin: 0;
-    margin-top: -20px;
-    width: 90%;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
-  }
-}
-
 /* ------------------------------------------- */
 
 .link {
@@ -128,4 +99,41 @@
 }
 
 .line {
+}
+
+/* ------------------------------------------- */
+
+@media tablet {
+  .post {
+    max-width: 900px;
+    flex-direction: column;
+  }
+
+  .postReversed .content {
+    margin-left: 0px;
+  }
+
+  .image {
+    height: 200px;
+  }
+
+  .imageWrap {
+    flex: 1 0;
+    height: 200px;
+    width: 100%;
+  }
+
+  .contentWrap {
+    width: 100%;
+  }
+
+  .content {
+    margin: 0;
+    margin-top: -150px;
+    padding: 20px 30px 0px;
+    width: 90%;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
 }
