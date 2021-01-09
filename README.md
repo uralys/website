@@ -7,7 +7,6 @@
 
 </h3>
 
----
 
 ## 🎧 Music
 
@@ -15,7 +14,6 @@
 - soundcloud <https://soundcloud.com/uralys/>
 - spotify <https://open.spotify.com/artist/1lRNAaGXQBBXR6MWs0pEVp>
 
----
 
 ## 🛠 Credits
 
