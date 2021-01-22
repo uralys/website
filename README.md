@@ -1,13 +1,13 @@
-<p align="center">
+<div align="center">
   <img width="200" alt="uralys" src="https://user-images.githubusercontent.com/910636/98414468-b5514300-207b-11eb-84e0-b7410d872ecc.png" />
 
-<a href='www.uralys.com'>www.uralys.com</a>
-
-</p>
+<a href="https://www.uralys.com">www.uralys.com</a>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b119faf7-3230-4571-a50e-ab522c37033d/deploy-status)](https://app.netlify.com/sites/uralys/deploys) [![style: styled-components](https://img.shields.io/badge/-%F0%9F%92%85%20styled--components-orange.svg?colorB=415)](https://github.com/styled-components/styled-components)
 
 ##### Created with Gatsby
+
+</div>
 
 ## 🎧 Music
 
