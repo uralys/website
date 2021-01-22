@@ -163,7 +163,7 @@
       - Lua
       - Solar2d
     dates: from early 2017
-    description: 'Cherry is the backbone to my games released from 2017. This is a toolset to help being quicker developing with Corona SDK'
+    description: 'Cherry is the backbone to my games released from 2017. This is a toolset to help being quicker developing with Solar2D'
     links:
       - type: github
         url: https://github.com/chrisdugne/cherry
@@ -210,9 +210,9 @@
       - Game Designer
     technos:
       - Lua
-      - Corona SDK
+      - Solar2D
     dates: August 2016
-    description: My first Ludum Dare participation. A mobile game developed with Corona SDK, with my daughter's drawings <3
+    description: My first Ludum Dare participation. A mobile game developed with Solar2D, with my daughter's drawings <3
     links:
       - type: github
         url: https://github.com/chrisdugne/ludum-dare-36
@@ -239,7 +239,7 @@
       - Game Designer
     technos:
       - Lua
-      - Corona SDK
+      - Solar2D
     dates: Jan 2015 - Dec 2015
     description: Phantoms is a new kind of mind game. You will have to find different paths in intricate 2D labyrinths. a mobile game released on Apple Store and Google Play.
     details: true
@@ -292,7 +292,7 @@
       - Backbone.js
       - Marionette.js
       - Lua
-      - Corona SDK
+      - Solar2D
     dates: Sept 2013 - Nov 2014
     description: I co-founded Adillions as full-stack developer to build a disruptive new sweepstake.
 
@@ -329,9 +329,9 @@
       - Game Designer
     technos:
       - Lua
-      - Corona SDK
+      - Solar2D
     dates: Jan - Apr 2014
-    description: My first platform game! Developed with Corona SDK, with its twin app meant for level designing. Delivered on both iOS and Android.
+    description: My first platform game! Developed with Solar2D, with its twin app meant for level designing. Delivered on both iOS and Android.
 
 #-------------------------------------------------------------------------------
 
@@ -372,7 +372,7 @@
       - Game Designer
     technos:
       - Lua
-      - Corona SDK
+      - Solar2D
     dates: August 2013
     description: Extending the previous mobile game to play with a funnier theme. Available on iOS and Android.
 
@@ -390,9 +390,9 @@
       - Game Designer
     technos:
       - Lua
-      - Corona SDK
+      - Solar2D
     dates: July - August 2013
-    description: My first mobile game developed with Corona SDK. Available on iOS and Android.
+    description: My first mobile game developed with Solar2D. Available on iOS and Android.
 
 #-------------------------------------------------------------------------------
 # Diligis
@@ -410,7 +410,7 @@
       - Play! Framework
       - PostgreSQL
       - Lua
-      - Corona SDK
+      - Solar2D
     dates: Apr – Jun 2013
     description: "Diligis was an app that helped you meet new business connections during your business trips. I've build the whole platform and mobile prototype"
 
