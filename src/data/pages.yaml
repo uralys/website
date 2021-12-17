@@ -571,29 +571,21 @@
           - subtitle: 'Collection and Use of Personal Information via my games:'
           - paragraph: I do not collect any personal information through my apps. Simple as that.
 
-          - subtitle: 'Collection and Use of Non-Personal Information via our games:'
-          - paragraph: For analytics purposes, anonymous and aggregated data may be collected, using Google Analytics.
-          - list:
-              - 'Navigational information: What screen you access on the game, how long you spend on each page;'
-              - 'Usage information: Analytics tied to your use of the game features, such as when you start, win or lose a game, get gems etc...'
-          - html: For more information on how Google Analytics use this data see this <a href="https://support.google.com/analytics/answer/6004245">document</a>
-
       - type: texts
         texts:
           - title: What other third parties are used within the games?
-          - subtitle: Corona Labs for coding
-          - paragraph: I develop my games with Corona SDK owned by Corona Labs Inc. which may collect non-personal information data to improve their software.
-          - html: You can read their privacy policy <a href="https://coronalabs.com/privacy-policy/">here</a>
+          - subtitle: Godot Engine for coding
+          - paragraph: I develop my games with Godot Engine.
+          - html: You can read their privacy policy <a href="https://godotengine.org/privacy-policy">here</a>
 
-          - subtitle: AWS for the leaderboards
-          - paragraph: Scores are anonymously stored using Amazon Web Services.
-          - html: You can read their privacy policy <a href="https://aws.amazon.com/privacy/">here</a>
-
-          - subtitle: Firebase for push notifications
-          - paragraph: Notifications may be pushed daily with FCM.
-          - html: You can read their privacy policy <a href="https://firebase.google.com/support/privacy/">here</a>
+          # - subtitle: AWS for the leaderboards
+          # - paragraph: Scores are anonymously stored using Amazon Web Services.
+          # - html: You can read their privacy policy <a href="https://aws.amazon.com/privacy/">here</a>
+          # - subtitle: Firebase for push notifications
+          # - paragraph: Notifications may be pushed daily with FCM.
+          # - html: You can read their privacy policy <a href="https://firebase.google.com/support/privacy/">here</a>
 
       - type: texts
         texts:
-          - paragraph: 'Last update: 2019-06-20'
+          - paragraph: 'Last update: 2021-12-17'
           - paragraph: If you have any questions, feel free to email `hello@uralys.com`
