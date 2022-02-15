@@ -550,12 +550,12 @@
 
       - type: texts
         texts:
-          - html: '<a href="http://uralys.com">Uralys</a> games are operated and maintained by <a href="https://twitter.com/chrisdugne">@chrisdugne</a>.'
+          - html: '<a href="http://uralys.com">Uralys</a> games are operated and maintained by <a href="https://twitter.com/uralys">@uralys</a>.'
           - html: This document outlines the data handling practices for all <i>Uralys</i> mobile games.
 
       - type: texts
         texts:
-          - subtitle: 'My games:'
+          - subtitle: 'Uralys games:'
           - list:
               - Do not collect any personal information
               - Do not collect location data
@@ -564,28 +564,24 @@
       - type: texts
         texts:
           - paragraph: The term “personal information” refers to personally identifiable information through which a user can be identified as an individual.
-          - paragraph: The term “Non-personal information” refers to information that does not directly identify a user.
+          - paragraph: The term “Non-personal information” refers to information that does not directly identify a user. For example, your scores and badges, which are stored in a secured DB.
 
       - type: texts
         texts:
-          - subtitle: 'Collection and Use of Personal Information via my games:'
-          - paragraph: I do not collect any personal information through my apps. Simple as that.
+          - subtitle: 'Collection and use of "personal information" via our games:'
+          - paragraph: Uralys do not collect any personal information through their apps. Simple as that.
 
       - type: texts
         texts:
           - title: What other third parties are used within the games?
           - subtitle: Godot Engine for coding
-          - paragraph: I develop my games with Godot Engine.
+          - paragraph: Uralys games are developed with Godot Engine.
           - html: You can read their privacy policy <a href="https://godotengine.org/privacy-policy">here</a>
-
-          # - subtitle: AWS for the leaderboards
-          # - paragraph: Scores are anonymously stored using Amazon Web Services.
-          # - html: You can read their privacy policy <a href="https://aws.amazon.com/privacy/">here</a>
-          # - subtitle: Firebase for push notifications
-          # - paragraph: Notifications may be pushed daily with FCM.
-          # - html: You can read their privacy policy <a href="https://firebase.google.com/support/privacy/">here</a>
+          - subtitle: AWS
+          - paragraph: Your scores and game progress are anonymously stored using Amazon Web Services
+          - html: You can read their privacy policy <a href="https://aws.amazon.com/privacy/">here</a>
 
       - type: texts
         texts:
-          - paragraph: 'Last update: 2021-12-17'
+          - paragraph: 'Last update: 2022-02-15'
           - paragraph: If you have any questions, feel free to email `hello@uralys.com`
