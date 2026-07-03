@@ -25,3 +25,11 @@
   - gamepad <https://thenounproject.com/search/?q=gamepad&i=669321>
   - internship <https://thenounproject.com/term/internship/961058/>
   - freelance <https://thenounproject.com/search/?q=freelance&i=1805396>
+
+---
+
+## ⚠️ Deprecated
+
+This repository is deprecated and no longer maintained.
+
+Please refer to the new website repository: <https://github.com/uralys/www>
